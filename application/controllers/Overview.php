@@ -11,6 +11,4 @@ class Overview extends CI_Controller{
     }
 
 }
-
-
 ?>
