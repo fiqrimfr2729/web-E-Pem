@@ -9,10 +9,9 @@
         <table id="tabel-data" class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th>name</th>
-                    <th>status</th>
-                    <th>price</th>
-                    <th></th>
+                    <th>ID</th>
+                    <th>NAMA</th>
+                    <th>AKSI</th>
                 </tr>
             </thead>
             <tbody>
