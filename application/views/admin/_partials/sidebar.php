@@ -8,12 +8,12 @@
         <nav class="navbar-sidebar2">
             <ul class="list-unstyled navbar__list">
                 <li>
-                    <a href="#">
-                        <i class="fas fa-tachometer-alt"></i>bbbb
+                    <a href="<?php echo site_url('admin/') ?>">
+                        <i class="fas fa-tachometer-alt"></i>Dashboard
                     </a>
                 </li>
                 <li>
-                    <a href="inbox.html">
+                    <a href="<?php echo site_url('admin/produk') ?>">
                         <i class="fas fa-chart-bar"></i>Produk</a>
                 </li>
 
@@ -26,7 +26,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="table.html">
+                            <a href="<?php echo site_url('admin/kategori') ?>">
                                 <i class="fas fa-table"></i>Kusen</a>
                         </li>
                         <li>
