@@ -32,7 +32,7 @@ class Auth extends CI_Controller
         $is_valid= $this->Login_model->validate($username, $password);
 
 
-        if($is_valid ) {
+        if($is_valid) {
 
             $data['message_error'] = true;
             $this->load->view('auth/login', $data);

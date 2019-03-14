@@ -1,6 +1,6 @@
 <?php
 
-class Logil_model extends CI_Model
+class Login_model extends CI_Model
 {
 	public function __construct()
 	{
@@ -18,6 +18,5 @@ class Logil_model extends CI_Model
 			}		
 	}
 }
-
 
 ?>

@@ -26,33 +26,33 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="<?php echo site_url('admin/kategori') ?>">
+                            <a href="<?php echo site_url('admin/kategori-kusen') ?>">
                                 <i class="fas fa-table"></i>Kusen</a>
                         </li>
                         <li>
-                            <a href="form.html">
+                            <a href="<?php echo site_url('admin/kategori-mebel') ?>">
                                 <i class="far fa-check-square"></i>Mebel</a>
                         </li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="inbox.html">
-                        <i class="fas fa-chart-bar"></i>Edit Cara Pemesanan</a>
+                    <a href="<?php echo site_url('admin/cara-pesan') ?>">
+                        <i class="fas fa-chart-bar"></i>Cara Pemesanan</a>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="<?php echo site_url('admin/pesanan') ?>">
                         <i class="fas fa-shopping-basket"></i>Pesanan</a>
                 </li>
 
                 <li>
-                    <a href="inbox.html">
+                    <a href="<?php echo site_url('admin/profil') ?>">
                         <i class="fas fa-chart-bar"></i>Profil Perusahaan</a>
                 </li>
 
                 <li>
-                    <a href="inbox.html">
+                    <a href="<?php echo site_url('admin/testimoni') ?>">
                         <i class="fas fa-chart-bar"></i>Testimoni</a>
                 </li>
 
