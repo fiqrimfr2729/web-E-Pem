@@ -1,9 +1,11 @@
 <div class="card">
     <div class="card-header">
         <strong class="card-title">Data Kategori</strong>
-        <button class="au-btn au-btn-icon au-btn--green">
+        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormKategori">
             <i class="zmdi zmdi-plus"></i>add item</button>
     </div>
+
+
 
     <div class="card-body">
         <table id="tabel-data" class="table table-striped table-bordered">
@@ -24,9 +26,6 @@
                     </td>
                     <td>
                         <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                <i class="zmdi zmdi-mail-send"></i>
-                            </button>
                             <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                 <i class="zmdi zmdi-edit"></i>
                             </button>

@@ -4615,14 +4615,14 @@ section {
 
 .table-data-feature .item {
     display: block;
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     position: relative;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    background: #e5e5e5;
-    margin-right: 5px;
+    background: #007bff;
+    margin-right: 15px;
 }
 
 .table-data-feature .item:last-child {
@@ -4631,7 +4631,7 @@ section {
 
 .table-data-feature .item i {
     font-size: 20px;
-    color: #808080;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -5031,7 +5031,7 @@ section {
 
 /* ----- Statistic 2 ----- */
 .statistic2 {
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .statistic2 .statistic__item {

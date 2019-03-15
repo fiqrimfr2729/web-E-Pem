@@ -6,13 +6,13 @@
 
 <body>
     <div class="page-wrapper">
-    
+
         <!-- MENU SIDEBAR-->
         <?php $this->load->view('admin/_partials/sidebar.php') ?>
         <!-- END MENU SIDEBAR-->
 
         <!-- PAGE CONTAINER-->
-        <div class="page-container">
+        <div class="page-container2">
 
             <!-- HEADER DESKTOP-->
             <?php $this->load->view('admin/_partials/navbar.php') ?>
@@ -47,6 +47,7 @@
                 </div>
             </section>
 
+            <?php $this->load->view('admin/modal_kategori') ?>
 
             <!-- MAIN CONTENT-->
             <div class="main-content">

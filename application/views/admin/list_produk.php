@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-header">
         <strong class="card-title">Data Table</strong>
-        <button class="au-btn au-btn-icon au-btn--green">
+        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormProduk">
             <i class="zmdi zmdi-plus"></i>add item</button>
     </div>
 
@@ -12,7 +12,7 @@
                     <th>ID</th>
                     <th>NAMA</th>
                     <th>KATEGORI</th>
-                    <th width="100px">AKSI</th>
+                    <th>AKSI</th>
                 </tr>
             </thead>
             <tbody>
