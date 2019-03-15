@@ -1,4 +1,4 @@
-<header class="header_area">
+    <header class="header_area">
            	<div class="top_menu">
            		<div class="container">
            			<div class="top_inner">
@@ -54,4 +54,4 @@
 					</div>
             	</nav>
             </div>
-        </header>
+    </header>

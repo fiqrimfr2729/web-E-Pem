@@ -1,4 +1,4 @@
-<div class="modal fade" id="modalFormKategori" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalFormKategori" tabindex="-1" role="form" aria-labelledby="mediumModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -12,10 +12,6 @@
                     <div class="form-group">
                         <label for="Nama Kategori">Nama</label>
                         <input type="text" class="form-control" name="nama_kategori" placeholder="Masukkan nama kategori" />
-                    </div>
-                    <div class="form-group">
-                        <label for="namakategori">id</label>
-                        <input type="text" class="form-control" name="id_kategori" placeholder="id kategori" />
                     </div>
                     <div class="form-group">
                         <label for="namakategori">jenis</label>

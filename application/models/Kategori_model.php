@@ -13,12 +13,6 @@ class Kategori_model extends CI_Model
     {
         return [
             [
-                'field' => 'id_kategori',
-                'label' => 'Id Kategori',
-                'rules' => 'required'
-            ],
-
-            [
                 'field' => 'nama_kategori',
                 'label' => 'Nama Kategori',
                 'rules' => 'required'
@@ -44,8 +38,9 @@ class Kategori_model extends CI_Model
 
     public function save()
     {
+        $query = $this->db->get($this->_table);
         $post = $this->input->post();
-        $this->id_kategori = $post['id_kategori'];
+        $this->id_kategori = 'K-'. $query->num_rows();
         $this->nama_kategori = $post['nama_kategori'];
         $this->id_jenis_kategori = $post['id_jenis_kategori'];
         $this->db->insert($this->_table, $this);

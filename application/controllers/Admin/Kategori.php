@@ -30,9 +30,7 @@ class Kategori extends CI_Controller
             $this->session->set_flashdata('success', 'Berhasil disimpan');
         }
 
-        $data['main_content'] = 'admin/list_kategori';
-        $data['title_dashboard'] = 'Kategori';
-        $this->load->view('admin/overview', $data);
+        redirect('admin/kategori');
     }
 }
  
