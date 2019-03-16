@@ -40,7 +40,7 @@ class Kategori_model extends CI_Model
     {
         $query = $this->db->get($this->_table);
         $post = $this->input->post();
-        $this->id_kategori = 'K-'. $query->num_rows();
+        $this->id_kategori = 'K'. $query->num_rows();
         $this->nama_kategori = $post['nama_kategori'];
         $this->id_jenis_kategori = $post['id_jenis_kategori'];
         $this->db->insert($this->_table, $this);
