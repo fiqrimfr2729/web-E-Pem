@@ -4,7 +4,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'user';
 
 
-
 $route['admin'] = 'admin/dashboard';
 $route['admin/produk'] = 'admin/produk';
 $route['admin/kategori-kusen'] = 'admin/kategori';
@@ -16,5 +15,5 @@ $route['admin/testimoni'] = 'admin/testimoni';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = false;
+
  
-?>

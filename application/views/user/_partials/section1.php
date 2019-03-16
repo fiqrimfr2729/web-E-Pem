@@ -9,21 +9,21 @@
         		<div class="furniture_inner row">
         			<div class="col-lg-4">
         				<div class="furniture_item">
-        					<img class="img-fluid" src="img/furniture/bedug4.jpg" alt="">
+        					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug4.jpg')?>"  alt="">
         					<h4>Bedug 01</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p>
         				</div>
         			</div>
         			<div class="col-lg-4">
         				<div class="furniture_item">
-        					<img class="img-fluid" src="img/furniture/bedug3.jpg" alt="">
+        					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug3.jpg')?>"  alt="">
         					<h4>Bedug 02</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p>
         				</div>
         			</div>
         			<div class="col-lg-4">
         				<div class="furniture_item">
-        					<img class="img-fluid" src="img/furniture/bedug4.jpg" alt="">
+        					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug4.jpg')?>"  alt="">
         					<h4>Bedug03</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p>
         				</div>

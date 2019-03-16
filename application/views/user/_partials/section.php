@@ -7,7 +7,7 @@
 								<h2>Aplikasi Pemesanan Furniture <br />PT Jati Makmur Mandiri</h2>
 								<p>Merupakan sebuah perangkat lunak (software) yang digunakan untuk pemesanan produk furniture dengan berbasis website dan android.</p>
 								<a class="banner_btn" href="pesansekarang.html">Pesan Sekarang</a>
-								<a class="banner_btn" href="carapesan.html">Baca Cara Pesan</a>
+								<a class="banner_btn" href="Overview.php">Baca Cara Pesan</a>
 							</div>
 						</div>
 
