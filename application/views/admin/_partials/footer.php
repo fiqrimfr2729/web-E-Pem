@@ -17,6 +17,14 @@
     });
 </script>
 
+<script>
+    function deleteConfirm(url) {
+        $('#btn-delete').attr('href', url);
+        $('#deleteModal').modal();
+    }
+</script>
+
+
 <!-- Bootstrap JS-->
 <script src="<?php echo base_url('assets/bootstrap-4.1/popper.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/bootstrap-4.1/bootstrap.min.js') ?>"></script>

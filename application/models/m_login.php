@@ -5,11 +5,10 @@
  */
 class M_login extends CI_Model
 {
-	
-	function getData(){
+
+	function getData()
+	{
 		return $this->db->get('admin');
 	}
 }
-
-
-?>
+ 

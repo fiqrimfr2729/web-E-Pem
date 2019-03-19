@@ -10,27 +10,71 @@ class Kategori extends CI_Controller
         $this->load->library('form_validation');
     }
 
-    public function index()
+    public function mebel()
     {
-        $data['kategori'] = $this->kategori_model->getAll();
-
-
-        $data['main_content'] = 'admin/list_kategori';
-        $data['title_dashboard'] = 'Kusen';
-        $this->load->view('admin/overview', $data);
-    }
-
-    public function add(){
         $kategori = $this->kategori_model;
         $validation = $this->form_validation;
         $validation->set_rules($kategori->rules());
 
-        if($validation->run()){
-            $kategori->save();
-            $this->session->set_flashdata('success', 'Berhasil disimpan');
-        }
+        if($validation->run() == false){
+            $data['kategori'] = $this->kategori_model->getByJenis("JK02");
 
-        redirect('admin/kategori');
+            $data['main_content'] = 'admin/list_kategori';
+            $data['title_dashboard'] = 'Mebel';
+            $this->load->view('admin/overview', $data);
+        }else{
+            $post = $this->input->post();
+            $nama_kategori= $post['nama_kategori'];;
+            $this->add('mebel', $nama_kategori);
+        }
+     }
+
+    public function kusen()
+    {
+        $kategori = $this->kategori_model;
+        $validation = $this->form_validation;
+        $validation->set_rules($kategori->rules());
+
+        if($validation->run() == false){
+            $data['kategori'] = $this->kategori_model->getByJenis("JK01");
+            
+            $data['main_content'] = 'admin/list_kategori';
+            $data['title_dashboard'] = 'Kusen';
+            $this->load->view('admin/overview', $data);
+        }else{
+            $post = $this->input->post();
+            $nama_kategori= $post['nama_kategori'];;
+            $this->add('kusen', $nama_kategori);
+        }
+        
     }
+    
+
+    public function add($jenis, $nama_kategori){
+        $kategori = $this->kategori_model;
+        if($jenis=='kusen'){
+            if($kategori->save('JK01', $nama_kategori)){
+                redirect('admin/kategori-'.$jenis);
+            }
+        }else{
+           if( $kategori->save('JK02', $nama_kategori)){
+                redirect('admin/kategori-'.$jenis);
+           }
+        }
+        $this->session->set_flashdata('success', 'Berhasil disimpan');
+          
+    }
+
+    public function delete($id=null, $nama_kategori)
+    {
+        if (!isset($id)) show_404();
+
+        if ($this->kategori_model->delete($id)) {
+            redirect(site_url('admin/kategori-'. strtolower($nama_kategori)));
+        }
+    }
+
+
+    
 }
  
