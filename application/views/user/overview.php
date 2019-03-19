@@ -5,8 +5,7 @@
 <?php $this->load->view('User/_partials/head.php') ?>
 
 <body>
-    <div class="top_menu">
-    
+    <header class="header_area">
         <!-- BAGIAN HALAMAN NAVBAR-->
         <?php $this->load->view('User/_partials/navbar.php') ?>
        
