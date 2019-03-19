@@ -1,4 +1,4 @@
-		<section class="home_banner_area">
+<section class="home_banner_area">
             <div class="banner_inner">
 				<div class="container">
 					<div class="row">
@@ -6,8 +6,8 @@
 							<div class="banner_content">
 								<h2>Aplikasi Pemesanan Furniture <br />PT Jati Makmur Mandiri</h2>
 								<p>Merupakan sebuah perangkat lunak (software) yang digunakan untuk pemesanan produk furniture dengan berbasis website dan android.</p>
-								<a class="banner_btn" href="pesansekarang.html">Pesan Sekarang</a>
-								<a class="banner_btn" href="Overview.php">Baca Cara Pesan</a>
+								<a class="banner_btn" href="#">Pesan Sekarang</a>
+								<a class="banner_btn" href="<?php ?>">Baca Cara Pesan</a>
 							</div>
 						</div>
 
@@ -15,10 +15,10 @@
 						<div class="col-lg-4">
 							<div class="home_right_box">
 								<a class="home_item" href="kategorisatu.html">
-								    <i class="flaticon-sofa"></i>
+								    <i class="<?php echo base_url('flaticon-sofa')?>"></i>
 								</a>
 								<a class="home_item" href="kategoridua.html">
-									<i class="flaticon-bed"></i>
+									<i class="<?php echo base_url('flaticon-bed')?>"></i>
 								</a>
 
 								<!--<div class="home_item">

@@ -8,12 +8,10 @@ class User extends CI_Controller
 		parent::__construct();
 	}
 
-
+	// Bagian buat fungsi index.php
 	public function index()
 	{
-		$data['main_content'] = 'User/Home';
-		$data['title_PTJatiMakmurMandiri'] = 'Home';
-		$this->load->view('User/overview', $data);
+		$this->load->view('user/overview');
 	}
 
 }
