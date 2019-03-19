@@ -8,6 +8,8 @@
     <!-- Title Page-->
     <title>Dashboard</title>
 
+
+
     <!-- Fontfaces CSS-->
     <link href="<?php echo base_url('css/font-face.css" rel="stylesheet') ?>" media="all">
     <link href="<?php echo base_url('assets/font-awesome-4.7/css/font-awesome.min.css') ?>" rel="stylesheet" media="all">
@@ -30,4 +32,8 @@
 
     <!-- Main CSS-->
     <link href="<?php echo base_url('css/theme.css') ?>" rel="stylesheet" media="all">
+
+    <!-- sweetalert -->
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <script type="text/javascript" src="<?php echo base_url('js/dist/sweetalert.min.js') ?>"></script>
 </head> 

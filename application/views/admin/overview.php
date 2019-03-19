@@ -68,6 +68,7 @@
 
     <?php $this->load->view('admin/_partials/footer.php') ?>
 
+    <?php $this->load->view('admin/_partials/alert.php') ?>
 </body>
 
 </html>

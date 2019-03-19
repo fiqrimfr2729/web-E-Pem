@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$route['default_controller'] = 'auth';
+$route['default_controller'] = 'user';
 
 
-$route['admin'] = 'admin/dashboard';
+$route['admin'] = 'auth';
 $route['admin/produk'] = 'admin/produk';
 $route['admin/kategori-kusen'] = 'admin/kategori/kusen';
 $route['admin/kategori-mebel'] = 'admin/kategori/mebel';

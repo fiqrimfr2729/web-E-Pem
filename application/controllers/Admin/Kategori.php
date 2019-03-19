@@ -57,7 +57,11 @@ class Kategori extends CI_Controller
                 redirect('admin/kategori-'.$jenis);
             }
         }else{
-           if( $kategori->save('JK02', $nama_kategori)){
+           if($kategori->save('JK02', $nama_kategori)){
+                $this->session->set_flashdata('success','Data berhasil ditambahkan');
+                redirect('admin/kategori-'.$jenis);
+           }else{
+                $this->session->set_flashdata('error','Gagal');
                 redirect('admin/kategori-'.$jenis);
            }
         }
@@ -70,6 +74,7 @@ class Kategori extends CI_Controller
         if (!isset($id)) show_404();
 
         if ($this->kategori_model->delete($id)) {
+            $this->session->set_flashdata('success', 'Data berhasil dihapus');
             redirect(site_url('admin/kategori-'. strtolower($nama_kategori)));
         }
     }
