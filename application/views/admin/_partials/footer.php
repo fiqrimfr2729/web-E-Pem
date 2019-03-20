@@ -16,6 +16,43 @@
         $('#tabel-data').DataTable();
     });
 </script>
+<script>
+    function deleteConfirm(url) {
+        swal({
+            title: "Apa anda yakin?",
+            text: "Data yang sudah dihapus tidak dapat dikembalikan lagi!",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+            })
+            .then((willDelete) => {
+            if (willDelete) {
+                window.location.replace(url);
+            } else {
+                swal("Your imaginary file is safe!");
+            }
+            });
+    }
+</script>
+
+<script>
+        jQuery(document).ready(function($){
+            $('.alert_notif').on('click',function(){
+                var getLink = $(this).attr('href');
+                swal({
+                        title: 'Alert',
+                        text: 'Hapus Data?',
+                        html: true,
+                        confirmButtonColor: '#d9534f',
+                        showCancelButton: true,
+                        },function(){
+                        window.location.href = getLink
+                    });
+                return false;
+            });
+        });	 
+</script>
+
 
 <!-- Bootstrap JS-->
 <script src="<?php echo base_url('assets/bootstrap-4.1/popper.min.js') ?>"></script>

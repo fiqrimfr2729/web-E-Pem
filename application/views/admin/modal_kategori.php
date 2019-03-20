@@ -8,14 +8,10 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="<?php echo base_url('admin/kategori/add') ?>" method="post" enctype="multipart/form-data">
+                <form action="<?php echo base_url('admin/kategori/' . $title_dashboard) ?>" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="Nama Kategori">Nama</label>
-                        <input type="text" class="form-control" name="nama_kategori" placeholder="Masukkan nama kategori" />
-                    </div>
-                    <div class="form-group">
-                        <label for="namakategori">jenis</label>
-                        <input type="text" class="form-control" name="id_jenis_kategori" placeholder="id jenis" />
+                        <input type="text" class="form-control" name="nama_kategori" placeholder="Masukkan nama kategori" required />
                     </div>
             </div>
             <div class="modal-footer">
@@ -54,6 +50,25 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                 <button type="button" class="btn btn-primary">Masukan</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Data yang dihapus tidak akan bisa dikembalikan.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a id="btn-delete" class="btn btn-danger" href="#">Delete</a>
             </div>
         </div>
     </div>
