@@ -22,10 +22,10 @@
 						
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="<?php echo site_url('Home') ?>">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="<?php echo site_url('About') ?>">About Us</a></li> 
-								<li class="nav-item"><a class="nav-link" href="<?php echo site_url('Contact') ?>">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?php echo site_url('Galery') ?>">Galery</a></li>
+								<li class="nav-item active"><a class="nav-link" href="<?php base_url('user/user') ?>">Home</a></li> 
+								<li class="nav-item"><a class="nav-link" href="<?php base_url('user/Aboutus') ?>">About Us</a></li> 
+								<li class="nav-item"><a class="nav-link" href="<?php base_url('User/contact') ?>">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?php base_url('User/calery') ?>">Galery</a></li>
 							</ul>
 						</div> 
 					</div>
