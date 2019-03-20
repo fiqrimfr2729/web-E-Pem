@@ -37,7 +37,7 @@
                                             <i class="zmdi zmdi-account"></i>Account</a>
                                     </div>
                                     <div class="account-dropdown__item">
-                                        <a href="#">
+                                        <a href="<?= base_url('admin/edit_akun'); ?>">
                                             <i class="zmdi zmdi-settings"></i>Setting</a>
                                     </div>
                                     <div class="account-dropdown__item">
@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                                 <div class="account-dropdown__footer">
-                                    <a href="#">
+                                    <a href="<?= base_url('auth/logout'); ?>">
                                         <i class="zmdi zmdi-power"></i>Logout</a>
                                 </div>
                             </div>
