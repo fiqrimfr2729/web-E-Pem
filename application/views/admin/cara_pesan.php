@@ -8,22 +8,54 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+ 
+body{
+    background: #c0c0c0;
+}
+ 
+div.konten{
+    background: #ffffff;
+    width: 900px;
+    margin: 30px auto 0;
+    border-radius: 16px;
+    min-height: 256px;
+    overflow: hidden;
+}
+ 
+div.kepala{
+    background: #0984e3;
+    padding: 10px 22px;
+    height: 60px;
+}
+ 
+div.kepala h2.judul{
+    color: #fff;
+    font-weight: normal;
+    line-height: 40px;
+    display: inline-block;
+}
+
+</style>
+
 <body>
-            <p align="justify">
-                   Silahkan kunjungi link www.PTJMM_meubel.com Silahkan kunjungi link www.PTJMM_meubel.com
-                   Silahkan kunjungi link www.PTJMM_meubel.com Silahkan kunjungi link www.PTJMM_meubel.com 
-                   Silahkan kunjungi link www.PTJMM_meubel.com Silahkan kunjungi link www.PTJMM_meubel.com 
-                   Silahkan kunjungi link www.PTJMM_meubel.com Silahkan kunjungi link www.PTJMM_meubel.com
-                   Silahkan kunjungi link www.PTJMM_meubel.com Silahkan kunjungi link www.PTJMM_meubel.com
-            </p><br>
-     
-    <p>1. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>2. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>3. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>4. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>5. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>6. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>7. Silahkan kunjungi link www.PTJMM_meubel.com</p>
-    <p>8. Silahkan kunjungi link www.PTJMM_meubel.com</p>
+<div class="konten">
+        <div class="kepala">
+            <div class="lock"></div>
+            <h2 class="judul">Cara Pesan</h2>
+        </div>
+        <div class="artikel">
+            <form action="" method="post">
+               
+            </form>
+        </div>
+    </div><br><br>
 </body>
 </html>

@@ -1,6 +1,7 @@
 <?php 
 defined('BASEPATH') or exit('No direct script access allowed');
 
+ // controller di awali dengan huruf kapital
 class Contact extends CI_Controller
 {
     public function __construct()
@@ -9,8 +10,11 @@ class Contact extends CI_Controller
     }
 
     public function index(){
-		
-		$this->load->view('User/overview3') ;
+
+       
+        // user sebagai nama folder nya
+        // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
+		$this->load->view('User/contact') ;
 	}
 }
  

@@ -1,8 +1,9 @@
 <?php 
 defined('BASEPATH') or exit('No direct script access allowed');
 
+
  // controller di awali dengan huruf kapital
-class Aboutus extends CI_Controller
+class Dasboard extends CI_Controller
 {
     public function __construct()
     {
@@ -14,7 +15,7 @@ class Aboutus extends CI_Controller
         
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('user/aboutus') ;
+		$this->load->view('User/dasboard') ;
 	}
 }
  
