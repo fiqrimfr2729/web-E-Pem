@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>carapesan</title>
+    <title>Cara Pemesanan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
@@ -43,6 +43,19 @@ div.kepala h2.judul{
     display: inline-block;
 }
 
+textarea{
+    color:black;
+    border: 1px solid #b2bec3;
+    width: 830px;
+    height: 400px;
+    margin:35px;
+}
+
+p{
+    margin-top:35px;
+    margin-left:33px;
+}
+
 </style>
 
 <body>
@@ -53,7 +66,8 @@ div.kepala h2.judul{
         </div>
         <div class="artikel">
             <form action="" method="post">
-               
+            <p>Silahkan input cara pesan produk furniture anda :</p>
+              <textarea name="text" id="ad" placeholder="  Masukkan cara pemesanan produk"></textarea>
             </form>
         </div>
     </div><br><br>

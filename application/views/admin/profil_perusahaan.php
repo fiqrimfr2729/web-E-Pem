@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Profil</title>
+    <title>Profil Perusahaan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
@@ -70,12 +70,11 @@ div.artikel div.grup input{
 }
  
 div.artikel div.grup label{
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
  
-div.artikel div.grup input[type="text"],
-div.artikel div.grup input[type="password"]{
+div.artikel div.grup input[type="text"]{
     width: 100%;
     height: 35px;
     padding: 0 15px;
@@ -112,7 +111,9 @@ div.artikel div.grup input[type="submit"]:hover{
         <div class="artikel">
             <form action="" method="post">
                 <div class="grup">
-                    <label for="nama">Nama Perusahaan</label><input type="text" placeholder="Masukkan Nama">
+                    <label for="nama">Nama Perusahaan</label>
+                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM) FURNITURE</label>
+                    
                 </div>
                 <div class="grup">
                     <label for="alamat">Alamat Perusahaan</label>
