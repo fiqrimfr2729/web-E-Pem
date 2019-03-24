@@ -15,7 +15,7 @@ class Kategori_model extends CI_Model
             [
                 'field' => 'nama_kategori',
                 'label' => 'Nama Kategori',
-                'rules' => 'required'
+                'rules' => 'required',
             ]
         ];
     }
@@ -35,11 +35,21 @@ class Kategori_model extends CI_Model
         return $this->db->get_where($this->_table, ["id_jenis_kategori" => $id_jenis_kategori])->result();
     }
 
+    public function getByNama($nama_kategori)
+    {
+        return $this->db->get_where($this->_table, ["nama_kategori" => $nama_kategori])->num_rows();
+    }
+
     public function save($id_jenis, $nama_kategori)
     {
-        $this->nama_kategori = $nama_kategori;
-        $this->id_jenis_kategori = $id_jenis;
-        return $this->db->insert($this->_table, $this);
+        if($this->getBynama($nama_kategori) < 1){
+            $this->nama_kategori = $nama_kategori;
+            $this->id_jenis_kategori = $id_jenis;
+            return $this->db->insert($this->_table, $this);
+        }else{
+            return false;
+        }
+        
     }
 
     public function delete($id)

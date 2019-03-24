@@ -20,6 +20,9 @@
     <link href="<?php echo base_url('assets/bootstrap-4.1/bootstrap.min.css') ?>" rel="stylesheet" media="all">
     <link href="<?php echo base_url('assets/data-table/css/dataTables.bootstrap4.min.css') ?>" rel="stylesheet" media="all">
     <link href="<?php echo base_url('assets/data-table/buttons/css/buttons.bootstrap4.min.css') ?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/datepicker/datepicker3.min.css') ?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/datepicker/bootstrap-datepicker.css') ?>" rel="stylesheet" media="all">
+    <link href="<?php echo base_url('assets/magnific/magnific-popup.css') ?>" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
     <link href="<?php echo base_url('assets/animsition/animsition.min.css') ?>" rel="stylesheet" media="all">
