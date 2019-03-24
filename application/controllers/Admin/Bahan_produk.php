@@ -11,7 +11,7 @@ class Bahan_produk extends CI_Controller
     public function index()
     {
         $data['title_dashboard'] = 'Bahan Produk';
-        $data['main_content'] = 'admin/bahanproduk';
+        $data['main_content'] = 'admin/list_bahan';
         $this->load->view('admin/overview', $data);
     }
 }

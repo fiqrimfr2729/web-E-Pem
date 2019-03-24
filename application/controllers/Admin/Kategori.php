@@ -57,7 +57,7 @@ class Kategori extends CI_Controller
                 $this->session->set_flashdata('success','Data berhasil ditambahkan');
                 redirect('admin/kategori-'.$jenis);
             }else{
-                $this->session->set_flashdata('error', 'Gagal');
+                $this->session->set_flashdata('error', 'Data sudah ada');
                 redirect('admin/kategori-' . $jenis);
             }
         }else{

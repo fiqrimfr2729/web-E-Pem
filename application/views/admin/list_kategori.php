@@ -11,31 +11,28 @@
         <table id="tabel-data" class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th width="150px">ID</th>
+                    <th width="60px">NO</th>
                     <th>NAMA KATEGORI</th>
-                    <th width="100px">AKSI</th>
+                    <th width="200px">AKSI</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($kategori as $data_kategori) : ?>
+                <?php $i = 1;
+                foreach ($kategori as $data_kategori) : ?>
                 <tr class="tr-shadow">
                     <td>
-                        <?php echo $data_kategori->id_kategori ?>
+                        <?php echo $i;
+                        $i++; ?>
                     </td>
                     <td>
                         <?php echo $data_kategori->nama_kategori ?>
                     </td>
                     <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
+                        <div>
+                            <button onclick="deleteConfirm('<?php echo site_url('admin/kategori/delete/' . $data_kategori->id_kategori . '/' . $title_dashboard) ?>')" class="btn btn-danger" type="button" title="Delete">
+                                Hapus
                             </button>
-                            <button onclick="deleteConfirm('<?php echo site_url('admin/kategori/delete/' . $data_kategori->id_kategori . '/' . $title_dashboard) ?>')" class=" item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
+                            <button type="button" class="btn btn-info">Info</button>
                         </div>
                     </td>
                 </tr>

@@ -37,7 +37,7 @@
                                             <li class="list-inline-item seprate">
                                                 <span>/</span>
                                             </li>
-                                            <li class="list-inline-item">Dashboard</li>
+                                            <li class="list-inline-item"><?php echo $title_dashboard ?></li>
                                         </ul>
                                     </div>
                                 </div>

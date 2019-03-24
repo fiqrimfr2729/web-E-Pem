@@ -11,46 +11,70 @@
 <script src="<?php echo base_url('assets/data-table/js/dataTables.bootstrap4.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/data-table/button//js/buttons.bootstrap4.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/data-table/button//js/buttons.bootstrap.min.js') ?>"></script>
+<script src="<?php echo base_url('assets/datepicker/bootstrap-datepicker.js') ?>"></script>
+<script src="<?php echo base_url('assets/magnific/jquery.magnific-popup.min.js') ?>"></script>
+
 <script>
     $(document).ready(function() {
         $('#tabel-data').DataTable();
     });
 </script>
+
 <script>
     function deleteConfirm(url) {
         swal({
-            title: "Apa anda yakin?",
-            text: "Data yang sudah dihapus tidak dapat dikembalikan lagi!",
-            icon: "warning",
-            buttons: true,
-            dangerMode: true,
+                title: "Apa anda yakin?",
+                text: "Data yang sudah dihapus tidak dapat dikembalikan lagi!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
             })
             .then((willDelete) => {
-            if (willDelete) {
-                window.location.replace(url);
-            } else {
-                swal("Your imaginary file is safe!");
-            }
+                if (willDelete) {
+                    window.location.replace(url);
+                } else {
+                    swal("Info", "Penghapusan dibatalkan", "info");
+                }
             });
     }
 </script>
 
+
 <script>
-        jQuery(document).ready(function($){
-            $('.alert_notif').on('click',function(){
-                var getLink = $(this).attr('href');
-                swal({
-                        title: 'Alert',
-                        text: 'Hapus Data?',
-                        html: true,
-                        confirmButtonColor: '#d9534f',
-                        showCancelButton: true,
-                        },function(){
-                        window.location.href = getLink
-                    });
-                return false;
+    $( document ).ready(function() {
+                $('.txtOnly').keypress(function (e) {
+			var regex = new RegExp("^[a-zA-Z0-9\'\-]+$");
+			var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+			if (regex.test(str)) {
+				return true;
+			}
+			else
+			{
+			e.preventDefault();
+			$('.error').html('Inputan salah').show().fadeOut("slow");
+			return false;
+			}
+		});
             });
-        });	 
+</script>
+
+
+<script>
+    jQuery(document).ready(function($) {
+        $('.alert_notif').on('click', function() {
+            var getLink = $(this).attr('href');
+            swal({
+                title: 'Alert',
+                text: 'Hapus Data?',
+                html: true,
+                confirmButtonColor: '#d9534f',
+                showCancelButton: true,
+            }, function() {
+                window.location.href = getLink
+            });
+            return false;
+        });
+    });
 </script>
 
 
