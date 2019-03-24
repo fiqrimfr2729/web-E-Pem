@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-header">
         <strong class="card-title">Akun</strong>
-        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormKategori">
+        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormEditAkun">
             <i class="zmdi zmdi-plus"></i>add item</button>
     </div>
 
@@ -17,13 +17,13 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($kategori as $data_kategori) : ?>
+                <?php foreach ($akun as $data_akun) : ?>
                 <tr class="tr-shadow">
                     <td>
-                        <?php echo $data_kategori->id_kategori ?>
+                        <?php echo $data_akun->id ?>
                     </td>
                     <td>
-                        <?php echo $data_kategori->nama_kategori ?>
+                        <?php echo $data_kategori->email ?>
                     </td>
                     <td>
                         <div class="table-data-feature">

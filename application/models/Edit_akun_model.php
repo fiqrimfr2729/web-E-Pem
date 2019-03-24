@@ -33,7 +33,7 @@ class Kategori_model extends CI_Model
 
     public function getById($id)
     {
-        return $this->db->get_where($this->_table, ["id" => $id])->row();
+        return $this->db->get_where($this->_table, ["id" => $id])->result();
     }
 
     public function save()
@@ -51,4 +51,3 @@ class Kategori_model extends CI_Model
         return $this->db->delete($this->_table, array("id" => $id));
     }
 }
-
