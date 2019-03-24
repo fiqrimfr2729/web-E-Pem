@@ -5,6 +5,7 @@ $route['default_controller'] = 'user';
 
 
 $route['admin'] = 'auth';
+$route['admin/dashboard'] = 'admin/dashboard';
 $route['admin/produk'] = 'admin/produk';
 $route['admin/kategori-kusen'] = 'admin/kategori/kusen';
 $route['admin/kategori-mebel'] = 'admin/kategori/mebel';
