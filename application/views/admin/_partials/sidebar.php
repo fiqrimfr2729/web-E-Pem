@@ -56,6 +56,11 @@
                         <i class="fas fa-chart-bar"></i>Testimoni</a>
                 </li>
 
+                <li>
+                    <a href="<?php echo site_url('admin/bahan_produk') ?>">
+                        <i class="fas fa-chart-bar"></i>Bahan Produk</a>
+                </li>
+
             </ul>
         </nav>
     </div>

@@ -12,7 +12,7 @@ class Dashboard extends CI_Controller
         {
             $email = ($this->session->userdata['logged_in']['email']);
         }else{
-            header("location: auth");
+            redirect("auth");
         }
         
     }
