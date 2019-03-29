@@ -100,6 +100,14 @@ div.artikel div.grup input[type="submit"]:hover{
 }
 
 
+textarea{
+    color:black;
+    border: 1px solid #b2bec3;
+    width: 840px;
+    height: 200px;
+}
+
+
 </style>
 
 <body>
@@ -125,7 +133,7 @@ div.artikel div.grup input[type="submit"]:hover{
                 </div>
                 <div class="grup">
                     <label for="about">About Us</label>
-                    <input type="text" placeholder="Masukkan Tentang Kami">
+                    <textarea type="text" placeholder="   Masukkan Tentang Kami"></textarea>
                 </div><br>
                 <div class="grup">
                     <input type="submit" value="Simpan">
