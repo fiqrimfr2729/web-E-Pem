@@ -14,6 +14,7 @@ $route['admin/profil'] = 'admin/profil';
 $route['admin/pesanan'] = 'admin/pesanan';
 $route['admin/testimoni'] = 'admin/testimoni';
 $route['admin/edit_akun'] = 'admin/edit_akun';
+$route['admin/setting'] = 'admin/setting';
 
 
 // Bagian link buat web user

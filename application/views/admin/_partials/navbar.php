@@ -37,17 +37,29 @@
                                             <i class="zmdi zmdi-account"></i>Account</a>
                                     </div>
                                     <div class="account-dropdown__item">
-                                        <a href="<?= base_url('admin/edit_akun'); ?>">
-                                            <i class="zmdi zmdi-settings"></i>Setting</a>
+                                        <li class="has-sub">
+                                            <a class="js-arrow" href="#">
+                                                <i class="fas fa-cog"></i>Setting
+                                                <span class="arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                                <li>
+                                                    <a href="<?php echo site_url('admin/setting') ?>">
+                                                        <i class="fas fa-user-plus"></i>Kelola Akun</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <div class="account-dropdown__item">
+                                            <a href="#">
+                                                <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                        </div>
                                     </div>
-                                    <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                    <div class="account-dropdown__footer">
+                                        <a href="<?= base_url('auth/logout'); ?>">
+                                            <i class="zmdi zmdi-power"></i>Logout</a>
                                     </div>
-                                </div>
-                                <div class="account-dropdown__footer">
-                                    <a href="<?= base_url('auth/logout'); ?>">
-                                        <i class="zmdi zmdi-power"></i>Logout</a>
                                 </div>
                             </div>
                         </div>
@@ -55,5 +67,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </header> 
