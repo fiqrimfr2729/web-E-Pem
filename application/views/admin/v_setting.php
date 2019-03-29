@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Profil Perusahaan</title>
+    <title>Setting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="main.js"></script>
 </head>
 
@@ -65,11 +66,39 @@
         margin: 20px 0;
     }
 
-    textarea {
+    div.artikel div.grup label,
+    div.artikel div.grup input {
+        display: block;
+    }
+
+    div.artikel div.grup label {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    div.artikel div.grup input[type="text"] {
+        width: 100%;
+        height: 35px;
+        padding: 0 15px;
+        border: none;
         color: black;
         border: 1px solid #b2bec3;
-        width: 840px;
-        height: 200px;
+    }
+
+    div.artikel div.grup input[type="submit"] {
+        background: #33cd77;
+        padding: 4px 16px;
+        margin: 0 auto;
+        border: 1px solid #33cd77;
+        border-radius: 2px;
+        color: #fff;
+        cursor: pointer;
+        margin-left: 750px;
+
+    }
+
+    div.artikel div.grup input[type="submit"]:hover {
+        background: #ff6348;
     }
 </style>
 
@@ -77,31 +106,18 @@
     <div class="konten">
         <div class="kepala">
             <div class="lock"></div>
-            <h2 class="judul">Profile</h2>
+            <h2 class="judul">Setting</h2>
         </div>
         <div class="artikel">
-            <form action="" method="post">
-                <div class="grup">
-                    <label for="nama">Nama Perusahaan</label>
-                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM) FURNITURE</label>
+            <div class="grup">
+                <a href="#"><i class="fas fa-user-plus"></i> Tambah Akun</a><br>
+            </div>
+            <div class="grup">
+                <a href="#"><i class="fas fa-user-edit"></i> Edit Akun</a><br>
+            </div>
+            <div class="grup">
 
-                </div>
-                <div class="grup">
-                    <label for="alamat">Alamat Perusahaan</label>
-                    <input type="text" placeholder="Masukkan Alamat">
-                </div>
-                <div class="grup">
-                    <label for="kontak">Kontak Person</label>
-                    <input type="text" placeholder="Masukkan No Kontak">
-                </div>
-                <div class="grup">
-                    <label for="about">About Us</label>
-                    <textarea type="text" placeholder="   Masukkan Tentang Kami"></textarea>
-                </div><br>
-                <div class="grup">
-                    <input type="submit" value="Simpan">
-                </div>
-            </form>
+            </div>
         </div>
     </div><br><br>
 </body>

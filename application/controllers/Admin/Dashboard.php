@@ -6,12 +6,15 @@ class Dashboard extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        if (isset($this->session->userdata['logged_in']))
+       
+       //session
+       if (isset($this->session->userdata['logged_in']))
         {
             $email = ($this->session->userdata['logged_in']['email']);
         }else{
             redirect("auth");
         }
+        
     }
 
     public function index()

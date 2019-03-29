@@ -39,4 +39,5 @@
     <!-- sweetalert -->
     <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
     <script type="text/javascript" src="<?php echo base_url('js/dist/sweetalert.min.js') ?>"></script>
+
 </head> 
