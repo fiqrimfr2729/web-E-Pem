@@ -1,0 +1,30 @@
+    <header class="header_area">
+           	<div class="top_menu">
+           		<div class="container">
+           			<div class="top_inner">
+           				<div class="float-left">
+           					<a>PT JATI MAKMUR MANDIRI</a>
+           					
+           				</div>
+           			</div>
+           		</div>
+           	</div>
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container" style="margin-top:-180px;">
+						
+						<a class="navbar-brand logo_h" href="index.html"><img style=" margin-left:-110px; width: 500px; height: 500px;" src="<?php echo base_url('img/epem2.png') ?>" alt=""><img src="<?php echo base_url('img/logo-2.png') ?>" alt=""></a>
+						
+						
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="<?php echo base_url('user/dasboard') ?>">HOME</a></li> 
+								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('user/aboutus') ?>">ABOUTUS</a></li> 
+								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/profile') ?>">PROFILE</a></li>
+                                <li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/bahanproduk') ?>">BAHAN PRODUK</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+    </header>
