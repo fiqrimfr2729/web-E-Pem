@@ -12,16 +12,34 @@
                         </i>Dashboard
                     </a>
                 </li>
-                <li>
-                    <a href="<?php echo site_url('admin/produk') ?>">
-                        </i>Produk</a>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        </i>Produk
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="<?php echo site_url('admin/produk-bangunan') ?>">
+                                </i>Bahan Bangunan</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('admin/produk-mebel') ?>">
+                                </i>Mebel</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('admin/produk-bedug') ?>">
+                                </i>Bedug</a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="has-sub">
                     <a class="js-arrow" href="#">
                         </i>Kategori
                         <span class="arrow">
-                            </i>
+                            <i class="fas fa-angle-down"></i>
                         </span>
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">

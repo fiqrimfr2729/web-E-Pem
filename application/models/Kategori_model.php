@@ -40,19 +40,18 @@ class Kategori_model extends CI_Model
         return $this->db->get_where($this->_table, ["nama_kategori" => $nama_kategori])->num_rows();
     }
 
-    public function save($id_jenis, $nama_kategori)
+    public function addKategori($id_jenis, $nama_kategori)
     {
-        if($this->getBynama($nama_kategori) < 1){
+        if ($this->getBynama($nama_kategori) < 1) {
             $this->nama_kategori = $nama_kategori;
             $this->id_jenis_kategori = $id_jenis;
             return $this->db->insert($this->_table, $this);
-        }else{
+        } else {
             return false;
         }
-        
     }
 
-    public function delete($id)
+    public function deleteKategori($id)
     {
         return $this->db->delete($this->_table, array("id_kategori" => $id));
     }

@@ -15,10 +15,13 @@ $route['admin/pesanan'] = 'admin/pesanan';
 $route['admin/testimoni'] = 'admin/testimoni';
 $route['admin/edit_akun'] = 'admin/edit_akun';
 $route['admin/setting'] = 'admin/setting';
+$route['admin/produk-bedug'] = 'admin/produk_bedug';
+$route['admin/produk-bangunan'] = 'admin/produk_bangunan';
+$route['admin/produk-mebel'] = 'admin/produk_mebel';
 
 
 // Bagian link buat web user
-$route['user/home'] = 'aser/home';
+$route['user/home'] = 'user/home';
 $route['user/aboutus'] = 'user/aboutus';
 $route['user/contact'] = 'user/home';
 $route['user/galery'] = 'user/galery';
