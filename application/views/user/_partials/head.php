@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="<?php echo base_url('img/iconepem.png')?>" type="image/png" media="all">
 
-        <title>PT Jati Makmur Mandiri Mebel</title>
+        <title>PT Jati Makmur Mandiri</title>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.css')?>" rel="stylesheet" media="all">

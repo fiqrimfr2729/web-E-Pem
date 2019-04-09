@@ -13,7 +13,7 @@
             	<nav class="navbar navbar-expand-lg navbar-light">
 					<div class="container" style="margin-top:-180px;">
 						
-						<a class="navbar-brand logo_h" href="index.html"><img style=" margin-left:-110px; width: 500px; height: 500px;" src="<?php echo base_url('img/epem2.png') ?>" alt=""><img src="<?php echo base_url('img/logo-2.png') ?>" alt=""></a>
+						<a class="navbar-brand logo_h" href="index.html"><img style=" margin-left:-20px; width: 300px; height: 300px; margin-top:130px;" src="<?php echo base_url('img/Epem.png') ?>" alt=""><img src="<?php echo base_url('img/logo-2.png') ?>" alt=""></a>
 						
 						
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">

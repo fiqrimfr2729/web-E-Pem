@@ -18,6 +18,10 @@
         <!--================Contact Area =================-->
         <section class="furniture_area p_120">
             <div class="container">
+            <div class="main_title">
+                    <h2>PRODUK-PRODUK MEBEL</h2>
+                    <p>Dibawah ini adalah produk mebel dari perusahaan kami yang akhir-akhir ini banyak dipesan konsumen dari berbagai kota luar majalengka.</p>
+                </div>
                ini adalah halaman dari kategori mebel-mebel
 
             </div>
