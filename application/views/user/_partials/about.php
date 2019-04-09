@@ -4,7 +4,7 @@
             	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
 				<div class="container">
 					<div class="banner_content text-center">
-						<h2>ABOUT US</h2>
+						<h2>TESTIMONI</h2>
 						
 					</div>
 				</div>
@@ -16,6 +16,6 @@
         <!--================About Area =================-->
         <section class="about_area p_120">
         <div class="container">
-                 ini adalah halaman about us kami
+                 ini adalah halaman testimoni kami
         </div>
         </section>

@@ -1,7 +1,7 @@
 <aside class="menu-sidebar2">
     <div class="logo">
         <a href="#">
-            <img src="<?php echo base_url('images/icon/logo-white.png') ?>" alt="Cool Admin" />
+            <img style="margin-top:20px; width:200px; height:200px; margin-left:10px;" src="<?php echo base_url('img/Epem.png') ?>" alt="Cool Admin" />
         </a>
     </div>
     <div class="menu-sidebar2__content js-scrollbar1">
