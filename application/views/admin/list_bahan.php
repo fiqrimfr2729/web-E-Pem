@@ -2,7 +2,7 @@
     <div class="card-header">
         <strong class="card-title">Data Bahan Produk</strong>
         <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormBahan">
-            <i class="zmdi zmdi-plus"></i>add item</button>
+            <i class="zmdi zmdi-plus"></i>Tambah</button>
     </div>
 
 
