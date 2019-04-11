@@ -17,35 +17,11 @@
             </thead>
             <tbody>
                 <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
+                    <td>1</td>
                     <td>
-                        <span class="block-email">lori@example.com</span>
+                        <span class="block-email">Lemari</span>
                     </td>
-                    <td class="desc">Samsung S8 Black</td>
-                    <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                <i class="zmdi zmdi-mail-send"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
-                    <td>
-                        <span class="block-email">lori@example.com</span>
-                    </td>
-                    <td class="desc">Samsung S8 Black</td>
+                    <td class="desc">Mebel</td>
                     <td>
                         <div class="table-data-feature">
                             <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
@@ -65,11 +41,11 @@
                 </tr>
 
                 <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
+                    <td>2</td>
                     <td>
-                        <span class="block-email">lori@example.com</span>
+                        <span class="block-email">Daun Pintu</span>
                     </td>
-                    <td class="desc">Samsung S8 Black</td>
+                    <td class="desc">Kusen</td>
                     <td>
                         <div class="table-data-feature">
                             <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
@@ -89,11 +65,11 @@
                 </tr>
 
                 <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
+                    <td>3</td>
                     <td>
-                        <span class="block-email">lori@example.com</span>
+                        <span class="block-email">Meja</span>
                     </td>
-                    <td class="desc">Samsung S8 Black</td>
+                    <td class="desc">Mebel</td>
                     <td>
                         <div class="table-data-feature">
                             <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
@@ -111,6 +87,32 @@
                         </div>
                     </td>
                 </tr>
+
+                <tr class="tr-shadow">
+                    <td>4</td>
+                    <td>
+                        <span class="block-email">Daun Jendela</span>
+                    </td>
+                    <td class="desc">Kusen</td>
+                    <td>
+                        <div class="table-data-feature">
+                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
+                                <i class="zmdi zmdi-mail-send"></i>
+                            </button>
+                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                <i class="zmdi zmdi-edit"></i>
+                            </button>
+                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                <i class="zmdi zmdi-delete"></i>
+                            </button>
+                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
+                                <i class="zmdi zmdi-more"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+
+               
             </tbody>
         </table> <br>
     </div>
