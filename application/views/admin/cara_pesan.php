@@ -81,7 +81,7 @@ p{
         </div>
         <div class="artikel">
             <form action="" method="post">
-            <p>Silahkan input cara pesan produk furniture anda :</p>
+            <p>Silahkan input cara pesan produk anda :</p>
               <textarea name="text" id="ad" placeholder="  Masukkan cara pemesanan produk"></textarea>
               <div class="button">
                     <input type="submit" value="Simpan">

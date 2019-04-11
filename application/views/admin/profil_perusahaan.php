@@ -91,13 +91,13 @@
     <div class="konten">
         <div class="kepala">
             <div class="lock"></div>
-            <h2 class="judul">Profile</h2>
+            <h2 class="judul">Tentang</h2>
         </div>
         <div class="artikel">
             <form action="" method="post">
                 <div class="grup">
-                    <label for="nama">Nama Perusahaan</label>
-                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM) FURNITURE</label>
+                    <label for="nama">Nama Perusahaan   :</label>
+                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM) MEBEL</label>
 
                 </div>
                 <div class="grup">
