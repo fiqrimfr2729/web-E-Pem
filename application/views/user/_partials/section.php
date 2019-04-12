@@ -14,13 +14,13 @@
                         <!---------------- Bagian Buat kategori------------------>
 						<div class="col-lg-4">
 							<div class="home_right_box">
-								<a style="color:white; margin-button:10px; " class="home_item" href="<?php echo base_url('user/furniture') ?>">
-								    <img class="img-fluid" src="<?php echo base_url('img/furniture/sofa.png')?>"  alt="">
-									<i>MEBEL</i>
+								<a style="color:white; " class="home_item" href="<?php echo base_url('user/furniture') ?>">
+								    <img class="img-fluid" src="<?php echo base_url('img/furniture/sofa.png')?>"  alt="Mebel">
+									<br>MEBEL
 								</a>
 								<a style="color:white;" class="home_item" href="<?php echo base_url('user/kusen') ?>">
-									<img class="img-fluid" src="<?php echo base_url('img/furniture/meja.png')?>"  alt="">
-									KUSEN
+									<img class="img-fluid" src="<?php echo base_url('img/furniture/meja.png')?>"  alt="Kusen">
+									<br>KUSEN
 								</a>
 
 								<!--<div class="home_item">

@@ -16,31 +16,28 @@ Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --
         				</aside>
         			</div>
         			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
+        				<!--<aside class="f_widget news_widget">
         					<div class="f_title">
         						<h3>Newsletter</h3>
         					</div>
         					<p>Stay updated with our latest trends</p>
         					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Address</h3>
-        					</div>
-        					<p>Alamat lengkap tempt produksi</p>
+							<p>Alamat lengkap tempat produksi</p>
         					<ul class="list">
         						<P>Jl. Raya Barat Ps. Prapatan, Panjalin Kidul, Sumberjaya, Kabupaten Majalengka, Jawa Barat 45455</P>
         					</ul>
+                            </div>
+        				</aside>-->
+        			</div>
+        			<div style="margin-left:-200px;" class="">
+        				<aside class="">
+        					<div class="f_title">
+        						<h3>Address</h3>
+        					</div>
+        					<p>Alamat lengkap tempat produksi kami<br><br>
+        					   Jl. Raya Barat Ps. Prapatan, Panjalin Kidul,<br>
+							   Sumberjaya, Kabupaten Majalengka, Jawa Barat 45455</P>
+        					
         				</aside>
         			</div>
         		</div>
