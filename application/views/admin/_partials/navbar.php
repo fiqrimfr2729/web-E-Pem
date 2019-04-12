@@ -33,8 +33,21 @@
                                 </div>
                                 <div class="account-dropdown__body">
                                     <div class="account-dropdown__item">
-                                        <a href="#">
-                                            <i class="zmdi zmdi-account"></i>Account</a>
+                                        <li class="has-sub">
+                                            <a class="js-arrow" href="#">
+                                                <i class="zmdi zmdi-account"></i>Account
+                                                <span class="js-arrow">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </span>
+
+                                            </a>
+                                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                                <li>
+                                                    <a href="<?php echo site_url('admin/kelola_akun/changePwd') ?>">
+                                                        <i class="fas fa-key"></i>Change Password</a>
+                                                </li>
+                                            </ul>
+                                        </li>
                                     </div>
                                     <div class="account-dropdown__item">
                                         <li class="has-sub">
@@ -46,7 +59,7 @@
                                             </a>
                                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                                 <li>
-                                                    <a href="<?php echo site_url('admin/setting') ?>">
+                                                    <a href="<?php echo site_url('admin/kelola_akun') ?>">
                                                         <i class="fas fa-user-plus"></i>Kelola Akun</a>
                                                 </li>
                                             </ul>
@@ -67,4 +80,4 @@
                 </div>
             </div>
         </div>
-</header> 
+</header>

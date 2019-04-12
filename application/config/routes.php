@@ -14,7 +14,8 @@ $route['admin/profil'] = 'admin/profil';
 $route['admin/pesanan'] = 'admin/pesanan';
 $route['admin/testimoni'] = 'admin/testimoni';
 $route['admin/edit_akun'] = 'admin/edit_akun';
-$route['admin/setting'] = 'admin/setting';
+$route['admin/kelola_akun'] = 'admin/kelola_akun';
+$route['admin/kelola_akun/changePwd'] = 'admin/kelola_akun/changePwd';
 
 
 // Bagian link buat web user
@@ -32,5 +33,3 @@ $route['user/kusen'] = 'user/kusen';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = false;
-
- 
