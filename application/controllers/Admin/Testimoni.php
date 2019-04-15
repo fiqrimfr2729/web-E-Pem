@@ -6,8 +6,16 @@ class Testimoni extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if (isset($this->session->userdata['logged_in'])) {
+            $email = ($this->session->userdata['logged_in']['email']);
+        }else{
+              redirect('admin');
+        }
+        
         $this->load->model('testimoni_model');
         $this->load->library('form_validation');
+
+        
     }
 
     public function index(){
@@ -52,15 +60,12 @@ class Testimoni extends CI_Controller
 
         $this->load->library('upload', $config);
 
-        if($this-> upload->do_upload('gambar')){
+        if($this->upload->do_upload('gambar')){
             return $this->upload->data("file_name");
         }
 
         return false;
     }
-
-
-    
     
     
 }
