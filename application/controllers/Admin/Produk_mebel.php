@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Produk_mebel extends CI_Controller
@@ -55,6 +55,16 @@ class Produk_mebel extends CI_Controller
         }
     }
 
+    public function infoProduk($id)
+    {
+        $data['main_content'] = 'admin/info_produk';
+        $data['data_produk'] = $this->produk_model->getById($id);
+        $data['coba'] = $this->produk_model->getById($id)->nama_produk;
+        $data['nama_kategori'] = 'Produk Mebel';
+        $data['title_dashboard'] = 'Info Produk';
+        $this->load->view('admin/overview', $data);
+    }
+
     public function hapusProduk($id)
     {
         if ($this->produk_model->deleteProduk($id)) {
@@ -69,17 +79,19 @@ class Produk_mebel extends CI_Controller
         mkdir('./upload/produk/' . $date . '/thumbnail/', 0777, true);
         $config['upload_path']          = './upload/produk/' . $date . '/thumbnail/';
         $config['allowed_types']        = 'gif|jpg|png';
-        $config['file_name']            = $date;
+        $config['file_name']            = $date . ".png";
 
-        $config['max_size']             = 1024;
+        $config['max_size']             = 5120;
 
         $this->load->library('upload', $config);
         $this->upload->initialize($config);
 
         if ($this->upload->do_upload('gambar')) {
             return $date;
-        } else { }
-
-        return false;
+        } else {
+            rmdir('./upload/produk/' . $date . '/thumbnail/');
+            rmdir('./upload/produk/' . $date);
+            return false;
+        }
     }
 }
