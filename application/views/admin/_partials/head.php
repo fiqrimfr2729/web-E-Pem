@@ -7,7 +7,7 @@
     <link rel="icon" href="<?php echo base_url('img/iconepem.png')?>" type="image/png" media="all">
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>Dashboard E-pem</title>
 
 
 
