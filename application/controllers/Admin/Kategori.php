@@ -8,7 +8,28 @@ class Kategori extends CI_Controller
         parent::__construct();
         $this->load->model('kategori_model');
         $this->load->library('form_validation');
+
     }
+
+    public function bangunan()
+    {
+        $kategori = $this->kategori_model;
+        $validation = $this->form_validation;
+        $validation->set_rules($kategori->rules());
+
+        if($validation->run() == false){
+            $data['kategori'] = $this->kategori_model->getByJenis("JK03");
+
+            $data['main_content'] = 'admin/list_kategori';
+            $data['title_dashboard'] = 'Bangunan';
+            $this->load->view('admin/overview', $data);
+        }else{
+            $post = $this->input->post();
+            $nama_kategori= $post['nama_kategori'];;
+            $this->add('Bangunan', $nama_kategori);
+        }
+     }
+
 
     public function mebel()
     {
@@ -29,7 +50,7 @@ class Kategori extends CI_Controller
         }
      }
 
-    public function kusen()
+    public function bedug()
     {
         $kategori = $this->kategori_model;
         $validation = $this->form_validation;
@@ -39,12 +60,12 @@ class Kategori extends CI_Controller
             $data['kategori'] = $this->kategori_model->getByJenis("JK01");
             
             $data['main_content'] = 'admin/list_kategori';
-            $data['title_dashboard'] = 'Kusen';
+            $data['title_dashboard'] = 'bedug';
             $this->load->view('admin/overview', $data);
         }else{
             $post = $this->input->post();
             $nama_kategori= $post['nama_kategori'];;
-            $this->add('kusen', $nama_kategori);
+            $this->add('bedug', $nama_kategori);
         }
         
     }

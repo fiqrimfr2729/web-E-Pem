@@ -70,7 +70,7 @@
 
                 <li>
                     <a href="<?php echo site_url('admin/profil') ?>">
-                        </i>Profil Perusahaan</a>
+                        </i>Tentang</a>
                 </li>
 
                 <li>
