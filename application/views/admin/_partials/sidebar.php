@@ -60,7 +60,7 @@
 
                 <li>
                     <a href="<?php echo site_url('admin/cara-pesan') ?>">
-                        </i>Cara Pemesanan</a>
+                        </i>Cara Pesan</a>
                 </li>
 
                 <li>
