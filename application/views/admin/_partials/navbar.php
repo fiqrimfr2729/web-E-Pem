@@ -34,12 +34,12 @@
                                 <div class="account-dropdown__body">
                                     <div class="account-dropdown__item">
                                         <a href="#">
-                                            <i class="zmdi zmdi-account"></i>Account</a>
+                                            <i class="zmdi zmdi-account"></i>Akun</a>
                                     </div>
                                     <div class="account-dropdown__item">
                                         <li class="has-sub">
                                             <a class="js-arrow" href="#">
-                                                <i class="fas fa-cog"></i>Setting
+                                                <i class="fas fa-cog"></i>Pengaturan
                                                 <span class="arrow">
                                                     <i class="fas fa-angle-down"></i>
                                                 </span>
