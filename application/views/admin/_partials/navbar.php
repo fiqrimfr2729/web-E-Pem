@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="header-wrap">
                 <form class="form-header" action="" method="POST">
-                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Pencarian Data" />
+                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Search" />
                     <button class="au-btn--submit" type="submit">
                         <i class="zmdi zmdi-search"></i>
                     </button>
@@ -21,7 +21,7 @@
                                 <div class="info clearfix">
                                     <div class="image">
                                         <a href="#">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="<?php echo base_url('images/icon/avatar-01.jpg') ?>" alt="John Doe" />
                                         </a>
                                     </div>
                                     <div class="content">
