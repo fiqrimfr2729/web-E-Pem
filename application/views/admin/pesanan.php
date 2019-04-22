@@ -9,6 +9,7 @@
                 <tr>
                     <th width="30px">NO</th>
                     <th>NAMA PEMESAN</th>
+
                     <th>KOTA</th>
                     <th>KONTAK</th>
                     <th>TANGGAL PESANAN</th>
