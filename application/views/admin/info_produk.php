@@ -25,7 +25,7 @@
                 <h4 class="pb-2 display-5">Deskripsi : </h4>
                 <?php echo $data_produk->deskripsi ?>
                 <hr width="100%" size="2px" color="black">
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalFormEditProduk">Edit</button>
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalFormEditProduk">Perbarui</button>
                 <button onclick="deleteConfirm('<?php echo site_url('admin/' . strtolower(str_replace(' ', '_', $info_kategori)) . '/hapusProduk/' . $data_produk->id_produk) ?>')" class="btn btn-danger" type="button" title="Delete">Hapus </button>
             </div>
         </div>

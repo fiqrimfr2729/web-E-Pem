@@ -22,7 +22,7 @@
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
                             <a href="<?php echo site_url('admin/produk-bangunan') ?>">
-                                </i>Bahan Bangunan</a>
+                                </i>Bangunan</a>
                         </li>
                         <li>
                             <a href="<?php echo site_url('admin/produk-mebel') ?>">
@@ -45,7 +45,7 @@
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
                             <a href="<?php echo site_url('admin/kategori-kusen') ?>">
-                                </i>Kusen</a>
+                                </i>Bangunan</a>
                         </li>
                         <li>
                             <a href="<?php echo site_url('admin/kategori-mebel') ?>">
@@ -82,4 +82,4 @@
             </ul>
         </nav>
     </div>
-</aside> 
+</aside>
