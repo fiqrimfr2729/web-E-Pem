@@ -16,11 +16,15 @@
 							<div class="home_right_box">
 								<a style="color:white; " class="home_item" href="<?php echo base_url('user/furniture') ?>">
 								    <img class="img-fluid" src="<?php echo base_url('img/furniture/sofa.png')?>"  alt="Mebel">
-									<br>MEBEL
+									<br>
 								</a>
 								<a style="color:white;" class="home_item" href="<?php echo base_url('user/kusen') ?>">
 									<img class="img-fluid" src="<?php echo base_url('img/furniture/meja.png')?>"  alt="Kusen">
-									<br>KUSEN
+									<br>
+								</a>
+								<a style="color:white;" class="home_item" href="<?php echo base_url('user/bedug') ?>">
+									<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug.png')?>"  alt="bedug">
+									<br>
 								</a>
 
 								<!--<div class="home_item">
