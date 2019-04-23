@@ -94,30 +94,35 @@
             <h2 class="judul">Tentang</h2>
         </div>
         <div class="artikel">
-            <form action="" method="post">
+        <?php foreach ($tentang->result() as $result) : ?>
+            <form action="<?php echo base_url(). 'admin/tentang/tambah_aksi'; ?>" method="post">
                 <div class="grup">
                     <label for="nama">Nama Perusahaan   :</label>
                     <label for="nama">PT JATI MAKMUR MANDIRI (JMM)</label>
 
                 </div>
                 <div class="grup">
-                    <label for="alamat">Alamat Perusahaan   :</label>
-                    <input type="text" placeholder="Masukkan Alamat">
+                    <label for="alamat">Alamat Perusahaan   : <?php echo $result->alamat ?></label>
+                    <input type="text" placeholder="Masukkan Alamat" name="alamat">
                 </div>
                 <div class="grup">
-                    <label for="kontak">Kontak Person   :</label>
-                    <input type="text" placeholder="Masukkan No Kontak">
+                    <label for="kontak">Kontak Person   : <?php echo $result->kontak ?></label>
+                    <input type="text" placeholder="Masukkan No Kontak" name="kontak">
                 </div>
                 <div class="grup">
-                    <label for="about">Tentang   :</label><br>
-                    <textarea type="text" placeholder="   Masukkan Tentang Kami"></textarea>
+                    <label for="isi_">Tentang   : <?php echo $result->isi ?></label><br>
+                    <textarea type="text" placeholder="   Masukkan Tentang Kami" name="isi"></textarea>
                 </div><br><br>
                 <div class="button">
-                    <input type="submit" value="Simpan">
+                    <input type="submit" value="Simpan" name="Simpan">
                 </div><br>
+               
             </form>
+              
         </div>
     </div><br><br>
+   
+
 </body>
 
 </html> 

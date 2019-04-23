@@ -42,6 +42,7 @@ $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
 $route['user/furniture'] = 'user/furniture';
 $route['user/kusen'] = 'user/kusen';
+$route['user/bedug'] = 'user/bedug';
 
 
 
