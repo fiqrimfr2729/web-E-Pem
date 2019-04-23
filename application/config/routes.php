@@ -7,8 +7,9 @@ $route['default_controller'] = 'user';
 $route['admin'] = 'auth';
 $route['admin/dashboard'] = 'admin/dashboard';
 $route['admin/produk'] = 'admin/produk';
-$route['admin/kategori-kusen'] = 'admin/kategori/kusen';
+$route['admin/kategori-bangunan'] = 'admin/kategori/bangunan';
 $route['admin/kategori-mebel'] = 'admin/kategori/mebel';
+$route['admin/kategori-bedug'] = 'admin/kategori/bedug';
 $route['admin/cara-pesan'] = 'admin/cara_pesan';
 $route['admin/profil'] = 'admin/profil';
 $route['admin/pesanan'] = 'admin/pesanan';
@@ -17,6 +18,16 @@ $route['admin/edit_akun'] = 'admin/edit_akun';
 //$route['admin/kelola_akun'] = 'admin/kelola_akun';
 $route['admin/kelola_akun-changePassword'] = 'admin/kelola_akun/changePassword';
 $route['admin/setting'] = 'admin/setting';
+
+
+// Bagian link buat web user
+$route['user/home'] = 'aser/home';
+$route['user/aboutus'] = 'user/aboutus';
+$route['user/profile'] = 'user/profile';
+$route['user/bahanproduk'] = 'user/bahanproduk';
+$route['user/pesansekarang'] = 'user/pesansekarang';
+$route['user/carapesan'] = 'user/carapesan';
+$route['user/mebel'] = 'user/mebel';
 $route['admin/produk-bedug'] = 'admin/produk_bedug';
 $route['admin/produk-bangunan'] = 'admin/produk_bangunan';
 $route['admin/produk-mebel'] = 'admin/produk_mebel';

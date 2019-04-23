@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Profil Perusahaan</title>
+    <title>Tentang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
@@ -25,15 +25,15 @@
 
     div.konten {
         background: #ffffff;
-        width: 900px;
+        width: 1000px;
         margin: 30px auto 0;
         border-radius: 16px;
-        min-height: 256px;
+        min-height: 300px;
         overflow: hidden;
     }
 
     div.kepala {
-        background: #0984e3;
+        background: #2980b9;
         padding: 10px 22px;
         height: 60px;
     }
@@ -71,36 +71,50 @@
         width: 840px;
         height: 200px;
     }
+
+    .button input{
+        margin-left:820px;
+        color:white;
+        background:#2980b9;
+        width: 100px;
+        height: 40px;
+
+    }
+
+    .button input:hover{
+        background:#74b9ff;
+    }
+    
 </style>
 
 <body>
     <div class="konten">
         <div class="kepala">
             <div class="lock"></div>
-            <h2 class="judul">Profile</h2>
+            <h2 class="judul">Tentang</h2>
         </div>
         <div class="artikel">
             <form action="" method="post">
                 <div class="grup">
-                    <label for="nama">Nama Perusahaan</label>
-                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM) FURNITURE</label>
+                    <label for="nama">Nama Perusahaan   :</label>
+                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM)</label>
 
                 </div>
                 <div class="grup">
-                    <label for="alamat">Alamat Perusahaan</label>
+                    <label for="alamat">Alamat Perusahaan   :</label>
                     <input type="text" placeholder="Masukkan Alamat">
                 </div>
                 <div class="grup">
-                    <label for="kontak">Kontak Person</label>
+                    <label for="kontak">Kontak Person   :</label>
                     <input type="text" placeholder="Masukkan No Kontak">
                 </div>
                 <div class="grup">
-                    <label for="about">About Us</label>
+                    <label for="about">Tentang   :</label><br>
                     <textarea type="text" placeholder="   Masukkan Tentang Kami"></textarea>
-                </div><br>
-                <div class="grup">
+                </div><br><br>
+                <div class="button">
                     <input type="submit" value="Simpan">
-                </div>
+                </div><br>
             </form>
         </div>
     </div><br><br>

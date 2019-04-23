@@ -1,7 +1,7 @@
 <aside class="menu-sidebar2">
     <div class="logo">
         <a href="#">
-            <img src="<?php echo base_url('images/icon/logo-white.png') ?>" alt="Cool Admin" />
+            <img style="margin-top:20px; width:200px; height:200px; margin-left:10px;" src="<?php echo base_url('img/Epem.png') ?>" alt="Cool Admin" />
         </a>
     </div>
     <div class="menu-sidebar2__content js-scrollbar1">
@@ -22,7 +22,7 @@
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
                             <a href="<?php echo site_url('admin/produk-bangunan') ?>">
-                                </i>Bahan Bangunan</a>
+                                </i>Bangunan</a>
                         </li>
                         <li>
                             <a href="<?php echo site_url('admin/produk-mebel') ?>">
@@ -44,19 +44,23 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="<?php echo site_url('admin/kategori-kusen') ?>">
-                                </i>Kusen</a>
+                            <a href="<?php echo site_url('admin/kategori-bangunan') ?>">
+                                </i>Bangunan</a>
                         </li>
                         <li>
                             <a href="<?php echo site_url('admin/kategori-mebel') ?>">
                                 </i>Mebel</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('admin/kategori-bedug') ?>">
+                                </i>Bedug</a>
                         </li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="<?php echo site_url('admin/cara-pesan') ?>">
-                        </i>Cara Pemesanan</a>
+                        </i>Cara Pesan</a>
                 </li>
 
                 <li>
@@ -66,7 +70,7 @@
 
                 <li>
                     <a href="<?php echo site_url('admin/profil') ?>">
-                        </i>Profil Perusahaan</a>
+                        </i>Tentang</a>
                 </li>
 
                 <li>

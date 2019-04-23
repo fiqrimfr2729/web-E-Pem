@@ -3,7 +3,7 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="<?php echo base_url('img/favicon.png')?>" type="image/png" media="all">
+        <link rel="icon" href="<?php echo base_url('img/iconepem.png')?>" type="image/png" media="all">
 
         <title>PT Jati Makmur Mandiri</title>
 

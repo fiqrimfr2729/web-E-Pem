@@ -23,7 +23,7 @@ body{
  
 div.konten{
     background: #ffffff;
-    width: 900px;
+    width: 1000px;
     margin: 30px auto 0;
     border-radius: 16px;
     min-height: 256px;
@@ -31,7 +31,7 @@ div.konten{
 }
  
 div.kepala{
-    background: #0984e3;
+    background: #2980b9;
     padding: 10px 22px;
     height: 60px;
 }
@@ -56,6 +56,21 @@ p{
     margin-left:33px;
 }
 
+
+.button input{
+    margin-left:820px;
+        color:white;
+        background:#2980b9;
+        width: 120px;
+        height: 40px;
+
+    }
+
+.button input:hover{
+        background:#74b9ff;
+}
+    
+
 </style>
 
 <body>
@@ -66,8 +81,11 @@ p{
         </div>
         <div class="artikel">
             <form action="" method="post">
-            <p>Silahkan input cara pesan produk furniture anda :</p>
+            <p>Silahkan input cara pesan produk anda :</p>
               <textarea name="text" id="ad" placeholder="  Masukkan cara pemesanan produk"></textarea>
+              <div class="button"><br>
+                    <input type="submit" value="Simpan">
+                </div><br><br>
             </form>
         </div>
     </div><br><br>

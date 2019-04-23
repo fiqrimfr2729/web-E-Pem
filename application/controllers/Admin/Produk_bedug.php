@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Produk_bedug extends CI_Controller
@@ -53,6 +53,43 @@ class Produk_bedug extends CI_Controller
         }
     }
 
+    public function updateProduk()
+    {
+        $produk = $this->produk_model;
+        $validation = $this->form_validation;
+        $validation->set_rules($produk->rules());
+        if ($validation->run() == false) {
+            $this->session->set_flashdata('error', 'Data produk gagal diperbarui');
+            redirect('admin/produk-bedug');
+        } else {
+            $gambar = $this->_uploadImage();
+            $post = $this->input->post();
+            $nama = $post['nama_produk'];
+            $deskripsi = $post['deskripsi'];
+            $kategori = $post['kategori'];
+
+            if ($gambar != false) {
+                if ($produk->addProduk($nama, $deskripsi, $kategori, $gambar)) {
+                    $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
+                    redirect('admin/produk-bedug');
+                }
+            } else {
+                $this->session->set_flashdata('error', 'Gambar tidak ada');
+                redirect('admin/produk-bedug');
+            }
+        }
+    }
+
+    public function infoProduk($id)
+    {
+        $data['main_content'] = 'admin/info_produk';
+        $data['data_produk'] = $this->produk_model->getById($id);
+        $data['coba'] = $this->produk_model->getById($id)->nama_produk;
+        $data['nama_kategori'] = 'Produk Bangunan';
+        $data['title_dashboard'] = 'Info Produk';
+        $this->load->view('admin/overview', $data);
+    }
+
     public function hapusProduk($id)
     {
         if ($this->produk_model->deleteProduk($id)) {
@@ -76,8 +113,10 @@ class Produk_bedug extends CI_Controller
 
         if ($this->upload->do_upload('gambar')) {
             return $date;
-        } else { }
-
-        return false;
+        } else {
+            rmdir('./upload/produk/' . $date . '/thumbnail/');
+            rmdir('./upload/produk/' . $date);
+            return false;
+        }
     }
 }

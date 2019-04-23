@@ -11,21 +11,17 @@
            	</div>
             <div class="main_menu" id="mainNav">
             	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container">
+					<div class="container" style="margin-top:-180px;">
 						
-						<a class="navbar-brand logo_h" href="index.html"><img src="<?php echo base_url('img/logo.png') ?>" alt=""><img src="<?php echo base_url('img/logo-2.png') ?>" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
+						<a class="navbar-brand logo_h" href="index.html"><img style=" margin-left:-20px; width: 300px; height: 300px; margin-top:130px;" src="<?php echo base_url('img/Epem.png') ?>" alt=""><img src="<?php echo base_url('img/logo-2.png') ?>" alt=""></a>
+						
 						
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="<?php echo base_url('user/dasboard') ?>">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('user/aboutus') ?>">About Us</a></li> 
-								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/contact') ?>">Contact</a></li>
-                                <li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/galery') ?>">Galery</a></li>
+								<li class="nav-item active"><a class="nav-link" href="<?php echo base_url('user/dasboard') ?>">BERANDA</a></li> 
+								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/profile') ?>">TENTANG</a></li>								
+								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('user/aboutus') ?>">TESTIMONI</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/bahanproduk') ?>">BAHAN PRODUK</a></li>
 							</ul>
 						</div> 
 					</div>

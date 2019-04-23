@@ -1,8 +1,8 @@
 <div class="card">
     <div class="card-header">
-        <strong class="card-title">Data Kategori</strong>
+        <strong class="card-title">Data Kategori </strong>
         <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormKategori">
-            <i class="zmdi zmdi-plus"></i>add item</button>
+            <i class="zmdi zmdi-plus"></i>Tambah</button>
     </div>
 
 

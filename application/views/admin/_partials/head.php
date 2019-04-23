@@ -4,9 +4,10 @@
     <meta name="description" content="au theme template">
     <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
+    <link rel="icon" href="<?php echo base_url('img/iconepem.png')?>" type="image/png" media="all">
 
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>Dashboard E-pem</title>
 
 
 

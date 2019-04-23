@@ -29,13 +29,13 @@
                                         <h2 class="title-1" id="judul"><?php echo $title_dashboard ?></h2>
                                     </div>
                                     <div class="au-breadcrumb-left">
-                                        <span class="au-breadcrumb-span">You are here:</span>
+                                        <span class="au-breadcrumb-span">Kamu Berada Halaman :</span>
                                         <ul class="list-unstyled list-inline au-breadcrumb__list">
                                             <li class="list-inline-item active">
-                                                <a href="#">Home</a>
+                                                <!--<a href="#">Home</a>-->
                                             </li>
                                             <li class="list-inline-item seprate">
-                                                <span>/</span>
+                                            <span></span>
                                             </li>
                                             <li class="list-inline-item"><?php echo $title_dashboard ?></li>
                                         </ul>

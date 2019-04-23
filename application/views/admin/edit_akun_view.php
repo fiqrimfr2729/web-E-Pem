@@ -2,14 +2,14 @@
     <div class="card-header">
         <strong class="card-title">Data Table</strong>
         <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormProduk">
-            <i class="zmdi zmdi-plus"></i>add item</button>
+            <i class="zmdi zmdi-plus"></i>Tambah</button>
     </div>
 
     <div class="card-body">
         <table id="tabel-data" class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>NO</th>
                     <th>NAMA</th>
                     <th>KATEGORI</th>
                     <th>AKSI</th>

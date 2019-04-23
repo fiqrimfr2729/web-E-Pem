@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Produk_bangunan extends CI_Controller
@@ -54,6 +54,51 @@ class Produk_bangunan extends CI_Controller
         }
     }
 
+    public function updateProduk($id, $gambarInfo)
+    {
+        $produk = $this->produk_model;
+        $validation = $this->form_validation;
+        $validation->set_rules($produk->rules());
+        if ($validation->run() == false) {
+            $this->session->set_flashdata('error', 'Data produk gagal diperbarui');
+            redirect('admin/produk-bangunan');
+        } else {
+            $gambar = $this->_uploadImage();
+            $post = $this->input->post();
+            $nama = $post['nama_produk'];
+            $deskripsi = $post['deskripsi'];
+            $kategori = $post['kategori'];
+
+            if ($gambar != false) {
+                if ($produk->updateProduk($id, $nama, $deskripsi, $kategori, $gambar)) {
+                    $path = 'upload/produk/' . $gambarInfo;
+                    $this->load->helper("file"); // load the helper
+                    delete_files($path, true); // delete all files/folders
+                    rmdir('./upload/produk/' . $gambarInfo);
+                    $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
+                    redirect('admin/produk-bangunan');
+                }
+            } else {
+                if ($produk->updateProduk($id, $nama, $deskripsi, $kategori, $gambarInfo)) {
+                    $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
+                    redirect('admin/produk-bangunan');
+                }
+            }
+        }
+    }
+
+    public function infoProduk($id)
+    {
+        $data['main_content'] = 'admin/info_produk';
+        $data['data_produk'] = $this->produk_model->getById($id);
+        $data['id_produk'] = $id;
+        $data['coba'] = $this->produk_model->getById($id)->nama_produk;
+        $data['gambar_produk'] = $this->produk_model->getById($id)->gambar;
+        $data['info_kategori'] = 'Produk Bangunan';
+        $data['title_dashboard'] = 'Info Produk';
+        $this->load->view('admin/overview', $data);
+    }
+
     public function hapusProduk($id)
     {
         if ($this->produk_model->deleteProduk($id)) {
@@ -68,17 +113,18 @@ class Produk_bangunan extends CI_Controller
         mkdir('./upload/produk/' . $date . '/thumbnail/', 0777, true);
         $config['upload_path']          = './upload/produk/' . $date . '/thumbnail/';
         $config['allowed_types']        = 'gif|jpg|png';
-        $config['file_name']            = $date;
+        $config['file_name']            = $date . '.png';
 
-        $config['max_size']             = 1024;
-
+        $config['max_size']             = 5120;
         $this->load->library('upload', $config);
         $this->upload->initialize($config);
 
         if ($this->upload->do_upload('gambar')) {
             return $date;
-        } else { }
-
-        return false;
+        } else {
+            rmdir('./upload/produk/' . $date . '/thumbnail/');
+            rmdir('./upload/produk/' . $date);
+            return false;
+        }
     }
 }
