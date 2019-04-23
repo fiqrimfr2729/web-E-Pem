@@ -180,7 +180,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 </div>
 
 <div class="modal fade" id="modalFormAkun" tabindex="-1" role="form" aria-labelledby="mediumModalLabel" aria-hidden="true">
@@ -212,6 +211,4 @@
             </div>
         </div>
     </div>
-=======
->>>>>>> 79779fcf72a62645f55f4dc1d9511ca4099a8df6
 </div>
