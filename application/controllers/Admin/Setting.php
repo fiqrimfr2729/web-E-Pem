@@ -10,7 +10,7 @@ class Setting extends CI_Controller
 
     public function index(){
 		$data['main_content']='admin/v_setting';
-		$data['title_dashboard'] = 'Setting';
+		$data['title_dashboard'] = 'Pengaturan';
 		$this->load->view('admin/overview',$data);
 	}
 }

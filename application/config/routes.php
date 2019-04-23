@@ -7,7 +7,7 @@ $route['default_controller'] = 'user';
 $route['admin'] = 'auth';
 $route['admin/dashboard'] = 'admin/dashboard';
 $route['admin/produk'] = 'admin/produk';
-$route['admin/kategori-kusen'] = 'admin/kategori/kusen';
+$route['admin/kategori-bangunan'] = 'admin/kategori/bangunan';
 $route['admin/kategori-mebel'] = 'admin/kategori/mebel';
 $route['admin/cara-pesan'] = 'admin/cara_pesan';
 $route['admin/profil'] = 'admin/profil';
@@ -41,9 +41,11 @@ $route['user/furniture'] = 'user/furniture';
 $route['user/kusen'] = 'user/kusen';
 
 
+$route['api/getKategori'] = 'api/kategori/kategori/';
+$route['api/kategoriapi'] = 'api/kategoriapi/index_get';
 
+$route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4
+$route['api/example/users/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'] = 'api/example/users/id/$1/format/$3$4'; // Example 8
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = false;
-
- 

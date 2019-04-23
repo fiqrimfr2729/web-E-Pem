@@ -44,7 +44,7 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="<?php echo site_url('admin/kategori-kusen') ?>">
+                            <a href="<?php echo site_url('admin/kategori-bangunan') ?>">
                                 </i>Bangunan</a>
                         </li>
                         <li>
@@ -56,7 +56,7 @@
 
                 <li>
                     <a href="<?php echo site_url('admin/cara-pesan') ?>">
-                        </i>Cara Pemesanan</a>
+                        </i>Cara Pesan</a>
                 </li>
 
                 <li>
@@ -66,7 +66,7 @@
 
                 <li>
                     <a href="<?php echo site_url('admin/profil') ?>">
-                        </i>Profil Perusahaan</a>
+                        </i>Tentang</a>
                 </li>
 
                 <li>

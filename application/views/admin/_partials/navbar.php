@@ -3,7 +3,7 @@
         <div class="container-fluid">
             <div class="header-wrap">
                 <form class="form-header" action="" method="POST">
-                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Pencarian Data" />
+                    <input class="au-input au-input--xl" type="text" name="search" placeholder="Search" />
                     <button class="au-btn--submit" type="submit">
                         <i class="zmdi zmdi-search"></i>
                     </button>
@@ -21,7 +21,7 @@
                                 <div class="info clearfix">
                                     <div class="image">
                                         <a href="#">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="<?php echo base_url('images/icon/avatar-01.jpg') ?>" alt="John Doe" />
                                         </a>
                                     </div>
                                     <div class="content">
@@ -34,12 +34,12 @@
                                 <div class="account-dropdown__body">
                                     <div class="account-dropdown__item">
                                         <a href="#">
-                                            <i class="zmdi zmdi-account"></i>Account</a>
+                                            <i class="zmdi zmdi-account"></i>Akun</a>
                                     </div>
                                     <div class="account-dropdown__item">
                                         <li class="has-sub">
                                             <a class="js-arrow" href="#">
-                                                <i class="fas fa-cog"></i>Setting
+                                                <i class="fas fa-cog"></i>Pengaturan
                                                 <span class="arrow">
                                                     <i class="fas fa-angle-down"></i>
                                                 </span>
