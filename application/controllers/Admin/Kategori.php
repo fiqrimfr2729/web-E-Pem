@@ -17,7 +17,7 @@ class Kategori extends CI_Controller
         $validation->set_rules($kategori->rules());
 
         if ($validation->run() == false) {
-            $data['kategori'] = $this->kategori_model->getByJenis("JK03");
+            $data['kategori'] = $this->kategori_model->getByJenis("JK01");
 
             $data['main_content'] = 'admin/list_kategori';
             $data['title_dashboard'] = 'Bangunan';
@@ -25,7 +25,7 @@ class Kategori extends CI_Controller
         } else {
             $post = $this->input->post();
             $nama_kategori = $post['nama_kategori'];;
-            $this->add('Bangunan', $nama_kategori);
+            $this->save('bangunan', $nama_kategori);
         }
     }
 
@@ -45,7 +45,7 @@ class Kategori extends CI_Controller
         } else {
             $post = $this->input->post();
             $nama_kategori = $post['nama_kategori'];;
-            $this->add('mebel', $nama_kategori);
+            $this->save('mebel', $nama_kategori);
         }
     }
 
@@ -53,7 +53,7 @@ class Kategori extends CI_Controller
     public function save($jenis, $nama_kategori)
     {
         $kategori = $this->kategori_model;
-        if ($jenis == 'kusen') {
+        if ($jenis == 'bangunan') {
             if ($kategori->addKategori('JK01', $nama_kategori)) {
                 $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
                 redirect('admin/kategori-' . $jenis);
@@ -62,7 +62,7 @@ class Kategori extends CI_Controller
                 redirect('admin/kategori-' . $jenis);
             }
         } else {
-            if ($kategori->save('JK02', $nama_kategori)) {
+            if ($kategori->addKategori('JK02', $nama_kategori)) {
                 $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
                 redirect('admin/kategori-' . $jenis);
             } else {

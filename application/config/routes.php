@@ -14,6 +14,8 @@ $route['admin/profil'] = 'admin/profil';
 $route['admin/pesanan'] = 'admin/pesanan';
 $route['admin/testimoni'] = 'admin/testimoni';
 $route['admin/edit_akun'] = 'admin/edit_akun';
+//$route['admin/kelola_akun'] = 'admin/kelola_akun';
+$route['admin/kelola_akun-changePassword'] = 'admin/kelola_akun/changePassword';
 $route['admin/setting'] = 'admin/setting';
 
 
@@ -39,6 +41,7 @@ $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
 $route['user/furniture'] = 'user/furniture';
 $route['user/kusen'] = 'user/kusen';
+$route['user/bedug'] = 'user/bedug';
 
 
 $route['api/getKategori'] = 'api/kategori/kategori/';
