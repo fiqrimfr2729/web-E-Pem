@@ -37,9 +37,25 @@
                 }
             });
     }
+
+    function updateConfirm(url) {
+        swal({
+                title: "Ubah status bahan?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willUpdate) => {
+                if (willUpdate) {
+                    window.location.replace(url);
+                } else {
+                    swal("Info", "Ubah status bahan dibatalkan", "info");
+                }
+            });
+    }
 </script>
 
-
+<!-- Seleksi input simbol -->
 <script>
     $(document).ready(function() {
         $('.txtOnly').keypress(function(e) {
@@ -52,6 +68,26 @@
                 $('.error').html('Inputan salah').show().fadeOut("slow");
                 return false;
             }
+        });
+    });
+</script>
+
+
+<!-- Tombol Status -->
+<script>
+    $(document).ready(function() {
+        $('.btnStatusAktif').hover(function() {
+            $(this).find('span').text('Non Aktif');
+        }, function() {
+            $(this).find('span').text('Aktif');
+        });
+    });
+
+    $(document).ready(function() {
+        $('.btnStatusNonAktif').hover(function() {
+            $(this).find('span').text('Aktif');
+        }, function() {
+            $(this).find('span').text('Non Aktif');
         });
     });
 </script>

@@ -11,7 +11,8 @@ class Profil extends CI_Controller
     public function index(){
 		$data['main_content']='admin/Profil_Perusahaan';
 		$data['title_dashboard'] = 'Profil Perusahaan';
-		$this->load->view('admin/overview',$data)  ;
+        $this->load->view('admin/overview',$data)  ;
+        
 	}
 }
  

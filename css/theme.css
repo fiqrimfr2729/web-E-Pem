@@ -63,6 +63,8 @@ textarea:focus {
     outline: none;
 }
 
+
+
 input, textarea {
     border: none;
 }
@@ -96,6 +98,7 @@ p {
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+
 
 /* ----- Typography ----- */
 body {
@@ -452,6 +455,22 @@ section {
     cursor: pointer;
 }
 
+.btnStatusAktif{
+    color:#28a745;background-color:transparent;background-image:none;border-color:#28a745;
+}
+
+.btnStatusAktif:hover{
+    color:#dc3545;background-color:transparent;background-image:none;border-color:#dc3545
+}
+
+.btnStatusNonAktif{
+    color:#dc3545;background-color:transparent;background-image:none;border-color:#dc3545
+}
+
+.btnStatusNonAktif:hover{
+    color:#28a745;background-color:transparent;background-image:none;border-color:#28a745;
+}
+
 .au-btn:hover {
     color: #fff;
     background: #3868cd;
@@ -462,7 +481,7 @@ section {
 }
 
 .au-btn--blue2:hover {
-    background: #00a2e3;
+    color:#212529;background-color:#ffc107;border-color:#ffc107
 }
 
 .au-btn--block {

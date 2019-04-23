@@ -9,108 +9,35 @@
         <table id="tabel-data" class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th width="60px">NO</th>
                     <th>NAMA</th>
                     <th>KATEGORI</th>
-                    <th>AKSI</th>
+                    <th>GAMBAR</th>
+                    <th width="120px">AKSI</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
-                    <td>
-                        <span class="block-email">lori@example.com</span>
-                    </td>
-                    <td class="desc">Samsung S8 Black</td>
-                    <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                <i class="zmdi zmdi-mail-send"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
 
+                <?php $i = 1;
+                foreach ($produk as $data_produk) : ?>
                 <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
+                    <td><?php echo $i;
+                        $i++; ?></td>
+                    <td> <?php echo $data_produk->nama_produk ?> </td>
+                    <td> <?php echo $data_produk->kategori->nama_kategori ?> </td>
                     <td>
-                        <span class="block-email">lori@example.com</span>
+                        <div><img width="100px" src="<?php echo base_url('upload/produk/' . $data_produk->gambar . '/thumbnail/' . $data_produk->gambar . '.png') ?>"> </div>
                     </td>
-                    <td class="desc">Samsung S8 Black</td>
                     <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                <i class="zmdi zmdi-mail-send"></i>
+                        <div>
+                            <button onclick="deleteConfirm('<?php echo site_url('admin/' . strtolower(str_replace(' ', '_', $title_dashboard)) . '/hapusProduk/' . $data_produk->id_produk) ?>')" class="btn btn-danger" type="button" title="Delete">
+                                Hapus
                             </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
+                            <button type="button" class="btn btn-info">Info</button>
                         </div>
                     </td>
                 </tr>
-
-                <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
-                    <td>
-                        <span class="block-email">lori@example.com</span>
-                    </td>
-                    <td class="desc">Samsung S8 Black</td>
-                    <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                <i class="zmdi zmdi-mail-send"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr class="tr-shadow">
-                    <td>Lori Lynch</td>
-                    <td>
-                        <span class="block-email">lori@example.com</span>
-                    </td>
-                    <td class="desc">Samsung S8 Black</td>
-                    <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                <i class="zmdi zmdi-mail-send"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
+                <?php endforeach; ?>
             </tbody>
         </table> <br>
     </div>

@@ -83,15 +83,15 @@ class Auth extends CI_Controller
                     redirect('admin/dashboard');
                 } else {
                     $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Password Salah</div>');
-                    redirect('auth');
+                    redirect('admin');
                 }
             } else {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Email Belum Aktif</div>');
-                redirect('auth');
+                redirect('admin');
             }
         } else {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> Email Belum Terdaftar</div>');
-            redirect('auth');
+            redirect('admin');
         }
     }
 
@@ -167,6 +167,6 @@ class Auth extends CI_Controller
         );
         $this->session->unset_userdata('logged_in', $sess_array);
         $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">You Have been Logged out!</div>');
-        redirect('auth');
+        redirect('admin');
     }
 }

@@ -53,7 +53,7 @@ class Kategori extends CI_Controller
     public function add($jenis, $nama_kategori){
         $kategori = $this->kategori_model;
         if($jenis=='kusen'){
-            if($kategori->save('JK01', $nama_kategori)){
+            if($kategori->addKategori('JK01', $nama_kategori)){
                 $this->session->set_flashdata('success','Data berhasil ditambahkan');
                 redirect('admin/kategori-'.$jenis);
             }else{
@@ -75,7 +75,7 @@ class Kategori extends CI_Controller
     {
         if (!isset($id)) show_404();
 
-        if ($this->kategori_model->delete($id)) {
+        if ($this->kategori_model->deleteKategori($id)) {
             $this->session->set_flashdata('success', 'Data berhasil dihapus');
             redirect(site_url('admin/kategori-'. strtolower($nama_kategori)));
         }

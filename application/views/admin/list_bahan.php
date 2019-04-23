@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-header">
         <strong class="card-title">Data Bahan Produk</strong>
-        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormKategori">
+        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormBahan">
             <i class="zmdi zmdi-plus"></i>add item</button>
     </div>
 
@@ -11,33 +11,36 @@
         <table id="tabel-data" class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th width="150px">ID</th>
-                    <th>NAMA KATEGORI</th>
-                    <th width="100px">AKSI</th>
+                    <th width="100px">NO</th>
+                    <th>NAMA BAHAN</th>
+                    <th> STATUS </th>
+                    <th width="200px">AKSI</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($kategori as $data_kategori) : ?>
-                <tr class="tr-shadow">
+                <?php $i = 1;
+                foreach ($bahan as $data_bahan) : ?>
+                <tr>
+                    <td><?php echo $i;
+                        $i++; ?>
+                    </td>
+
+                    <td> <?php echo $data_bahan->nama_bahan; ?> </td>
                     <td>
-                        <?php echo $data_kategori->id_kategori ?>
+                        <?php if ($data_bahan->status_bahan == false) : ?>
+
+                        <button onclick="updateConfirm('<?php echo site_url('admin/bahan_produk/update/' . $data_bahan->id_bahan) ?>')" id="btnStatus" type="button" class="btn btnStatusNonAktif"><span id="txtStatus">Non Aktif</span></i></button>
+
+                        <?php else : ?>
+
+                        <button onclick="updateConfirm('<?php echo site_url('admin/bahan_produk/update/' . $data_bahan->id_bahan) ?>')" id="btnStatus" type="button" class="btn btnStatusAktif"><span id="txtStatus">Aktif</span></button>
+
+                        <?php endif; ?>
                     </td>
                     <td>
-                        <?php echo $data_kategori->nama_kategori ?>
+                        <button onclick="deleteConfirm('<?php echo site_url('admin/bahan_produk/delete/' . $data_bahan->id_bahan) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
                     </td>
-                    <td>
-                        <div class="table-data-feature">
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                <i class="zmdi zmdi-edit"></i>
-                            </button>
-                            <button onclick="deleteConfirm('<?php echo site_url('admin/kategori/delete/' . $data_kategori->id_kategori . '/' . $title_dashboard) ?>')" class=" item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                <i class="zmdi zmdi-delete"></i>
-                            </button>
-                            <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                <i class="zmdi zmdi-more"></i>
-                            </button>
-                        </div>
-                    </td>
+
                 </tr>
                 <?php endforeach; ?>
             </tbody>
