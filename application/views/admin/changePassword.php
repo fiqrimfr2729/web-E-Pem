@@ -1,22 +1,36 @@
-<!-- Main content -->
-<section class='content'>
-    <div class='row'>
-        <div class='col-xs-12'>
-            <div class='box'>
-                <div class='box-header'>
-                    <h3 class='box-title'>Akun</h3>
-                    <table class="table table-bordered">
-                        <tr>
-                            <td>Akun</td>
-                            <td><?php echo $akun; ?></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><a href="<?php echo site_url('kelola_akun') ?>" class="btn btn-default">Cancel</a></td>
-                        </tr>
-                    </table>
-                </div><!-- /.box-body -->
-            </div><!-- /.box -->
-        </div><!-- /.col -->
-    </div><!-- /.row -->
-</section><!-- /.content -->
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-lg-6">
+            <?= $this->session->flashdata('message'); ?>
+
+            <form action="<?= base_url('admin/kelola_akun/changepwd'); ?>" method="post">
+                <div class="form-group">
+                    <label for="current_password">Password Sekarang</label>
+                    <input type="password" class="form-control" id="current_password" name="current_password">
+                    <?= form_error('current_password', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group">
+                    <label for="new_password1">Password Baru</label>
+                    <input type="password" class="form-control" id="new_password1" name="new_password1">
+                    <?= form_error('new_password1', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group">
+                    <label for="new_password2">Ulangi Password</label>
+                    <input type="password" class="form-control" id="new_password2" name="new_password2">
+                    <?= form_error('new_password2', '<small class="text-danger pl-3">', '</small>'); ?>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Ubah Password</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+</div>
