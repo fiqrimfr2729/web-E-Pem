@@ -18,7 +18,7 @@ $route['admin/edit_akun'] = 'admin/edit_akun';
 $route['admin/kelola_akun-changePassword'] = 'admin/kelola_akun/changePassword';
 $route['admin/setting'] = 'admin/setting';
 
-
+/*
 // Bagian link buat web user
 $route['user/home'] = 'aser/home';
 $route['user/aboutus'] = 'user/aboutus';
@@ -30,7 +30,7 @@ $route['user/mebel'] = 'user/mebel';
 $route['admin/produk-bedug'] = 'admin/produk_bedug';
 $route['admin/produk-bangunan'] = 'admin/produk_bangunan';
 $route['admin/produk-mebel'] = 'admin/produk_mebel';
-
+*/
 
 // Bagian link buat web user
 $route['user/home'] = 'user/home';
