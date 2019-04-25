@@ -149,7 +149,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-primary">Masukan</button>
+                <button type="submit" class="btn btn-primary">Perbarui</button>
                 </form>
             </div>
         </div>
@@ -171,6 +171,37 @@
                         <label for="Nama Bahan">Nama bahan </label>
                         <span id="pesan" class="error"></span></p>
                         <input type="text" class="form-control" pattern="[a-zA-Z0-9\s\-]+" id="nama_bahan" name="nama_bahan" placeholder="Masukkan nama bahan" required />
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn btn-primary">Masukan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalFormAkun" tabindex="-1" role="form" aria-labelledby="mediumModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mediumModalLabel">Data Akun Baru</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="<?php echo base_url('admin/kelola_akun/' . $title_dashboard) ?>" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <span id="pesan" class="error"></span></p>
+                        <input type="email" class="form-control txtOnly" id="email" name="email" placeholder="Masukkan Email" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <span id="pesan" class="error"></span></p>
+                        <input type="password" class="form-control txtOnly" id="password" name="password" placeholder="Masukkan Password" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
                     </div>
             </div>
             <div class="modal-footer">

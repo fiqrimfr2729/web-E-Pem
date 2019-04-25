@@ -38,6 +38,24 @@
             });
     }
 
+    function deleteConfirmKategori(url, kategori) {
+        swal({
+                title: "Apa anda yakin?",
+                text: "Data produk yang memiliki kategori " + kategori +
+                    " juga akan terhapus!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+                if (willDelete) {
+                    window.location.replace(url);
+                } else {
+                    swal("Info", "Penghapusan dibatalkan", "info");
+                }
+            });
+    }
+
     function updateConfirm(url) {
         swal({
                 title: "Ubah status bahan?",
@@ -77,17 +95,17 @@
 <script>
     $(document).ready(function() {
         $('.btnStatusAktif').hover(function() {
-            $(this).find('span').text('Non Aktif');
+            $(this).find('span').text('Tidak Tersedia');
         }, function() {
-            $(this).find('span').text('Aktif');
+            $(this).find('span').text('Tersedia');
         });
     });
 
     $(document).ready(function() {
         $('.btnStatusNonAktif').hover(function() {
-            $(this).find('span').text('Aktif');
+            $(this).find('span').text('Tersedia');
         }, function() {
-            $(this).find('span').text('Non Aktif');
+            $(this).find('span').text('Tidak Tersedia');
         });
     });
 </script>
@@ -130,4 +148,4 @@
 <script src="<?php echo base_url('assets/chartjs/Chart.bundle.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/select2/select2.min.js') ?>"></script>
 <!-- Main JS-->
-<script src="<?php echo base_url('js/main.js') ?>"></script> 
+<script src="<?php echo base_url('js/main.js') ?>"></script>

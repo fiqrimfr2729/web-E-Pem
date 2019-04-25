@@ -20,30 +20,30 @@
             <tbody>
                 <?php $i = 1;
                 foreach ($bahan as $data_bahan) : ?>
-                <tr>
-                    <td><?php echo $i;
-                        $i++; ?>
-                    </td>
+                    <tr>
+                        <td><?php echo $i;
+                            $i++; ?>
+                        </td>
 
-                    <td> <?php echo $data_bahan->nama_bahan; ?> </td>
-                    <td>
-                        <?php if ($data_bahan->status_bahan == false) : ?>
+                        <td> <?php echo $data_bahan->nama_bahan; ?> </td>
+                        <td>
+                            <?php if ($data_bahan->status_bahan == false) : ?>
 
-                        <button onclick="updateConfirm('<?php echo site_url('admin/bahan_produk/update/' . $data_bahan->id_bahan) ?>')" id="btnStatus" type="button" class="btn btnStatusNonAktif"><span id="txtStatus">Non Aktif</span></i></button>
+                                <button onclick="updateConfirm('<?php echo site_url('admin/bahan_produk/update/' . $data_bahan->id_bahan) ?>')" id="btnStatus" type="button" class="btn btnStatusNonAktif"><span id="txtStatus">Tidak Tersedia</span></i></button>
 
-                        <?php else : ?>
+                            <?php else : ?>
 
-                        <button onclick="updateConfirm('<?php echo site_url('admin/bahan_produk/update/' . $data_bahan->id_bahan) ?>')" id="btnStatus" type="button" class="btn btnStatusAktif"><span id="txtStatus">Aktif</span></button>
+                                <button onclick="updateConfirm('<?php echo site_url('admin/bahan_produk/update/' . $data_bahan->id_bahan) ?>')" id="btnStatus" type="button" class="btn btnStatusAktif"><span id="txtStatus">Tersedia</span></button>
 
-                        <?php endif; ?>
-                    </td>
-                    <td>
-                        <button onclick="deleteConfirm('<?php echo site_url('admin/bahan_produk/delete/' . $data_bahan->id_bahan) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
-                    </td>
+                            <?php endif; ?>
+                        </td>
+                        <td>
+                            <button onclick="deleteConfirm('<?php echo site_url('admin/bahan_produk/delete/' . $data_bahan->id_bahan) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
+                        </td>
 
-                </tr>
+                    </tr>
                 <?php endforeach; ?>
             </tbody>
         </table> <br>
     </div>
-</div> 
+</div>

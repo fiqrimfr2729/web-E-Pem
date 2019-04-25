@@ -54,6 +54,7 @@ class Produk_model extends CI_Model
         return $query;
     }
 
+
     public function addProduk($nama_produk, $deskripsi, $kategori, $gambar)
     {
         $this->nama_produk = $nama_produk;
@@ -85,7 +86,6 @@ class Produk_model extends CI_Model
     {
 
         $produk = $this->getById($id);
-
         $path = 'upload/produk/' . $produk->gambar;
         $this->load->helper("file"); // load the helper
         delete_files($path, true); // delete all files/folders

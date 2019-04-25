@@ -1,4 +1,4 @@
-<?php 
+<?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
 class Kategori_model extends CI_Model
@@ -32,7 +32,8 @@ class Kategori_model extends CI_Model
 
     public function getByJenis($id_jenis_kategori)
     {
-        return $this->db->get_where($this->_table, ["id_jenis_kategori" => $id_jenis_kategori])->result();
+        $query = $this->db->get_where($this->_table, ["id_jenis_kategori" => $id_jenis_kategori])->result();
+        return $query;
     }
 
     public function getByNama($nama_kategori)
@@ -53,6 +54,46 @@ class Kategori_model extends CI_Model
 
     public function deleteKategori($id)
     {
+        $query = $this->getProduk($id);
+        foreach ($query as $data_produk) {
+            $this->deleteProduk($data_produk->id_produk);
+        }
         return $this->db->delete($this->_table, array("id_kategori" => $id));
+    }
+
+
+    public function getProduk($id)
+    {
+        return $this->db->get_where("produk", ["kategori" => $id])->result();
+    }
+
+    public function deleteProduk($id)
+    {
+        $this->_deleteImage($id);
+        return $this->db->delete("produk", array("id_produk" => $id));
+    }
+
+    private function _deleteImage($id)
+    {
+
+        $produk = $this->getProdukId($id);
+        $path = 'upload/produk/' . $produk->gambar;
+        $this->load->helper("file"); // load the helper
+        delete_files($path, true); // delete all files/folders
+
+        rmdir('upload/produk/' . $produk->gambar);
+    }
+
+    public function getProdukId($id)
+    {
+        $this->db->select('*');
+        $this->db->from('produk');
+        $this->db->join('kategori', 'produk.kategori = kategori.id_kategori', 'inner');
+        $this->db->where('id_produk', $id);
+        $query = $this->db->get()->row();
+        $kategori = new Kategori_model();
+        $query->kategori = $kategori->getById($query->kategori);
+
+        return $query;
     }
 }

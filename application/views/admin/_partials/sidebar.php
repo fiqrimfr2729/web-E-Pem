@@ -51,10 +51,6 @@
                             <a href="<?php echo site_url('admin/kategori-mebel') ?>">
                                 </i>Mebel</a>
                         </li>
-                        <li>
-                            <a href="<?php echo site_url('admin/kategori-bedug') ?>">
-                                </i>Bedug</a>
-                        </li>
                     </ul>
                 </li>
 
@@ -86,4 +82,4 @@
             </ul>
         </nav>
     </div>
-</aside> 
+</aside>
