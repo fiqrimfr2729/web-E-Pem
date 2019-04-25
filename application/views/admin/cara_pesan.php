@@ -23,10 +23,10 @@ body{
  
 div.konten{
     background: #ffffff;
-    width: 1000px;
+    width: 1100px;
+    height: 565px;
     margin: 30px auto 0;
     border-radius: 16px;
-    min-height: 256px;
     overflow: hidden;
 }
  
@@ -46,8 +46,8 @@ div.kepala h2.judul{
 textarea{
     color:black;
     border: 1px solid #b2bec3;
-    width: 830px;
-    height: 400px;
+    width: 900px;
+    height: 300px;
     margin:35px;
 }
 
@@ -58,11 +58,11 @@ p{
 
 
 .button input{
-    margin-left:820px;
+    margin-left:830px;
         color:white;
         background:#2980b9;
-        width: 120px;
-        height: 40px;
+        width: 270px;
+        height: 35px;
 
     }
 
@@ -81,13 +81,17 @@ p{
         </div>
         <div class="artikel">
             <form action="" method="post">
-            <p>Silahkan input cara pesan produk anda :</p>
-              <textarea name="text" id="ad" placeholder="  Masukkan cara pemesanan produk"></textarea>
+            
+              <p>Silahkan input cara pesan produk anda :</p>
+              <textarea name="text" id="ad" placeholder="  Masukkan cara pesan"></textarea>
+            
               <div class="button"><br>
-                    <input type="submit" value="Simpan">
+                    <input type="submit" value="Edit">
                 </div><br><br>
+
+               
             </form>
-        </div>
+         
     </div><br><br>
 </body>
 </html>

@@ -13,5 +13,6 @@ class Profil extends CI_Controller
 		$data['title_dashboard'] = 'Tentang';
         $this->load->view('admin/overview',$data)  ;
         
-	}
+    }
+
 }

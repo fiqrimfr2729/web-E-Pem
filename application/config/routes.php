@@ -41,6 +41,9 @@ $route['user/carapesan'] = 'user/carapesan';
 $route['user/furniture'] = 'user/furniture';
 $route['user/kusen'] = 'user/kusen';
 $route['user/bedug'] = 'user/bedug';
+$route['user/katmebelsatu'] = 'user/katmebelsatu';
+$route['user/katmebeldua'] = 'user/katmebeldua';
+
 
 
 

@@ -1,6 +1,6 @@
    
     <!--================Home Banner Area =================-->
-     <section class="banner_area">
+    <section class="banner_area">
             <div class="banner_inner d-flex align-items-center">
                 <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
                 <div class="container">
@@ -18,18 +18,18 @@
         
         <style>
         .menu-back-kat{
-          
+            background:#c8d6e5;
             width:300px;
-            height:280px;
+            height:300px;
 
         }
 
         .back-kat-samping{
             background:#dfe6e9;
             width:1195px;
-            height:180px;
+            height:200px;
             margin-left:300px;
-            margin-top:-280px;
+            margin-top:-300px;
         }
 
         .menu-kat{
@@ -48,7 +48,7 @@
         a{
             color:black;
             font-size:23px;
-            margin-left:50px;     
+            margin-left:60px;     
             padding:20px;
             padding: 0px 20px;
             line-height: 50px
@@ -67,8 +67,11 @@
                     <p>Dibawah ini adalah produk mebel dari perusahaan kami yang akhir-akhir ini banyak dipesan konsumen dari berbagai kota luar majalengka.</p>
                 </div>
             </div>
+        </section>
+        
 
-            <div class="menu-back-kat">
+        <section>
+        <div class="menu-back-kat">
             <div class="menu-kat">        
                 <div>               
                 <a href="<?php echo base_url('User/katmebelsatu') ?>">Daun Pintu</a>                           
@@ -80,16 +83,10 @@
                 <a href="<?php echo base_url('User/katmebeldua') ?>">Daun Jendela</a>                           
                 </div><br>           
             </div>
-
-            <div class="menu-kat">        
-                <div>               
-                <a href="<?php echo base_url('User/katmebeltiga') ?>">Daun Pisang</a>                           
-                </div><br>           
-            </div>
-            
         </div>
 
-        <div class="back-kat-samping"></div>
-
-        </section>
+        <div class="back-kat-samping">
+        <p> ini adalah halaman sub kategori 2 dari halam produk mebel</p>
+        </div>
         
+        </section>
