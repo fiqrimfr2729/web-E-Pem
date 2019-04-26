@@ -77,7 +77,7 @@
         margin-left:820px;
         color:white;
         background:#2980b9;
-        width: 270px;
+        width: 300px;
         height: 35px;
 
     }
@@ -96,25 +96,28 @@
         </div>
         <div class="artikel">
 
-            <form action="" method="post">                     
+            <form action="" method="post">
+                 
                 <div class="grup">
                     <label for="nama">Nama Perusahaan   : </label>
-                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM)</label>
+                    <input type="text" placeholder=" <?php echo $profil['0']->nama ?> " name="nama"/>
                 </div>
                 <div class="grup">
                     <label for="alamat">Alamat Perusahaan   :</label>
-                    <input type="text" placeholder="Masukkan Alamat" name="alamat"/>
+                    <input type="text" placeholder=" <?php echo $profil['0']->alamat ?> "  name="alamat"/>
                 </div>
                 <div class="grup">
                     <label for="kontak">Kontak Person   : </label>
-                    <input type="text" placeholder="Masukkan No Kontak" name="kontak"/>
+                    <input type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> "  name="no_kontak"/>
                 <div class="grup">
                     <label for="isi_">Tentang   :  </label><br>
-                    <textarea type="text" placeholder="   Masukkan Tentang Kami" name="isi"></textarea>
+                    <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> "  name="tentang"></textarea>
                 </div><br><br>
-                <div class="button">
-                    <input type="submit" value="Edit" name="Simpan">
-                </div><br>               
+                <div class="card-header"><br>
+                    <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
+                        <i class="zmdi zmdi-plus"></i>Edit</button>
+                </div><br><br>  
+
             </form>
 
         </div>
