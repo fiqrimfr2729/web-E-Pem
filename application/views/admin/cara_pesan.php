@@ -74,24 +74,36 @@ p{
 </style>
 
 <body>
+
 <div class="konten">
         <div class="kepala">
             <div class="lock"></div>
             <h2 class="judul">Cara Pesan</h2>
         </div>
         <div class="artikel">
+        
             <form action="" method="post">
-            
+
               <p>Silahkan input cara pesan produk anda :</p>
               <textarea name="text" id="ad" placeholder="  Masukkan cara pesan"></textarea>
-            
+       
               <div class="button"><br>
                     <input type="submit" value="Edit">
                 </div><br><br>
 
-               
+            
             </form>
-         
+
+            <?php
+            foreach ($carapesan->result() as $siswa) {
+            
+            echo "<tr>
+            <td>$siswa->carapesan</td>
+            
+            </tr>";
+            }
+            ?>
+            </div>
     </div><br><br>
 </body>
 </html>

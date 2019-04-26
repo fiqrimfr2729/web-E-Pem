@@ -6,8 +6,7 @@ class Cara_pesan extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('Carapesan_model');
-        $this->load->library('form_validation');
+        $this->load->model(array('Carapesan_model'));
     }
 
     public function index()
@@ -17,8 +16,12 @@ class Cara_pesan extends CI_Controller
         $this->load->view('admin/overview', $data);
        
     }
- 
+
+    public function tampil_data()
+    {
+        $dm['carapesan'] = $this->Carapesan_model->getAll();
+        $this->load->view('carapesan/list',$dm);
+
+    }
 }
     
-
- 
