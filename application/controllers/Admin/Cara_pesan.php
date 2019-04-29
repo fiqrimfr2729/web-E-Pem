@@ -6,6 +6,10 @@ class Cara_pesan extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('profil_model');
+        $this->load->helper('url');
+        $this->load->library('form_validation');
+
     }
 
 
@@ -23,17 +27,19 @@ class Cara_pesan extends CI_Controller
         $this->load->view('admin/overview', $data);
 
         */
-        $this->load->model('profil_model');
+        
         $data['main_content'] = 'admin/cara_pesan';
         $data['title_dashboard'] = 'Cara Pesan';
         $data['profil'] = $this->profil_model->getAll();
         $this->load->view('admin/overview', $data);
     }
 
-    /*
     public function update()
     {
-        $this->load->model('profil_model');
+       $this->profil_model->updateCara_pesan();
     }
-    */
+
+    
+    
+    
 }
