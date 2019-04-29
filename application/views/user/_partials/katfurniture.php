@@ -1,4 +1,84 @@
-   
+    
+    <style>
+
+    a{
+        color:black;
+        font-size:18px;
+        margin-left:50px;     
+        padding:20px;
+        padding: 0px 20px;
+        line-height: 50px
+    }
+
+    a:hover{
+        color:white;
+    }
+
+    .kat-mebel{
+        background:#dfe6e9;
+        width:200px;
+        height:50px;
+    }
+
+    .kat-mebel:hover{
+        background:#74b9ff;        
+    }
+
+    .meja{
+    width: 250px; 
+    height: 150px; 
+    }
+
+    .meja-1{
+    margin-left:300px; 
+    margin-top:-220px; 
+    }
+
+    .meja-2{
+    margin-left:700px; 
+    margin-top:-265px;
+    }
+
+    .meja-3{
+    margin-left:1100px; 
+    margin-top:-315px;
+    }
+
+    .meja-4{
+    margin-left:300px; 
+    margin-top:0px; 
+    }
+
+    .meja-5{
+    margin-left:170px; 
+    margin-top:0px;
+    }
+
+    .meja-6{
+    margin-left:1100px; 
+    margin-top:-250px;
+    }
+
+    .meja-7{
+    margin-left:300px; 
+    margin-top:120px; 
+    }
+
+    .meja-8{
+    margin-left:170px; 
+    margin-top:120px;
+    }
+
+    .meja-9{
+    margin-left:1100px; 
+    margin-top:-250px;
+    }
+
+
+
+
+    </style>
+    
     <!--================Home Banner Area =================-->
      <section class="banner_area">
             <div class="banner_inner d-flex align-items-center">
@@ -15,81 +95,54 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
-        <style>
-        .menu-back-kat{
-          
-            width:300px;
-            height:280px;
-
-        }
-
-        .back-kat-samping{
-            background:#dfe6e9;
-            width:1195px;
-            height:180px;
-            margin-left:300px;
-            margin-top:-280px;
-        }
-
-        .menu-kat{
-            width:300px;
-            height:60px;
-            color:black;
-
-        }
-
-        .menu-kat:hover{
-            background:#f1c40f;
-            color:white;
-                        
-        }
-
-        a{
-            color:black;
-            font-size:23px;
-            margin-left:50px;     
-            padding:20px;
-            padding: 0px 20px;
-            line-height: 50px
-        }
-
-        a:hover{
-            color:black;
-        }
-        </style>
-
+       
         <!--================Contact Area =================-->
-        <section class="furniture_area p_120">
-            <div class="container">
-            <div class="main_title">
-                    <h2>PRODUK MEBEL</h2>
-                    <p>Dibawah ini adalah produk mebel dari perusahaan kami yang akhir-akhir ini banyak dipesan konsumen dari berbagai kota luar majalengka.</p>
-                </div>
-            </div>
-
-            <div class="menu-back-kat">
-            <div class="menu-kat">        
-                <div>               
-                <a href="<?php echo base_url('User/katmebelsatu') ?>">Daun Pintu</a>                           
-                </div><br>           
-            </div>
-
-            <div class="menu-kat">        
-                <div>               
-                <a href="<?php echo base_url('User/katmebeldua') ?>">Daun Jendela</a>                           
-                </div><br>           
-            </div>
-
-            <div class="menu-kat">        
-                <div>               
-                <a href="<?php echo base_url('User/katmebeltiga') ?>">Daun Pisang</a>                           
-                </div><br>           
-            </div>
-            
+<section class="furniture_area p_120">
+    <div class="container">
+       <div class="main_title">
+            <h2>PRODUK MEBEL</h2>
+               <p>Dibawah ini adalah produk mebel dari perusahaan kami yang akhir-akhir ini banyak dipesan konsumen dari berbagai kota luar majalengka.</p>
         </div>
+    </div><br><br>
+       
+    <div>
+            <div class="kat-mebel">        
+                <div>               
+                <a href="<?php echo base_url('User/katmebelsatu') ?>">Meja</a>                           
+                </div>          
+            </div>
+            <br>
+            <div class="kat-mebel">        
+                <div>               
+                <a href="<?php echo base_url('User/katmebeldua') ?>">Kursi</a>                           
+                </div>         
+            </div>  
+            <br>
+            <div class="kat-mebel">        
+                <div>               
+                <a href="<?php echo base_url('User/katmebeldua') ?>">Lemari</a>                           
+                </div>         
+            </div>            
+    </div >
 
-        <div class="back-kat-samping"></div>
+    <div class="meja"> 
+    <img class="meja-1" src="<?php echo base_url('img/furniture/meja-1.jpeg') ?>" > 
+    <img class="meja-2" src="<?php echo base_url('img/furniture/meja-2.jpeg') ?>" > 
+    <img class="meja-3" src="<?php echo base_url('img/furniture/meja-3.jpeg') ?>" >       
+    </div>
 
-        </section>
+    <div >
+    <img class="meja-4" src="<?php echo base_url('img/furniture/meja-4.jpeg') ?>" > 
+    <img class="meja-5" src="<?php echo base_url('img/furniture/meja-5.jpeg') ?>" > 
+    <img class="meja-6" src="<?php echo base_url('img/furniture/meja-6.jpeg') ?>" >
+    </div>
+
+    
+    <div >
+    <img class="meja-7" src="<?php echo base_url('img/furniture/meja-7.jpeg') ?>" > 
+    <img class="meja-8" src="<?php echo base_url('img/furniture/meja-8.jpeg') ?>" > 
+    <img class="meja-9" src="<?php echo base_url('img/furniture/meja-9.jpeg') ?>" >
+    </div>
+    
+</section>
         

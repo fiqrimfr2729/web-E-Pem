@@ -1,4 +1,10 @@
-    <header class="header_area">
+    <style>
+	.nav-link:hover{
+		color:#f1c40f;
+	}
+	</style>
+	
+	<header class="header_area">
            	<div class="top_menu">
            		<div class="container">
            			<div class="top_inner">

@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
@@ -28,6 +29,5 @@ class Profil_model extends CI_Model
         $this->session->set_flashdata('success', 'Data berhasil diubah!!!');
 
         redirect(site_url('admin/cara_pesan'));
-
     }
-}   
+}

@@ -81,8 +81,9 @@
             <h2 class="judul">Cara Pesan</h2>
         </div>
         <div class="artikel">
+
             <form action="" method="post">
-                <p>Cara Pesan</p>
+                <p>Silahkan input cara pesan produk anda :</p>
                 <p><?php echo $profil['0']->caraPesan ?></p>
 
                 <!-- Modal -->
@@ -107,21 +108,21 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                                 <button type="submit" class="btn btn-primary">Ubah</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- modal terakhir -->
-                <div class="card-header"><br>
-                    <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
-                        <i class="zmdi zmdi-plus"></i>Ubah</button>
-                </div><br><br>
             </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- modal terakhir -->
+    <div class="card-header"><br>
+        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
+            <i class="zmdi zmdi-plus"></i>Ubah</button>
+    </div><br><br>
+    </form>
 
-            <?= $this->session->flashdata('message'); ?>
+    <?= $this->session->flashdata('message'); ?>
 
-        </div><br><br>
+    </div><br><br>
 </body>
 
 </html>
