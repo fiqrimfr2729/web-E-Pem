@@ -7,6 +7,8 @@
     <title>Cara Pemesanan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+
     <script src="main.js"></script>
 </head>
 <style>
@@ -79,53 +81,48 @@
             <h2 class="judul">Cara Pesan</h2>
         </div>
         <div class="artikel">
-        
-            <form action="" method="post">
-                <textarea name="text" id="ad" placeholder="<?php echo $profil['0']->caraPesan ?>"></textarea>
 
-            <!--modal profil-->
-            <div class="modal fade" id="modalFormCarapesan" tabindex="-1" role="form" aria-labelledby="mediumModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="mediumModalLabel">Data Cara Pesan Baru</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="<?php echo base_url('admin/kelola_akun/' . $title_dashboard) ?>" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="Cara_pesan">Cara Pesan</label>
-                        <span id="pesan" class="error"></span></p>
-                        <input type="text" class="form-control txtOnly" id="cara_pesan" name="cara_pesan" placeholder="Masukkan Cara Pesan terbaru" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <span id="pesan" class="error"></span></p>
-                        <input type="password" class="form-control txtOnly" id="password" name="password" placeholder="Masukkan Password" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
-                    </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-primary">Ubah</button>
-                </form>
-            </div>
+            <form action="" method="post">
+                <p>Silahkan input cara pesan produk anda :</p>
+                <p><?php echo $profil['0']->caraPesan ?></p>
+
+                <!-- Modal -->
+
+                <div class="modal fade" id="modalFormCarapesan" tabindex="-1" role="form" aria-labelledby="mediumModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mediumModalLabel">Data Cara Pesan Baru</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="<?php echo base_url('admin/cara_pesan/update') ?>" method="post" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="Cara_pesan">Cara Pesan</label>
+                                        <span id="pesan" class="error"></span></p>
+                                        <input type="text" class="form-control txtOnly" id="cara_pesan" name="cara_pesan" placeholder="Masukkan Cara Pesan terbaru" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
+                                    </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                <button type="submit" class="btn btn-primary">Ubah</button>
+            </form>
         </div>
     </div>
-</div>
+    </div>
+    </div>
+    <!-- modal terakhir -->
+    <div class="card-header"><br>
+        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
+            <i class="zmdi zmdi-plus"></i>Ubah</button>
+    </div><br><br>
+    </form>
 
-        <!-- stop modal profil-->
+    <?= $this->session->flashdata('message'); ?>
 
-                <div class="card-header"><br>
-                    <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
-                        <i class="zmdi zmdi-plus"></i>Edit</button>
-                </div><br><br>
-
-
-            </form>
-
-        </div><br><br>
+    </div><br><br>
 </body>
 
 </html>

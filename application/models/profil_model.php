@@ -6,23 +6,28 @@ class Profil_model extends CI_Model
 {
 
     public $_table = "profil";
-    public $cPesan = "caraPesan";
+
 
     public function getAll()
     {
         return $this->db->get($this->_table)->result();
     }
 
-    public function getNama($cPesan)
+    public function getProfil()
     {
-        return $this->db->get_where($this->_table, ["caraPesan" => $cPesan])->result();
+        $this->db->get('profil')->result();
+        $carapesan = $profil[0]->cara_pesan;
+        return $carapesan;
     }
 
-    public function getprofil($_table)
+    public function updateCara_pesan()
     {
-        return $this->db->get_where($this->_table, ["profil" => $_table])->result();
-    }
+        $cara_pesan = $this->input->post('cara_pesan');
 
-    
+        $this->db->set('caraPesan', $cara_pesan);
+        $this->db->update('profil');
+        $this->session->set_flashdata('success', 'Data berhasil diubah!!!');
+
+        redirect(site_url('admin/cara_pesan'));
+    }
 }
-
