@@ -14,7 +14,14 @@ class Profile extends CI_Controller
        
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('User/profile') ;
+        $this->load->view('User/profile') ;
+        $this->load->model('profil_model');
+        $data['main_content'] = 'admin/Profil_perusahaan';
+        $data['title_dashboard'] = 'Tentang';
+        $data['profil'] = $this->profil_model->getAll();
+        $this->load->view('admin/overview', $data);
+		
+       
 	}
 }
  

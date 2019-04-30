@@ -25,7 +25,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 565px;
+        height: 515px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -46,7 +46,7 @@
 
     textarea {
         color: black;
-        border: 1px solid #b2bec3;
+        border: 1px solid white;
         width: 900px;
         height: 300px;
         margin: 35px;
@@ -81,7 +81,6 @@
         <div class="artikel">
         
             <form action="" method="post">
-                <p>Silahkan input cara pesan produk anda :</p>
                 <textarea name="text" id="ad" placeholder="<?php echo $profil['0']->caraPesan ?>"></textarea>
 
             <!--modal profil-->
