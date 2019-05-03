@@ -16,7 +16,7 @@
   <!--================End Home Banner Area =================-->
   <style>
    textarea {
-        color: black;
+        color: grey;
         border: 1px solid white;
         width: 900px;
         height: 300px;

@@ -9,11 +9,7 @@ class Bahanproduk extends CI_Controller
     {
         
         parent::__construct();
-        if (isset($this->session->userdata['logged_in'])) {
-            $email = ($this->session->userdata['logged_in']['email']);
-        } else {
-            redirect('admin');
-        }
+
         $this->load->model('Bahan_model');
         $this->load->library('form_validation');
     }

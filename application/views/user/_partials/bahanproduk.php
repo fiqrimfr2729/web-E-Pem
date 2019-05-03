@@ -26,7 +26,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="tr-shadow">
                    
                 <?php $i = 1;
                 foreach ($bahan as $data) : ?>
