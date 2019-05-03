@@ -5,7 +5,7 @@
                 <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
                 <div class="container">
                     <div class="banner_content text-center">
-                        <h2>BANGUNAN</h2>
+                        <h2>PRODUK BANGUNAN</h2>
                         <!--<div class="page_link">
                             <a href="index.html">Home</a>
                             <a href="contact.html">Galery</a>
@@ -19,12 +19,7 @@
         <!--================Contact Area =================-->
         <section class="furniture_area p_120">
             <div class="container">
-                <div class="main_title">
-                    <h2>PRODUK KUSEN</h2>
-                    <p>Dibawah ini adalah produk kusen dari perusahaan kami yang akhir-akhir ini banyak dipesan konsumen dari berbagai kota luar majalengka.</p>
-                </div>
-
-               ini adalah halaman produk kusen
+                ini adalah halaman produk kusen
 
 
             </div>

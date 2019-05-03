@@ -7,14 +7,27 @@ class Aboutus extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+            
+        if (isset($this->session->userdata['logged_in'])) {
+            $email = ($this->session->userdata['logged_in']['email']);
+        }else{
+              redirect('admin');
+        }
+        
+        $this->load->model('testimoni_model');
+        $this->load->library('form_validation');
     }
 
+
     public function index(){
-        
-        
-        // user sebagai nama folder nya
-        // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('user/aboutus') ;
+        $data['testimoni'] = $this->testimoni_model->getAll();
+
+        $data['main_content']='user/about';
+        $data [ 'title_dashboard'] = 'Testimoni';
+        $this->load->view('user/aboutus',$data) ;
+    }
+
 	}
-}
+
+
  

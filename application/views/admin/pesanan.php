@@ -17,30 +17,7 @@
             </thead>
             <tbody>
                 <tr class="tr-shadow">
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        Mohamad Fiqri Rahardian
-                    </td>
-                    <td>
-                        Palangkaraya
-                    </td>
-                    <td>
-                        20-06-2019
-                    </td>
-                    <td>
-                        Belum Direspon
-                    </td>
-                    <td>
-                        <div>
-                            <button class="btn btn-danger" type="button" title="Delete">
-                                Hapus
-                            </button>
-                            <button type="button" class="btn btn-info">Info</button>
-                        </div>
-                    </td>
-                </tr>
+                   
 
                 <?php $i = 1;
                 foreach ($pesanan as $data_pesanan) : ?>

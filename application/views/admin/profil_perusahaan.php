@@ -12,14 +12,7 @@
 </head>
 
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-
-    }
-
+   
     body {
         background: #c0c0c0;
     }
@@ -27,7 +20,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 650px;
+        height: 500px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -69,8 +62,8 @@
     textarea {
         color: black;
         border: 1px solid white;
-        width: 1000px;
-        height: 100px;
+        width:700px;
+        height: 500px;
     }
 
     .button input{
@@ -88,12 +81,7 @@
 .button{
     width: 1300px;
     height: 40px;
-}
-
-.au-btn au-btn-icon au-btn--green{
-    width: 1300px;
-    height: 40px;
-    margin-top:-100px;
+    color:black;
 }
 
 </style>
@@ -125,12 +113,12 @@
                 <div class="card-header">
                     <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
                         <i class="zmdi zmdi-plus"></i>Edit</button>
-                </div><br><br>  
+                </div>
 
             </form>
 
-        </div><br><br>
-    </div><br><br>
+        </div>
+    </div>
    
 </body>
 

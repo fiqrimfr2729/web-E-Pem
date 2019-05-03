@@ -85,7 +85,7 @@
                 <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
                 <div class="container">
                     <div class="banner_content text-center">
-                        <h2>MEBEL</h2>
+                        <h2>PRODUK MEBEL</h2>
                         <!--<div class="page_link">
                             <a href="index.html">Home</a>
                             <a href="contact.html">Galery</a>
@@ -98,14 +98,7 @@
        
         <!--================Contact Area =================-->
 <section class="furniture_area p_120">
-    <div class="container">
-       <div class="main_title">
-            <h2>PRODUK MEBEL</h2>
-               <p>Dibawah ini adalah produk mebel dari perusahaan kami yang akhir-akhir ini banyak dipesan konsumen dari berbagai kota luar majalengka.</p>
-        </div>
-    </div><br><br>
-       
-    <div>
+       <div>
             <div class="kat-mebel">        
                 <div>               
                 <a href="<?php echo base_url('User/katmebelsatu') ?>">Meja</a>                           
