@@ -9,6 +9,7 @@ $route['admin/dashboard'] = 'admin/dashboard';
 $route['admin/produk'] = 'admin/produk';
 $route['admin/kategori-bangunan'] = 'admin/kategori/bangunan';
 $route['admin/kategori-mebel'] = 'admin/kategori/mebel';
+$route['admin/kategori-bedug'] = 'admin/kategori/bedug';
 $route['admin/cara-pesan'] = 'admin/cara_pesan';
 $route['admin/profil'] = 'admin/profil';
 $route['admin/pesanan'] = 'admin/pesanan';

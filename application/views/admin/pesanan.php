@@ -11,8 +11,11 @@
                     <th>NAMA PEMESAN</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
+                    <th>KONTAK</th>
+                    <th>ALAMAT</th>
                     <th>STATUS</th>
                     <th width="150px">AKSI</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -34,6 +37,12 @@
                         </td>
                         <td>
                             <?php echo $data_pesanan->tanggal ?>
+                        </td>
+                        <td>
+                            <?php echo $data_pesanan->kontak ?>
+                        </td>
+                        <td>
+                            <?php echo $data_pesanan->alamat ?>
                         </td>
                         <td>
                             <?php echo $data_pesanan->status ?>
