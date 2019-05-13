@@ -35,16 +35,13 @@ $route['admin/produk-mebel'] = 'admin/produk_mebel';
 
 // Bagian link buat web user
 $route['user/home'] = 'user/home';
-$route['user/aboutus'] = 'user/aboutus';
+$route['user/testmimoni'] = 'user/testimoni';
 $route['user/contact'] = 'user/home';
-$route['user/galery'] = 'user/galery';
 $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
-$route['user/furniture'] = 'user/furniture';
-$route['user/kusen'] = 'user/kusen';
-$route['user/bedug'] = 'user/bedug';
-$route['user/katmebelsatu'] = 'user/katmebelsatu';
-$route['user/katmebeldua'] = 'user/katmebeldua';
+$route['user/mebel'] = 'user/mebel';
+$route['user/bangunan'] = 'user/bangunan';
+$route['user/lihatproduk'] = 'user/lihatproduk';
 
 
 

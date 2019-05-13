@@ -10,7 +10,7 @@
         <?php $this->load->view('User/_partials/navbar.php') ?>
        
         <!-- BAGIAN HALAMAN NAVBAR-->
-        <?php $this->load->view('User/_partials/katbedug.php') ?>
+        <?php $this->load->view('User/_partials/lihatproduk.php') ?>
        
          
         <!-- BAGIAN HALAMAN FOOTER-->

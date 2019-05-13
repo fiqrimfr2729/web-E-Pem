@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
  // controller di awali dengan huruf kapital
-class Aboutus extends CI_Controller
+class Testimoni extends CI_Controller
 {
     public function __construct()
     {
@@ -16,9 +16,9 @@ class Aboutus extends CI_Controller
     public function index(){
         $data['testimoni'] = $this->testimoni_model->getAll();
 
-        $data['main_content']='user/about';
+        $data['main_content']='user/testimoni';
         $data [ 'title_dashboard'] = 'Testimoni';
-        $this->load->view('user/aboutus',$data) ;
+        $this->load->view('user/testimoni',$data) ;
     }
 
 	}

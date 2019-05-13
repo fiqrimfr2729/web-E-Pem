@@ -10,7 +10,7 @@
         <?php $this->load->view('User/_partials/navbar.php') ?>
        
         <!-- BAGIAN HALAMAN NAVBAR-->
-        <?php $this->load->view('User/_partials/about.php') ?>
+        <?php $this->load->view('User/_partials/testimoni.php') ?>
        
          
         <!-- BAGIAN HALAMAN FOOTER-->
