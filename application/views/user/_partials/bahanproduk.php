@@ -16,7 +16,36 @@
         <!--================Contact Area =================-->
         <section class="furniture_area p_120">
             <div class="container">
-              ini adalah halaman bahan produk kami
+            
+            <table id="tabel-data" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th width="30px">NO</th>
+                    <th>NAMA BAHAN</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                   
+                <?php $i = 1;
+                foreach ($bahan as $data) : ?>
+                    <tr class="tr-shadow">
+                        <td>
+                            <?php echo $i;
+                            $i++ ?>
+                        </td>
+                        <td>
+                            <?php echo $data->nama_bahan ?>
+                        </td>
+                        <td>
+                            <?php echo $data->status_bahan ?>
+                        </td>
+                      
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table> <br>
+
             </div>
         </section>
 

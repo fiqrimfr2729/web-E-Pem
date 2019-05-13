@@ -11,36 +11,16 @@
                     <th>NAMA PEMESAN</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
+                    <th>KONTAK</th>
+                    <th>ALAMAT</th>
                     <th>STATUS</th>
                     <th width="150px">AKSI</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 <tr class="tr-shadow">
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        Mohamad Fiqri Rahardian
-                    </td>
-                    <td>
-                        Palangkaraya
-                    </td>
-                    <td>
-                        20-06-2019
-                    </td>
-                    <td>
-                        Belum Direspon
-                    </td>
-                    <td>
-                        <div>
-                            <button class="btn btn-danger" type="button" title="Delete">
-                                Hapus
-                            </button>
-                            <button type="button" class="btn btn-info">Info</button>
-                        </div>
-                    </td>
-                </tr>
+                   
 
                 <?php $i = 1;
                 foreach ($pesanan as $data_pesanan) : ?>
@@ -57,6 +37,12 @@
                         </td>
                         <td>
                             <?php echo $data_pesanan->tanggal ?>
+                        </td>
+                        <td>
+                            <?php echo $data_pesanan->kontak ?>
+                        </td>
+                        <td>
+                            <?php echo $data_pesanan->alamat ?>
                         </td>
                         <td>
                             <?php echo $data_pesanan->status ?>

@@ -228,10 +228,8 @@
                     <div class="form-group">
                         <label for="Cara_pesan">Cara Pesan</label>
                         <span id="pesan" class="error"></span></p>
-                        <!--<input type="text" class="form-control txtOnly" id="cara_pesan" name="cara_pesan" placeholder="Masukkan Cara Pesan terbaru" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
-                        -->
+                        <textarea rows="5" cols="40" id="cara_pesan" name="cara_pesan" placeholder="<?php echo $profil['0']->caraPesan ?>" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required></textarea>
                     </div>
-                    <textarea id="cara_pesan" name="cara_pesan" cols="4" rows="20" placeholder="<?= $profil['0']->caraPesan ?>"></textarea>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>

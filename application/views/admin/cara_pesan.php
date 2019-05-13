@@ -12,14 +12,6 @@
     <script src="main.js"></script>
 </head>
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-
-    }
-
     body {
         background: #c0c0c0;
     }
@@ -27,7 +19,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 565px;
+        height: 515px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -46,17 +38,11 @@
         display: inline-block;
     }
 
-    textarea {
-        color: black;
-        border: 1px solid #b2bec3;
+    .text {
+        border: 1px solid white;
         width: 900px;
         height: 300px;
         margin: 35px;
-    }
-
-    p {
-        margin-top: 35px;
-        margin-left: 33px;
     }
 
 
@@ -73,11 +59,10 @@
         background: #74b9ff;
     }
 
-    textarea{
+    textarea {
         width: 700px;
-        height: 300px;
+        height: 500px;
     }
-
 </style>
 
 <body>
@@ -89,8 +74,8 @@
         <div class="artikel">
 
             <form action="" method="post">
-                <p>Silahkan input cara pesan produk anda :</p>
-                <p><?php echo $profil['0']->caraPesan ?></p>
+
+                <textarea class="text"><?php echo $profil['0']->caraPesan ?></textarea>
 
                 <!-- Modal -->
 
@@ -107,16 +92,21 @@
                                 <form action="<?php echo base_url('admin/cara_pesan/update') ?>" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="Cara_pesan">Cara Pesan</label>
-                                        <span id="pesan" class="error"></span></p>
-                                        <!--<input type="text" class="form-control txtOnly" id="cara_pesan" name="cara_pesan" placeholder="Masukkan Cara Pesan terbaru" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
+                                        <<<<<<< HEAD <span id="pesan" class="error"></span></p>
+                                            <!--<input type="text" class="form-control txtOnly" id="cara_pesan" name="cara_pesan" placeholder="Masukkan Cara Pesan terbaru" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
                                         -->
-                                       
+
+                                            =======
+                                            <span id="pesan" class="error"></span>
+
+                                            <textarea rows="5" cols="40" name="cara_pesan" placeholder="<?php echo $profil['0']->caraPesan ?>" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required></textarea>
+                                            >>>>>>> ff3a80289de3dcde9d352b1501be34ac3d0e4b5a
                                     </div>
                                     <textarea id="cara_pesan" name="cara_pesan" cols="4" rows="20" placeholder="<?= $profil['0']->caraPesan ?>"></textarea>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                <button type="submit" class="btn btn-primary">Ubah</button>
+                                <button type="submit" class="btn btn-primary">ubah</button>
             </form>
         </div>
     </div>
@@ -125,7 +115,7 @@
     <!-- modal terakhir -->
     <div class="card-header"><br>
         <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
-            <i class="zmdi zmdi-plus"></i>Ubah</button>
+            <i class="zmdi zmdi-plus"></i>EDIT</button>
     </div><br><br>
     </form>
 

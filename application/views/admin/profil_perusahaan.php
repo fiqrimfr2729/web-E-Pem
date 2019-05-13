@@ -12,14 +12,7 @@
 </head>
 
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-
-    }
-
+   
     body {
         background: #c0c0c0;
     }
@@ -27,7 +20,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 610px;
+        height: 500px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -68,17 +61,16 @@
 
     textarea {
         color: black;
-        border: 1px solid #b2bec3;
-        width: 900px;
-        height: 200px;
+        border: 1px solid white;
+        width:700px;
+        height: 500px;
     }
 
     .button input{
-        margin-left:820px;
-        color:white;
+        color:black;
         background:#2980b9;
         width: 300px;
-        height: 35px;
+        height: 40px;
 
     }
 
@@ -86,6 +78,12 @@
         background:#74b9ff;
     }
     
+.button{
+    width: 1300px;
+    height: 40px;
+    color:black;
+}
+
 </style>
 
 <body>
@@ -100,28 +98,27 @@
                  
                 <div class="grup">
                     <label for="nama">Nama Perusahaan   : </label>
-                    <input type="text" placeholder=" <?php echo $profil['0']->nama ?> " name="nama"/>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->nama ?> " name="nama"/>
                 </div>
                 <div class="grup">
                     <label for="alamat">Alamat Perusahaan   :</label>
-                    <input type="text" placeholder=" <?php echo $profil['0']->alamat ?> "  name="alamat"/>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->alamat ?> "  name="alamat"/>
                 </div>
                 <div class="grup">
                     <label for="kontak">Kontak Person   : </label>
-                    <input type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> "  name="no_kontak"/>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> "  name="no_kontak"/>
                 <div class="grup">
                     <label for="isi_">Tentang   :  </label><br>
-                    <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> "  name="tentang"></textarea>
-                </div><br><br>
-                <div class="card-header"><br>
+                    <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> "  name="tentang"></textarea>                </div><br><br>
+                <div class="card-header">
                     <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
                         <i class="zmdi zmdi-plus"></i>Edit</button>
-                </div><br><br>  
+                </div>
 
             </form>
 
         </div>
-    </div><br><br>
+    </div>
    
 </body>
 
