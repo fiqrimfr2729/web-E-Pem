@@ -7,7 +7,11 @@ class Bahanproduk extends CI_Controller
 {
     public function __construct()
     {
+        
         parent::__construct();
+
+        $this->load->model('Bahan_model');
+        $this->load->library('form_validation');
     }
 
     public function index(){
@@ -15,7 +19,12 @@ class Bahanproduk extends CI_Controller
         
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('User/bahanproduk') ;
-	}
+        $data['title_dashboard'] = 'Bahan Produk';
+        $data['main_content'] = 'User/bahanproduk';
+        $data['bahan'] = $this->Bahan_model->getAll();
+        $this->load->view('User/bahanproduk', $data);
+    }
+    
+    
 }
  

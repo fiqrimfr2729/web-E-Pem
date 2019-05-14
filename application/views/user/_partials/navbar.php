@@ -1,4 +1,10 @@
-    <header class="header_area">
+    <style>
+	.nav-link:hover{
+		color:#f1c40f;
+	}
+	</style>
+	
+	<header class="header_area">
            	<div class="top_menu">
            		<div class="container">
            			<div class="top_inner">
@@ -20,7 +26,7 @@
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="<?php echo base_url('user/dasboard') ?>">BERANDA</a></li> 
 								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/profile') ?>">TENTANG</a></li>								
-								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('user/aboutus') ?>">TESTIMONI</a></li> 
+								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('user/testimoni') ?>">TESTIMONI</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/bahanproduk') ?>">BAHAN PRODUK</a></li>
 							</ul>
 						</div> 

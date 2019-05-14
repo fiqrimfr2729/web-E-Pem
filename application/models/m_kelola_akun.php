@@ -8,6 +8,7 @@ class M_kelola_akun extends CI_Model
     public $id = 'id';
     public $order = 'DESC';
 
+
     function __construct()
     {
         parent::__construct();
@@ -27,6 +28,8 @@ class M_kelola_akun extends CI_Model
         return $this->db->get($this->table)->row();
     }
 
+
+
     // get total rows
     function total_rows($q = null)
     {
@@ -37,8 +40,11 @@ class M_kelola_akun extends CI_Model
     }
 
     // get data with limit and search
-    function get_limit_data($limit, $start = 0, $q = null)
-    {
+    function get_limit_data(
+        $limit,
+        $start = 0,
+        $q = null
+    ) {
         $this->db->order_by($this->id, $this->order);
         $this->db->like('id', $q);
         $this->db->or_like('user', $q);

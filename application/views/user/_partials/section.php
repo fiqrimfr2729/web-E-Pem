@@ -14,18 +14,18 @@
                         <!---------------- Bagian Buat kategori------------------>
 						<div class="col-lg-4">
 							<div class="home_right_box">
-								<a style="color:white; " class="home_item" href="<?php echo base_url('user/furniture') ?>">
-								    <img class="img-fluid" src="<?php echo base_url('img/furniture/sofa.png')?>"  alt="Mebel">
+								<a style="color:white; " class="home_item" href="<?php echo base_url('user/mebel') ?>">
+								    <img class="img-fluid" src="<?php echo base_url('img/furniture/sofa-2.png')?>"  alt="Mebel">
 									<br>
 								</a>
-								<a style="color:white;" class="home_item" href="<?php echo base_url('user/kusen') ?>">
-									<img class="img-fluid" src="<?php echo base_url('img/furniture/meja.png')?>"  alt="Kusen">
+								<a style="color:white;" class="home_item" href="<?php echo base_url('user/bangunan') ?>">
+									<img class="img-fluid" src="<?php echo base_url('img/furniture/kusen-2.png')?>"  alt="Kusen">
 									<br>
 								</a>
-								<a style="color:white;" class="home_item" href="<?php echo base_url('user/bedug') ?>">
+								<!--<a style="color:white;" class="home_item" href="<?php echo base_url('user/bedug') ?>">
 									<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug.png')?>"  alt="bedug">
 									<br>
-								</a>
+								</a>-->
 
 								<!--<div class="home_item">
 									<i class="flaticon-computer"></i>

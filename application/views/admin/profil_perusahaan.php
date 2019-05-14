@@ -11,24 +11,16 @@
 </head>
 
 <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-
-    }
-
     body {
         background: #c0c0c0;
     }
 
     div.konten {
         background: #ffffff;
-        width: 1000px;
+        width: 1100px;
+        height: 500px;
         margin: 30px auto 0;
         border-radius: 16px;
-        min-height: 300px;
         overflow: hidden;
     }
 
@@ -67,23 +59,34 @@
 
     textarea {
         color: black;
-        border: 1px solid #b2bec3;
-        width: 840px;
-        height: 200px;
+        border: 1px solid white;
+        width: 700px;
+        height: 500px;
     }
 
-    .button input {
+    <<<<<<< HEAD .button input {
         margin-left: 820px;
         color: white;
         background: #2980b9;
         width: 100px;
-        height: 40px;
 
-    }
+        =======.button input {
+            color: black;
+            background: #2980b9;
+            width: 300px;
+            >>>>>>>e58f2ff1b0bfa861900ab9286b3b26c8b519a24f height: 40px;
 
-    .button input:hover {
-        background: #74b9ff;
-    }
+        }
+
+        .button input:hover {
+            background: #74b9ff;
+        }
+
+        .button {
+            width: 1300px;
+            height: 40px;
+            color: black;
+        }
 </style>
 
 <body>
@@ -93,33 +96,32 @@
             <h2 class="judul">Tentang</h2>
         </div>
         <div class="artikel">
-            <form action="<?php echo base_url() . 'admin/tentang/tambah_aksi'; ?>" method="post">
-                <div class="grup">
-                    <label for="nama">Nama Perusahaan :</label>
-                    <label for="nama">PT JATI MAKMUR MANDIRI (JMM)</label>
 
+            <form action="" method="post">
+
+                <div class="grup">
+                    <label for="nama">Nama Perusahaan : </label>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->nama ?> " name="nama" />
                 </div>
                 <div class="grup">
-                    <label for="alamat">Alamat Perusahaan : <?php echo $result->alamat ?></label>
-                    <input type="text" placeholder="Masukkan Alamat" name="alamat">
+                    <label for="alamat">Alamat Perusahaan :</label>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->alamat ?> " name="alamat" />
                 </div>
                 <div class="grup">
-                    <label for="kontak">Kontak Person : <?php echo $result->kontak ?></label>
-                    <input type="text" placeholder="Masukkan No Kontak" name="kontak">
-                </div>
-                <div class="grup">
-                    <label for="isi_">Tentang : <?php echo $result->isi ?></label><br>
-                    <textarea type="text" placeholder="   Masukkan Tentang Kami" name="isi"></textarea>
-                </div><br><br>
-                <div class="button">
-                    <input type="submit" value="Simpan" name="Simpan">
-                </div><br>
+                    <label for="kontak">Kontak Person : </label>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> " name="no_kontak" />
+                    <div class="grup">
+                        <label for="isi_">Tentang : </label><br>
+                        <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> " name="tentang"></textarea> </div><br><br>
+                    <div class="card-header">
+                        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
+                            <i class="zmdi zmdi-plus"></i>Edit</button>
+                    </div>
 
             </form>
 
         </div>
-    </div><br><br>
-
+    </div>
 
 </body>
 

@@ -13,6 +13,7 @@
                     <th>TANGGAL</th>
                     <th>STATUS</th>
                     <th width="150px">AKSI</th>
+
                 </tr>
             </thead>
             <tbody>

@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
  // controller di awali dengan huruf kapital
-class Furniture extends CI_Controller
+class Lihatproduk extends CI_Controller
 {
     public function __construct()
     {
@@ -15,7 +15,7 @@ class Furniture extends CI_Controller
         
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('User/katfurniture') ;
+		$this->load->view('User/lihatproduk');
 	}
 }
  

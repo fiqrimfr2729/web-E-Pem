@@ -1,4 +1,4 @@
-        <section class="feature_area p_120">
+       <!-- <section class="feature_area p_120">
         	<div class="container">
         		<div class="main_title">
         			<h2>Some Features that Made us Unique</h2>
