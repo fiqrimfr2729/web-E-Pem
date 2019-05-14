@@ -14,9 +14,15 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Contact Area =================-->
-        <section class="furniture_area p_120">
-            <div class="container">
-            
+    <section class="furniture_area p_120">
+
+        <div style="margin-left:180px;">
+            <h4>Keterangan  :</h4>
+            Status 0 (nol) itu menandakan bahwa Bahan Produk TIDAK TERSEDIA<br>
+            Status 1 (satu) itu menandakan bahwa Bahan Produk TERSEDIA
+        </div><br><br><br>
+
+        <div class="container">
             <table id="tabel-data" class="table table-striped table-bordered">
             <thead>
                 <tr>
@@ -45,8 +51,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table> <br>
-
-            </div>
-        </section>
+        </div>
+    </section>
 
         
