@@ -53,7 +53,7 @@ class Testimoni extends CI_Controller
     private function _uploadImage(){
 
         $config['upload_path']          = './upload/testimoni/';
-        $config['allowed_types']        = 'gif|jpg|png';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
         $config['file_name']            = date("ymdhis");
         $config['overwrite']            = true;
         $config['max_size']             = 1024;
