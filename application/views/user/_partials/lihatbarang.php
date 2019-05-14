@@ -35,7 +35,8 @@
         <section class="furniture_area p_120">
           <img class="img" src="<?php echo base_url('img/furniture/bedug4.jpg')?>"  alt="Lemari">
             <div class="detail">
-            <h2>BEDUG CIREBON</h2><br>
+            <h2>BEDUG CIREBON
+            </h2><br>
             <h3>Kategori : Bedug</h3><br>
             <h5>Deskripsi Barang</h5>
             Sony laptops are among the most well known laptops on today’s market.<br> 
