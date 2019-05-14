@@ -32,7 +32,7 @@
         					<h4>LEMARI</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p>
         				</div>
-						<button type="button" class="btn btn-info"  onclick="<?php echo base_url('user/lihatproduk') ?>">Lihat Produk</button>
+						<button type="button" class="btn btn-info" onclick="window.location.href='lihatproduk'">Lihat Produk</button>
         			</div>
         			<div class="col-lg-4">
         				<div class="furniture_item">
