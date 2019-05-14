@@ -4,6 +4,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Kategori_model extends CI_Model
 {
     private $_table = "kategori";
+    private $_tableProduk = "produk";
+
 
     public $id_kategori;
     public $nama_kategori;
@@ -18,6 +20,11 @@ class Kategori_model extends CI_Model
                 'rules' => 'required',
             ]
         ];
+    }
+
+    public function getProdukAll()
+    {
+        return $this->db->get($this->_tableProduk)->result();
     }
 
     public function getAll()
