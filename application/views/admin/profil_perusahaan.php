@@ -72,19 +72,18 @@
         height: 200px;
     }
 
-    .button input{
-        margin-left:820px;
-        color:white;
-        background:#2980b9;
+    .button input {
+        margin-left: 820px;
+        color: white;
+        background: #2980b9;
         width: 100px;
         height: 40px;
 
     }
 
-    .button input:hover{
-        background:#74b9ff;
+    .button input:hover {
+        background: #74b9ff;
     }
-    
 </style>
 
 <body>
@@ -94,35 +93,34 @@
             <h2 class="judul">Tentang</h2>
         </div>
         <div class="artikel">
-        <?php foreach ($tentang->result() as $result) : ?>
-            <form action="<?php echo base_url(). 'admin/tentang/tambah_aksi'; ?>" method="post">
+            <form action="<?php echo base_url() . 'admin/tentang/tambah_aksi'; ?>" method="post">
                 <div class="grup">
-                    <label for="nama">Nama Perusahaan   :</label>
+                    <label for="nama">Nama Perusahaan :</label>
                     <label for="nama">PT JATI MAKMUR MANDIRI (JMM)</label>
 
                 </div>
                 <div class="grup">
-                    <label for="alamat">Alamat Perusahaan   : <?php echo $result->alamat ?></label>
+                    <label for="alamat">Alamat Perusahaan : <?php echo $result->alamat ?></label>
                     <input type="text" placeholder="Masukkan Alamat" name="alamat">
                 </div>
                 <div class="grup">
-                    <label for="kontak">Kontak Person   : <?php echo $result->kontak ?></label>
+                    <label for="kontak">Kontak Person : <?php echo $result->kontak ?></label>
                     <input type="text" placeholder="Masukkan No Kontak" name="kontak">
                 </div>
                 <div class="grup">
-                    <label for="isi_">Tentang   : <?php echo $result->isi ?></label><br>
+                    <label for="isi_">Tentang : <?php echo $result->isi ?></label><br>
                     <textarea type="text" placeholder="   Masukkan Tentang Kami" name="isi"></textarea>
                 </div><br><br>
                 <div class="button">
                     <input type="submit" value="Simpan" name="Simpan">
                 </div><br>
-               
+
             </form>
-              
+
         </div>
     </div><br><br>
-   
+
 
 </body>
 
-</html> 
+</html>

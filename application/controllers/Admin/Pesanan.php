@@ -17,4 +17,22 @@ class Pesanan extends CI_Controller
         $data['pesanan'] = $this->pesanan_model->getAll();
         $this->load->view('admin/overview', $data);
     }
+
+    public function infoPesanan($id)
+    {
+        $pesanan = $this->pesanan_model->getById($id);
+        $data['main_content'] = 'admin/info_pesanan';
+        $data['title_dashboard'] = 'Info Pesanan';
+        $data['pesanan'] = $pesanan;
+
+        $this->load->view('admin/overview', $data);
+    }
+
+    public function delete($id)
+    {
+        if ($this->pesanan_model->deletePesanan($id)) {
+            $this->session->set_flashdata('success', 'Data berhasil dihapus');
+            redirect(site_url('admin/pesanan'));
+        }
+    }
 }

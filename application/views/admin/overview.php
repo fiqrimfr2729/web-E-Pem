@@ -35,7 +35,7 @@
                                                 <!--<a href="#">Home</a>-->
                                             </li>
                                             <li class="list-inline-item seprate">
-                                            <span></span>
+                                                <span></span>
                                             </li>
                                             <li class="list-inline-item"><?php echo $title_dashboard ?></li>
                                         </ul>
@@ -48,6 +48,7 @@
             </section>
 
             <?php $this->load->view('admin/modal_kategori') ?>
+
 
             <!-- MAIN CONTENT-->
             <div class="main-content">
@@ -72,4 +73,4 @@
 </body>
 
 </html>
-<!-- end document--> 
+<!-- end document-->

@@ -28,6 +28,18 @@ class Kategori extends REST_Controller
         $this->response($kategori, REST_Controller::HTTP_OK);
     }
 
+    function kategoriByJenis_get()
+    {
+        $id = $this->get('id_jenis');
+        if ($id == '') {
+            $kategori = $this->db->get('kategori')->result();
+        } else {
+            $this->db->where('id_jenis_kategori', $id);
+            $kategori = $this->db->get('kategori')->result();
+        }
+        $this->response($kategori, REST_Controller::HTTP_OK);
+    }
+
     function kategori_post()
     {
         $this->load->library('form_validation');
@@ -72,6 +84,35 @@ class Kategori extends REST_Controller
                 'respon'   => false,
                 'message' => validation_errors()
             ], 200);
+        }
+    }
+
+    function kategori_delete()
+    {
+        $id = $this->delete('id');
+
+        $this->db->where('kategori', $id);
+        $produk = $this->db->get('produk')->result();
+
+        foreach ($produk as $data_produk) {
+            $path = 'upload/produk/' . $data_produk->gambar;
+            $this->load->helper("file"); // load the helper
+            delete_files($path, true); // delete all files/folders
+
+            rmdir('upload/produk/' . $data_produk->gambar);
+        }
+
+        $this->db->where('id_kategori', $id);
+        $delete = $this->db->delete('kategori');
+
+        if ($delete) {
+            $this->response([
+                'respon' => true
+            ]);
+        } else {
+            $this->response([
+                'respon' => false
+            ]);
         }
     }
 

@@ -16,31 +16,6 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="tr-shadow">
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        Mohamad Fiqri Rahardian
-                    </td>
-                    <td>
-                        Palangkaraya
-                    </td>
-                    <td>
-                        20-06-2019
-                    </td>
-                    <td>
-                        Belum Direspon
-                    </td>
-                    <td>
-                        <div>
-                            <button class="btn btn-danger" type="button" title="Delete">
-                                Hapus
-                            </button>
-                            <button type="button" class="btn btn-info">Info</button>
-                        </div>
-                    </td>
-                </tr>
 
                 <?php $i = 1;
                 foreach ($pesanan as $data_pesanan) : ?>
@@ -53,20 +28,28 @@
                             <?php echo $data_pesanan->nama_pemesan ?>
                         </td>
                         <td>
-                            <?php echo $data_pesanan->kota ?>
+                            <?php echo ucfirst(strtolower($data_pesanan->kota->nama_kabkota)) ?>
                         </td>
                         <td>
-                            <?php echo $data_pesanan->tanggal ?>
+                            <?php $originalDate = $data_pesanan->tanggal;
+                            $newDate = date("d-m-Y", strtotime($originalDate));
+                            echo $newDate; ?>
                         </td>
                         <td>
-                            <?php echo $data_pesanan->status ?>
+                            <?php if ($data_pesanan->status->id_status_pesanan == 'ST01') : ?>
+                                <button class="btn btn-warning" type="button" title="Edit">
+                                    Respon pesanan
+                                </button>
+                            <?php elseif ($data_pesanan->status->id_status_pesanan == 'ST02') : ?>
+                                <button class="btn btn-secondary" type="button" title="Edit">
+                                    Pesanan selesai
+                                </button>
+                            <?php endif; ?>
                         </td>
                         <td>
                             <div>
-                                <button class="btn btn-danger" type="button" title="Delete">
-                                    Hapus
-                                </button>
-                                <button type="button" class="btn btn-info">Info</button>
+                                <button onclick="deleteConfirm('<?php echo site_url('admin/pesanan/delete/' . $data_pesanan->id_pesanan) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
+                                <button type="button" onclick="window.location.href='<?php echo base_url('admin/pesanan/infoPesanan/' . $data_pesanan->id_pesanan) ?>'" class="btn btn-info">Info</button>
                             </div>
                         </td>
                     </tr>

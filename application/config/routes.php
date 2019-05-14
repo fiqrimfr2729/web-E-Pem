@@ -45,6 +45,7 @@ $route['user/bedug'] = 'user/bedug';
 
 
 $route['api/getKategori'] = 'api/kategori/kategori/';
+$route['api/getKategoriJenis'] = 'api/kategori/kategoriByJenis/';
 $route['api/kategoriapi'] = 'api/kategoriapi/index_get';
 
 $route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4
