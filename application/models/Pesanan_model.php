@@ -3,7 +3,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Pesanan_model extends CI_Model
 {
-    private $_table = 'pesanan';
+    private $_table = 'produk';
+    private $_tableKota = 'kota';
+    private $_tableProvinsi = 'provinsi';
+
 
     public $id_pesanan;
     public $nama_pemesan;
@@ -49,5 +52,15 @@ class Pesanan_model extends CI_Model
     public function deletePesanan($id)
     {
         return $this->db->delete($this->_table, array("id_pesanan" => $id));
+    }
+
+    public function getByKota()
+    {
+        return $this->db->get($this->_tableKota)->result();
+    }
+
+    public function getByProvinsi()
+    {
+        return $this->db->get($this->_tableProvinsi)->result();
     }
 }
