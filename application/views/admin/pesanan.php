@@ -9,6 +9,7 @@
                 <tr>
                     <th width="30px">NO</th>
                     <th>NAMA PEMESAN</th>
+                    <th>PROVINSI</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
                     <th>KONTAK</th>
@@ -31,6 +32,9 @@
                         </td>
                         <td>
                             <?php echo $data_pesanan->nama_pemesan ?>
+                        </td>
+                        <td>
+                            <?php echo $data_pesanan->provinsi ?>
                         </td>
                         <td>
                             <?php echo $data_pesanan->kota ?>

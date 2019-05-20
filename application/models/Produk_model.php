@@ -26,6 +26,7 @@ class Produk_model extends CI_Model
             ]
         ];
     }
+    
 
     public function getProduk($id_jenis_kategori)
     {

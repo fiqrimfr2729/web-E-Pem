@@ -20,7 +20,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 500px;
+        height: 700px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -62,8 +62,8 @@
     textarea {
         color: black;
         border: 1px solid white;
-        width:700px;
-        height: 500px;
+        width:1000px;
+        height: 700px;
     }
 
     .button input{
@@ -109,7 +109,8 @@
                     <input class="button" type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> "  name="no_kontak"/>
                 <div class="grup">
                     <label for="isi_">Tentang   :  </label><br>
-                    <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> "  name="tentang"></textarea>                </div><br><br>
+                    <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> "  name="tentang"></textarea>  
+                    <div><br><br>
                 <div class="card-header">
                     <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
                         <i class="zmdi zmdi-plus"></i>Edit</button>

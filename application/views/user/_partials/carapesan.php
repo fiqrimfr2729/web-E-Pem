@@ -18,19 +18,17 @@
    textarea {
         color: grey;
         border: 1px solid white;
-        width: 900px;
-        height: 300px;
-        margin: 35px;
-        font-size:18px;
-        margin-left:100px;
-        margin-top:-20px;
-    }
+        font-size:17px;
+        padding:100px;
+        margin-top:-50px;
+
+   }
 
   </style>
   <!--================Contact Area =================-->
   <section class="contact_area p_120">
             <form action="" method="post">
                 
-                <textarea><?php echo $profil['0']->caraPesan ?></textarea>
+                <textarea cols="70" rows="20"><?php echo $profil['0']->caraPesan ?></textarea>
             </form>    
   </section>
