@@ -42,10 +42,12 @@ $route['user/carapesan'] = 'user/carapesan';
 $route['user/mebel'] = 'user/mebel';
 $route['user/bangunan'] = 'user/bangunan';
 $route['user/lihatproduk'] = 'user/lihatproduk';
+$route['user/lihatbarang'] = 'user/lihatbarang';
 
 
 
 $route['api/getKategori'] = 'api/kategori/kategori/';
+$route['api/getKategoriJenis'] = 'api/kategori/kategoriByJenis/';
 $route['api/kategoriapi'] = 'api/kategoriapi/index_get';
 
 $route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4

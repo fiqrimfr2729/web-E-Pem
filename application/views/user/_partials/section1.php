@@ -19,7 +19,7 @@
         					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug4.jpg')?>"  alt="">
         					<h4>BEDUG CIREBON</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p><br>
-							<button type="button"  class="btn btn-info">Lihat Produk</button>
+							<button type="button"  class="btn btn-info" onclick="window.location.href='lihatbarang'">Lihat Produk</button>
 						</div>
         			</div>
         			<div class="col-lg-4">
@@ -44,7 +44,7 @@
         			<div class="col-lg-4">
         				<div class="furniture_item">
         					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug4.jpg')?>"  alt="">
-        					<h4>BEDUG CIREBON</h4>
+        					<h4>BEDUG KUNINGAN</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p><br>
 							<button type="button"  class="btn btn-info">Lihat Produk</button>
 						</div>
@@ -52,7 +52,7 @@
         			<div class="col-lg-4">
         				<div class="furniture_item">
         					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug3.jpg')?>"  alt="">
-        					<h4>BEDUG INDRAMAYU</h4>
+        					<h4>BEDUG BREBES</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p><br>
 							<button type="button"  class="btn btn-info">Lihat Produk</button>
 						</div>
@@ -60,7 +60,7 @@
         			<div class="col-lg-4">
         				<div class="furniture_item">
         					<img class="img-fluid" src="<?php echo base_url('img/furniture/bedug4.jpg')?>"  alt="">
-        					<h4>BEDUG MAJALENGKA</h4>
+        					<h4>BEDUG TEGAL</h4>
         					<p>Sony laptops are among the most well known laptops on today’s market. Sony is a name that.</p><br>
 							<button type="button"  class="btn btn-info">Lihat Produk</button>
 						</div>
