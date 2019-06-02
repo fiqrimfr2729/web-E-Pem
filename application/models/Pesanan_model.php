@@ -19,7 +19,39 @@ class Pesanan_model extends CI_Model
 
     public function getAll()
     {
-        return $this->db->get($this->_table)->result();
+        $pesanan = $this->db->get($this->_table)->result();
+        foreach ($pesanan as $data_pesanan) {
+            $kota = $this->db->get_where('kota', ['id_kabkota' => $data_pesanan->kota])->row();
+            $data_pesanan->kota = $kota;
+
+            $produk = $this->db->get_where('produk', ['id_produk' => $data_pesanan->produk])->row();
+            $data_pesanan->produk = $produk;
+
+            $status = $this->db->get_where('status_pesanan', ['id_status_pesanan' => $data_pesanan->status])->row();
+            $data_pesanan->status = $status;
+        }
+        return $pesanan;
+    }
+
+    public function getById($id)
+    {
+        $pesanan = $this->db->get_where('pesanan', ['id_pesanan' => $id])->row();
+
+        $kota = $this->db->get_where('kota', ['id_kabkota' => $pesanan->kota])->row();
+        $pesanan->kota = $kota->nama_kabkota;
+
+        $produk = $this->db->get_where('produk', ['id_produk' => $pesanan->produk])->row();
+        $pesanan->produk = $produk;
+
+        $status = $this->db->get_where('status_pesanan', ['id_status_pesanan' => $pesanan->status])->row();
+        $pesanan->status = $status->nama_status_pesanan;
+
+        return $pesanan;
+    }
+
+    public function deletePesanan($id)
+    {
+        return $this->db->delete($this->_table, array("id_pesanan" => $id));
     }
 
     public function getByKota()

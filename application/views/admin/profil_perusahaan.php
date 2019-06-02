@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +11,6 @@
 </head>
 
 <style>
-   
     body {
         background: #c0c0c0;
     }
@@ -62,28 +60,38 @@
     textarea {
         color: black;
         border: 1px solid white;
+<<<<<<< HEAD
         width:1000px;
         height: 700px;
+=======
+        width: 700px;
+        height: 500px;
+>>>>>>> b6bbba3fc2a19384103b20ac574b82891438d05d
     }
 
-    .button input{
-        color:black;
-        background:#2980b9;
-        width: 300px;
-        height: 40px;
+    <<<<<<< HEAD .button input {
+        margin-left: 820px;
+        color: white;
+        background: #2980b9;
+        width: 100px;
 
-    }
+        =======.button input {
+            color: black;
+            background: #2980b9;
+            width: 300px;
+            >>>>>>>e58f2ff1b0bfa861900ab9286b3b26c8b519a24f height: 40px;
 
-    .button input:hover{
-        background:#74b9ff;
-    }
-    
-.button{
-    width: 1300px;
-    height: 40px;
-    color:black;
-}
+        }
 
+        .button input:hover {
+            background: #74b9ff;
+        }
+
+        .button {
+            width: 1300px;
+            height: 40px;
+            color: black;
+        }
 </style>
 
 <body>
@@ -95,16 +103,17 @@
         <div class="artikel">
 
             <form action="" method="post">
-                 
+
                 <div class="grup">
-                    <label for="nama">Nama Perusahaan   : </label>
-                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->nama ?> " name="nama"/>
+                    <label for="nama">Nama Perusahaan : </label>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->nama ?> " name="nama" />
                 </div>
                 <div class="grup">
-                    <label for="alamat">Alamat Perusahaan   :</label>
-                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->alamat ?> "  name="alamat"/>
+                    <label for="alamat">Alamat Perusahaan :</label>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->alamat ?> " name="alamat" />
                 </div>
                 <div class="grup">
+<<<<<<< HEAD
                     <label for="kontak">Kontak Person   : </label>
                     <input class="button" type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> "  name="no_kontak"/>
                 <div class="grup">
@@ -115,12 +124,23 @@
                     <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
                         <i class="zmdi zmdi-plus"></i>Edit</button>
                 </div>
+=======
+                    <label for="kontak">Kontak Person : </label>
+                    <input class="button" type="text" placeholder=" <?php echo $profil['0']->no_kontak ?> " name="no_kontak" />
+                    <div class="grup">
+                        <label for="isi_">Tentang : </label><br>
+                        <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> " name="tentang"></textarea> </div><br><br>
+                    <div class="card-header">
+                        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
+                            <i class="zmdi zmdi-plus"></i>Edit</button>
+                    </div>
+>>>>>>> b6bbba3fc2a19384103b20ac574b82891438d05d
 
             </form>
 
         </div>
     </div>
-   
+
 </body>
 
-</html> 
+</html>

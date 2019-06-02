@@ -12,16 +12,12 @@
                     <th>PROVINSI</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
-                    <th>KONTAK</th>
-                    <th>ALAMAT</th>
                     <th>STATUS</th>
                     <th width="150px">AKSI</th>
-                    
+
                 </tr>
             </thead>
             <tbody>
-                <tr class="tr-shadow">
-                   
 
                 <?php $i = 1;
                 foreach ($pesanan as $data_pesanan) : ?>
@@ -34,6 +30,7 @@
                             <?php echo $data_pesanan->nama_pemesan ?>
                         </td>
                         <td>
+<<<<<<< HEAD
                             <?php echo $data_pesanan->provinsi ?>
                         </td>
                         <td>
@@ -44,19 +41,30 @@
                         </td>
                         <td>
                             <?php echo $data_pesanan->kontak ?>
+=======
+                            <?php echo ucfirst(strtolower($data_pesanan->kota->nama_kabkota)) ?>
+>>>>>>> b6bbba3fc2a19384103b20ac574b82891438d05d
                         </td>
                         <td>
-                            <?php echo $data_pesanan->alamat ?>
+                            <?php $originalDate = $data_pesanan->tanggal;
+                            $newDate = date("d-m-Y", strtotime($originalDate));
+                            echo $newDate; ?>
                         </td>
                         <td>
-                            <?php echo $data_pesanan->status ?>
+                            <?php if ($data_pesanan->status->id_status_pesanan == 'ST01') : ?>
+                                <button class="btn btn-warning" type="button" title="Edit">
+                                    Respon pesanan
+                                </button>
+                            <?php elseif ($data_pesanan->status->id_status_pesanan == 'ST02') : ?>
+                                <button class="btn btn-secondary" type="button" title="Edit">
+                                    Pesanan selesai
+                                </button>
+                            <?php endif; ?>
                         </td>
                         <td>
                             <div>
-                                <button class="btn btn-danger" type="button" title="Delete">
-                                    Hapus
-                                </button>
-                                <button type="button" class="btn btn-info">Info</button>
+                                <button onclick="deleteConfirm('<?php echo site_url('admin/pesanan/delete/' . $data_pesanan->id_pesanan) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
+                                <button type="button" onclick="window.location.href='<?php echo base_url('admin/pesanan/infoPesanan/' . $data_pesanan->id_pesanan) ?>'" class="btn btn-info">Info</button>
                             </div>
                         </td>
                     </tr>
