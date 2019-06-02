@@ -18,30 +18,23 @@
     <!--================Contact Area =================-->
     <section class="furniture_area p_120">
        
-		<!-- Tampilkan semua produk -->
-		<div class="row">
-		<!-- looping products -->
-		  <?php foreach($produk as $produk) : ?>
-		  <div class="col-sm-3 col-md-3">
-			<div class="thumbnail">
-			  <?=img([
-				'src'		=> 'uploads/' . $produk->gambar,
-				'style'		=> 'max-width: 100%; max-height:100%; height:100px'
-			  ])?>
-			  <div class="caption">
-				<h3 style="min-height:60px;"><?=$produk->nama_produk?></h3>
-				<p><?=$produk->deskripsi?></p>
-				<p>
-					<?=anchor('Mebel/add_to_cart/' . $produk->id_produk, 'Buy' , [
-						'class'	=> 'btn btn-primary',
-						'role'	=> 'button'
-					])?>
-				</p>
-			  </div>
-			</div>
-		  </div>
-		  <?php endforeach; ?>
-		<!-- end looping -->
-		</div>
+		
+
+        
+        
+
+            <div class="card-body">
+                <h4 class="pb-2 display-5">Kategori : <?php echo $data_query->kategori->nama_kategori ?> </h4>
+                <hr width="100%" size="2px" color="black">
+
+                <h4 class="pb-2 display-5">Deskripsi : </h4>
+                <?php echo $data_query->Deskripsi ?>
+                <hr width="100%" size="2px" color="black">
+                <button type="button" class="btn btn-success" >Chat</button>
+                <button onclick=" " class="btn btn-danger" type="button" >Pesan </button>
+            </div>
+     
+
+
     </section>
         

@@ -21,12 +21,16 @@
                     </a>
                     <ul class="list-unstyled navbar__sub-list js-sub-list">
                         <li>
-                            <a href="<?php echo site_url('admin/kategori-bangunan') ?>">
+                            <a href="<?php echo site_url('admin/produk_bangunan') ?>">
                                 </i>Bangunan</a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('admin/kategori-mebel') ?>">
+                            <a href="<?php echo site_url('admin/produk_mebel') ?>">
                                 </i>Mebel</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('admin/produk_bedug') ?>">
+                                </i>Bedug</a>
                         </li>
                     </ul>
                 </li>
