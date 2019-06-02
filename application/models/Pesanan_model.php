@@ -22,13 +22,18 @@ class Pesanan_model extends CI_Model
         return $this->db->get($this->_table)->result();
     }
 
-    public function getByKota()
+    public function getByKota($id_propinsi)
     {
-        return $this->db->get($this->_tableKota)->result();
+        $this->db->order_by('nama_kabkota', 'asc');
+        $this->db->where('id_propinsi', $id_propinsi);
+        $result = $this->db->get('kota')->result();
+
+        return $result;
     }
 
     public function getByProvinsi()
     {
+        $this->db->order_by('nama_propinsi', 'asc');
         return $this->db->get($this->_tableProvinsi)->result();
     }
 }
