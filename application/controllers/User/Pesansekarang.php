@@ -18,7 +18,7 @@ class Pesansekarang extends CI_Controller
     public function index()
     {
 
-        $data['produk'] = $this->pesanan_model->getAll();
+        //$data['produk'] = $this->pesanan_model->getAll();
         $data['kota'] = $this->pesanan_model->getByKota();
         $data['profinsi'] = $this->pesanan_model->getByProvinsi();
 
