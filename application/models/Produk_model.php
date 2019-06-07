@@ -93,4 +93,15 @@ class Produk_model extends CI_Model
 
         rmdir('upload/produk/' . $produk->gambar);
     }
+
+    public function all(){
+		$hasil = $this->db->get('produk');
+		if($hasil->num_rows() > 0){
+			return $hasil->result();
+		} else {
+			return array();
+		}
+	}
+	
+	
 }

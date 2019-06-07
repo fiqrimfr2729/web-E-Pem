@@ -30,20 +30,7 @@
                             <?php echo $data_pesanan->nama_pemesan ?>
                         </td>
                         <td>
-<<<<<<< HEAD
-                            <?php echo $data_pesanan->provinsi ?>
-                        </td>
-                        <td>
-                            <?php echo $data_pesanan->kota ?>
-                        </td>
-                        <td>
-                            <?php echo $data_pesanan->tanggal ?>
-                        </td>
-                        <td>
-                            <?php echo $data_pesanan->kontak ?>
-=======
                             <?php echo ucfirst(strtolower($data_pesanan->kota->nama_kabkota)) ?>
->>>>>>> b6bbba3fc2a19384103b20ac574b82891438d05d
                         </td>
                         <td>
                             <?php $originalDate = $data_pesanan->tanggal;

@@ -17,24 +17,26 @@
           
     <!--================Contact Area =================-->
     <section class="furniture_area p_120">
-       
+		<div>
+      <!-- Tampilkan semua produk -->
+		<div class="row" style="margin-left:25px">
+		<!-- looping products -->
+		  <?php foreach($produkbykategori as $produk) : ?>
+		  <div class="col-sm-3 col-md-3">
+			<div class="thumbnail">
+			<div><img width="250px" height="200px" src="<?php echo base_url('upload/produk/' . $produk->gambar . '/thumbnail/' . $produk->gambar . '.png') ?>"> </div>
+		  <br>
+			  <div class="caption">
+				<h4 style="min-height:30px;"><?=$produk->nama_produk?></h4>
+				<p><?=$produk->deskripsi?></p>
+				<button onclick="<?php echo base_url('user/lihatproduk') ?>" style="width:250px; background:#f39c12; border:#f39c12" type="button" class="btn btn-success">Lihat Produk</button>
+				</div><br><br><br>
+			</div>
+		  </div>
+			<?php endforeach; ?>
+		<!-- end looping -->
+		</div>
+		</div>
 		
-
-        
-        
-
-            <div class="card-body">
-                <h4 class="pb-2 display-5">Kategori : <?php echo $data_query->kategori->nama_kategori ?> </h4>
-                <hr width="100%" size="2px" color="black">
-
-                <h4 class="pb-2 display-5">Deskripsi : </h4>
-                <?php echo $data_query->Deskripsi ?>
-                <hr width="100%" size="2px" color="black">
-                <button type="button" class="btn btn-success" >Chat</button>
-                <button onclick=" " class="btn btn-danger" type="button" >Pesan </button>
-            </div>
-     
-
-
     </section>
         

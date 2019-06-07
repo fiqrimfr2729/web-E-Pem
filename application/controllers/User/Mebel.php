@@ -8,19 +8,19 @@ class Mebel extends CI_Controller
     public function __construct()
     {
         parent::__construct();  
-        $this->load->model('Model_mebel');      
+        $this->load->model('Produk_model');      
     }
 
 	public function index()
 	{
        
-		$data['produk'] = $this->Model_mebel->all();
+		$data['produkbykategori'] = $this->Produk_model->all();
 		$this->load->view('user/mebel', $data);
 	}
 	
-	public function add_to_cart($id_produk)
+	public function add_to_cart($id_kategori)
 	{
-		$produk = $this->Model_mebel->find($id_produk);
+		$produk = $this->Produk_model->find($id_kategori);
 		$data = array(
 					   'id_produk'      => $produk->id_produk,
 					   'nama_produk'   => $produk->nama_produk,
@@ -33,15 +33,7 @@ class Mebel extends CI_Controller
 		redirect(base_url());
 	}
 	
-	public function cart(){
-		$this->load->view('show_cart');
-	}
-	
-	public function clear_cart()
-	{
-		$this->cart->destroy();
-		redirect(base_url());
-	}
+
 	
 }
  
