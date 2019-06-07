@@ -7,6 +7,7 @@
 								<h2><br><br>Pemesanan Mebel & Kusen <br/>PT Jati Makmur Mandiri (JMM)</h2>
 								<p>Merupakan sebuah perangkat lunak (software) yang digunakan untuk pemesanan produk Mebel dan kusen dengan berbasis website dan android.</p>
 								<a class="banner_btn" href="<?php echo base_url('user/pesansekarang') ?>">Pesan Sekarang</a>
+								<a class="banner_btn" href="<?php echo base_url('user/pesancoustems') ?>">Pesan Coustems</a>
 								<a class="banner_btn" href="<?php echo base_url('user/carapesan') ?>">Baca Cara Pesan</a>
 							</div>
 						</div>
