@@ -12,19 +12,30 @@ class Pesansekarang extends CI_Controller
     {
         parent::__construct();
         $this->load->model('pesanan_model');
+        $this->load->model('bahan_model');
         $this->load->helper('date');
     }
 
     public function index()
     {
 
-        $data['produk'] = $this->pesanan_model->getAll();
+        //$data['produk'] = $this->pesanan_model->getAll();
         //$data['kota'] = $this->pesanan_model->getByKota();
         $data['provinsi'] = $this->pesanan_model->getByProvinsi();
+        $data['bahan'] =  $this->bahan_model->getAll();
+
 
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
         $this->load->view('User/pesansekarang', $data);
+    }
+
+    public function tambahProduk()
+    {
+        $this->input->post();
+        $this->produk = $_POST['produk'];
+
+        $this->load->view('User/pesansekarang', $this);
     }
 
     public function tambahPesan()
@@ -36,9 +47,10 @@ class Pesansekarang extends CI_Controller
         $this->tanggal = $_POST['tanggal'];
         $this->kontak = $_POST['kontak'];
         $this->alamat = $_POST['alamat'];
+        $this->bahan = $_POST['bahan'];
         $this->status = "ST01";
 
-        //$this->produk = $_POST['produk'];
+        $this->produk = $_POST['produk'];
         $this->db->insert($this->_table, $this);
 
         redirect('User/pesansekarang');
