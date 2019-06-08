@@ -43,12 +43,15 @@ $route['user/mebel'] = 'user/mebel';
 $route['user/bangunan'] = 'user/bangunan';
 $route['user/lihatproduk'] = 'user/lihatproduk';
 $route['user/lihatbarang'] = 'user/lihatbarang';
+$route['user/pesancoustems'] = 'user/pesancoustems';
+
 
 
 
 $route['api/getKategori'] = 'api/kategori/kategori/';
 $route['api/getKategoriJenis'] = 'api/kategori/kategoriByJenis/';
 $route['api/kategoriapi'] = 'api/kategoriapi/index_get';
+$route['api/login'] = 'api/login/login/';
 
 $route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4
 $route['api/example/users/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'] = 'api/example/users/id/$1/format/$3$4'; // Example 8

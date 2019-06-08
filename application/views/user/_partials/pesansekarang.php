@@ -88,12 +88,34 @@
       .step.finish {
           background-color: #4CAF50;
       }
+
+      button{
+          width:150px;
+          margin-left:570px;
+      }
   </style>
   <!--================Contact Area =================-->
   <section class="contact_area p_120">
       <div class="container">
           <h3>FORM PEMESANAN</h3>
           <form id="regForm" action="<?php echo site_url('user/pesansekarang/tambahPesan'); ?>" method="post">
+
+          <div class="grup">
+                  <label>Nama Pemesan : </label>
+                  <input type="text" placeholder="Nama Lengkap" name="nama_pemesan" class="form-control" />
+              </div><br>
+
+              <div class="grup">
+                  <label>Pilih Provinsi : </label>
+                  <select class="form-control">
+                      <?php
+
+                        foreach ($profinsi as $row3) {
+                            echo '<option  name="nama_provinsi" value="' . $row3->nama_propinsi . '">' . $row3->nama_propinsi . '</option>';
+                        }
+                        ?>
+                  </select>
+              </div><br>
 
               <div class="grup">
                   <label>Pilih Kota : </label>
@@ -108,36 +130,20 @@
               </div><br>
 
               <div class="grup">
-                  <label>Pilih Provinsi : </label>
-                  <select class="form-control">
-                      <?php
-
-                        foreach ($profinsi as $row3) {
-                            echo '<option  name="nama_provinsi" value="' . $row3->nama_propinsi . '">' . $row3->nama_propinsi . '</option>';
-                        }
-                        ?>
-                  </select>
-              </div><br>
-              <div class="grup">
-                  <label>Nama Pemesan : </label>
-                  <input type="text" placeholder="  " name="nama_pemesan" class="form-control" />
-              </div><br>
-
-              <div class="grup">
                   <label>Tanggal : </label>
                   <input type="date" value="<?php echo date('y-m-d'); ?>" name="tanggal" class="form-control" />
               </div><br>
 
               <div class="grup">
                   <label>kontak : </label>
-                  <input type="tel" placeholder="  " name="kontak" class="form-control" />
+                  <input type="tel" placeholder="No.Telephone" name="kontak" class="form-control" />
               </div><br>
               <div class="grup">
                   <label>Alamat : </label>
-                  <input type="text" placeholder="  " name="alamat" class="form-control" />
+                  <input type="text" placeholder="Alamat Pembeli" name="alamat" class="form-control" />
               </div><br>
 
-              <div>
+              <div><br>
                   <button class="btn btn-primary" type="submit">Pesan</button>
               </div>
 

@@ -24,7 +24,7 @@
     textarea {
         border: 1px solid white;
         width: 1000px;
-        height: 100px;
+        height: 700px;
        
     }
 

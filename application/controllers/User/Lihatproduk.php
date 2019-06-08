@@ -8,6 +8,7 @@ class Lihatproduk extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('Produk_model');
     }
 
     public function index(){
@@ -16,6 +17,9 @@ class Lihatproduk extends CI_Controller
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
 		$this->load->view('User/lihatproduk');
-	}
+    }
+    
+
+    
 }
  
