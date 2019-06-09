@@ -13,7 +13,7 @@
         <?php $this->load->view('User/_partials/section.php') ?>
 
         <!-- BAGIAN HALAMAN SECTION1-->
-        <?php $this->load->view('User/_partials/section1.php') ?>
+        <?php $this->load->view('User/_partials/bedug.php') ?>
 
         <!-- BAGIAN HALAMAN SECTION2-->
         <?php $this->load->view('User/_partials/section2.php') ?>

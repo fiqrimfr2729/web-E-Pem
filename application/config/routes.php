@@ -43,6 +43,8 @@ $route['user/mebel'] = 'user/mebel';
 $route['user/bangunan'] = 'user/bangunan';
 $route['user/lihatproduk'] = 'user/lihatproduk';
 $route['user/lihatbarang'] = 'user/lihatbarang';
+$route['user/pesancoustems'] = 'user/pesancoustems';
+
 
 
 

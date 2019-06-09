@@ -88,6 +88,11 @@
       .step.finish {
           background-color: #4CAF50;
       }
+
+      button {
+          width: 150px;
+          margin-left: 570px;
+      }
   </style>
   <!--================Contact Area =================-->
   <section class="contact_area p_120">
@@ -120,7 +125,7 @@
 
               <div class="grup">
                   <label>kontak : </label>
-                  <input type="tel" placeholder="  " name="kontak" class="form-control" />
+                  <input type="tel" placeholder="No.Telephone" name="kontak" class="form-control" />
               </div><br>
 
 
@@ -149,7 +154,7 @@
 
               <div class="grup">
                   <label>Alamat : </label>
-                  <input type="text" placeholder="  " name="alamat" class="form-control" />
+                  <input type="text" placeholder="Alamat Pembeli" name="alamat" class="form-control" />
               </div><br>
 
               <div class="grup">
@@ -160,7 +165,6 @@
                   <button class="btn btn-primary" type="submit">Pesan</button>
               </div>
 
-              <?php echo $produk; ?>
           </form>
 
       </div>

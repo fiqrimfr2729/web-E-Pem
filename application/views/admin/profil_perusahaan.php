@@ -18,7 +18,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 500px;
+        height: 700px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -64,19 +64,6 @@
         height: 500px;
     }
 
-    <<<<<<< HEAD .button input {
-        margin-left: 820px;
-        color: white;
-        background: #2980b9;
-        width: 100px;
-
-        =======.button input {
-            color: black;
-            background: #2980b9;
-            width: 300px;
-            >>>>>>>e58f2ff1b0bfa861900ab9286b3b26c8b519a24f height: 40px;
-
-        }
 
         .button input:hover {
             background: #74b9ff;

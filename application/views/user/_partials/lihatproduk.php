@@ -13,37 +13,12 @@
                 </div>
             </div>
         </section>
-        <!--================End Home Banner Area =================-->
-        
-        <style>
-        .img{
-            width:350px;
-            height:350px;
-            margin-left:250px;
-            border:solid 1px grey;
-        }
-        button{
-            width:220px;
-        }
-        .detail{
-            margin-top:-330px;
-            margin-left:750px;
-        }
-        </style>
 
         <!--================Contact Area =================-->
         <section class="furniture_area p_120">
-          <img class="img" src="<?php echo base_url('img/furniture/lemari-4.jpeg')?>"  alt="Lemari">
-            <div class="detail">
-            <h2>Lemari</h2><br>
-            <h3>Kategori : Mebel</h3><br>
-            <h5>Deskripsi Barang</h5>
-            Sony laptops are among the most well known laptops on today’s market.<br> 
-        	Sony laptops are among the most well known laptops on today’s market.<br>
-            Sony laptops are among the most well known laptops on today’s market.<br>
-            Sony laptops are among the most well known laptops on today’s market.<br><br>
-        				
-            <button type="button" class="btn btn-info"  onclick="<?php echo base_url('user/lihatproduk') ?>">WhatsApp</button>
-            <button type="button" class="btn btn-info"  onclick="<?php echo base_url('user/lihatproduk') ?>">Pesan</button>
-            </div>
+        <img width="250px" height="200px" src="<?php echo base_url('upload/produk/' . $produk->gambar . '/thumbnail/' . $produk->gambar . '.png') ?>">
+		  
+            <button style="width:200px; background:#f39c12; border:#f39c12" type="button" class="btn btn-info"  onclick="<?php echo base_url('') ?>">Chat</button>
+            <button style="width:250px; background:#d35400; border:#d35400" type="button" class="btn btn-info"  onclick="<?php echo base_url('') ?>">Pesan</button>
+                    
         </section>

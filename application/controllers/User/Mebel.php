@@ -7,15 +7,34 @@ class Mebel extends CI_Controller
 {
     public function __construct()
     {
-        parent::__construct();
+        parent::__construct();  
+        $this->load->model('Produk_model');      
     }
 
-    public function index(){
-        
-        
-        // user sebagai nama folder nya
-        // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('User/mebel') ;
+	public function index()
+	{
+       
+		$data['produkbykategori'] = $this->Produk_model->all();
+		$this->load->view('user/mebel', $data);
 	}
+	
+	public function add_to_cart($id_kategori)
+	{
+		$produk = $this->Produk_model->find($id_kategori);
+		$data = array(
+					   'id_produk'      => $produk->id_produk,
+					   'nama_produk'   => $produk->nama_produk,
+                       'deskripsi'    => $produk->deskripsi,
+                       'kategori'    => $produk->kategori,
+                       'gambar'    => $produk->gambar
+					);
+ 
+		$this->cart->insert($data);
+		redirect(base_url());
+	}
+	
+
+	
 }
+ 
  

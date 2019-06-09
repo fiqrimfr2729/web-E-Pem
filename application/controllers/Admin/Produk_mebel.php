@@ -113,7 +113,7 @@ class Produk_mebel extends CI_Controller
         $date = date("ymdhis");
         mkdir('./upload/produk/' . $date . '/thumbnail/', 0777, true);
         $config['upload_path']          = './upload/produk/' . $date . '/thumbnail/';
-        $config['allowed_types']        = 'gif|jpg|png';
+        $config['allowed_types']        = 'gif|jpg|png|jpeg';
         $config['file_name']            = $date . ".png";
 
         $config['max_size']             = 5120;
