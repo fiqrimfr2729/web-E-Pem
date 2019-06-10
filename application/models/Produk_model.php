@@ -26,7 +26,7 @@ class Produk_model extends CI_Model
             ]
         ];
     }
-    
+
 
     public function getProduk($id_jenis_kategori)
     {
@@ -94,14 +94,39 @@ class Produk_model extends CI_Model
         rmdir('upload/produk/' . $produk->gambar);
     }
 
-    public function all(){
-		$hasil = $this->db->get('produk');
-		if($hasil->num_rows() > 0){
-			return $hasil->result();
-		} else {
-			return array();
-		}
-	}
-	
-	
+    public function all()
+    {
+        $hasil = $this->db->get('produk');
+        if ($hasil->num_rows() > 0) {
+            return $hasil->result();
+        } else {
+            return array();
+        }
+    }
+
+    public function getProdukUser($id_jenis_kategori)
+    {
+
+        $this->db->select('*');
+        $this->db->from('produk');
+        $this->db->join('kategori', 'produk.kategori = kategori.id_kategori', 'inner');
+        $this->db->where('id_jenis_kategori', $id_jenis_kategori);
+
+        $hasil = $this->db->get();
+
+        if ($hasil->num_rows() > 0) {
+            $this->db->select('*');
+            $this->db->from('produk');
+            $this->db->join('kategori', 'produk.kategori = kategori.id_kategori', 'inner');
+            $this->db->where('id_jenis_kategori', $id_jenis_kategori);
+            $hasil = $this->db->get()->result();
+            foreach ($hasil as $data_query) {
+
+                $data_query->kategori = $this->db->get_where('kategori', ['id_kategori' => $data_query->kategori])->row()->nama_kategori;
+            }
+            return $hasil;
+        } else {
+            return array();
+        }
+    }
 }

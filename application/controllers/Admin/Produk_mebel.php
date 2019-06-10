@@ -46,11 +46,11 @@ class Produk_mebel extends CI_Controller
             if ($gambar != false) {
                 if ($produk->addProduk($nama, $deskripsi, $kategori, $gambar)) {
                     $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
-                    redirect('admin/produk-mebel');
+                    redirect('admin/produk_mebel');
                 }
             } else {
                 $this->session->set_flashdata('error', 'Gambar tidak ada');
-                redirect('admin/produk-mebel');
+                redirect('admin/produk_mebel');
             }
         }
     }
