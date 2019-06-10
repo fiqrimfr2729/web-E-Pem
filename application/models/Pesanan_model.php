@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Pesanan_model extends CI_Model
 {
     private $_table = 'produk';
-    private $_tableKota = 'kota';
+
     private $_tableProvinsi = 'provinsi';
 
 
@@ -16,6 +16,7 @@ class Pesanan_model extends CI_Model
     public $alamat;
     public $status;
     public $produk;
+    public $gambar;
 
     public function getAll()
     {
@@ -35,5 +36,12 @@ class Pesanan_model extends CI_Model
     {
         $this->db->order_by('nama_propinsi', 'asc');
         return $this->db->get($this->_tableProvinsi)->result();
+    }
+
+    public function save($gambar)
+    {
+        $this->gambar = $gambar;
+
+        return $this->db->insert($this->_tabel, $this);
     }
 }
