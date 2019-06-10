@@ -45,11 +45,11 @@ class Produk_bangunan extends CI_Controller
             if ($gambar != false) {
                 if ($produk->addProduk($nama, $deskripsi, $kategori, $gambar)) {
                     $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
-                    redirect('admin/produk-bangunan');
+                    redirect('admin/produk_bangunan');
                 }
             } else {
                 $this->session->set_flashdata('error', 'Gambar tidak ada');
-                redirect('admin/produk-bangunan');
+                redirect('admin/produk_bangunan');
             }
         }
     }
