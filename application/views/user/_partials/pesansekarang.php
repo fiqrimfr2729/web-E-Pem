@@ -98,7 +98,7 @@
   <section class="contact_area p_120">
       <div class="container">
           <h3>FORM PEMESANAN</h3>
-          <form id="regForm" action="<?php echo site_url('user/pesansekarang/tambahPesan'); ?>" method="post">
+          <form id="regForm" action="<?php echo site_url('user/pesansekarang/tambahPesan') ?>" method="post">
 
 
               <div class="grup">
@@ -160,6 +160,8 @@
               <div class="grup">
                   <input type="text" placeholder="" id="status" name="status" class="form-control" />
               </div><br>
+
+              <input type="hidden" name="id_produk" value="<?php echo $id_produk ?>" />
 
               <div>
                   <button class="btn btn-primary" type="submit">Pesan</button>
