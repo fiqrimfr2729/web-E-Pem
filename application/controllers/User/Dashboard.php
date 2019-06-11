@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 // controller di awali dengan huruf kapital
-class Dasboard extends CI_Controller
+class Dashboard extends CI_Controller
 {
 
     public function __construct()
@@ -16,7 +16,7 @@ class Dasboard extends CI_Controller
     {
 
         $data['produk'] = $this->Produk_model->getProdukUser('JK03');
-        $this->load->view('User/dasboard', $data);
+        $this->load->view('User/dashbord', $data);
     }
 
     public function add_to_cart($id_kategori)

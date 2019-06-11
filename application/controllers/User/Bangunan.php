@@ -9,12 +9,16 @@ class Bangunan extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Produk_model');
+        $this->load->model('Produk_model');
+        $this->load->model('kategori_model');
     }
 
     public function index()
     {
 
         $data['produk'] = $this->Produk_model->getProdukUser('JK01');
+        $data['main_content'] = 'user/mebel';
+        $data['title_dashboard'] = 'Mebel';
         $this->load->view('User/bangunan', $data);
     }
 
@@ -31,5 +35,17 @@ class Bangunan extends CI_Controller
 
         $this->cart->insert($data);
         redirect(base_url());
+    }
+
+    public function infoProduk($id)
+    {
+        $data['main_content'] = 'admin/info_produk';
+        $data['data_produk'] = $this->produk_model->getById($id);
+        $data['id_produk'] = $id;
+        $data['coba'] = $this->produk_model->getById($id)->nama_produk;
+        $data['gambar_produk'] = $this->produk_model->getById($id)->gambar;
+        $data['info_kategori'] = 'Produk Bangunan';
+        $data['title_dashboard'] = 'Info Produk';
+        $this->load->view('admin/overview', $data);
     }
 }

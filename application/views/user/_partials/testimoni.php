@@ -16,6 +16,12 @@
         <!--================About Area =================-->
         <section class="about_area p_120">
         <div class="container">
+
+        <div>
+            <h4>Keterangan  :</h4>
+            Dibawah ini merupakan sebuah testimoni dari para pelanggan yang sudah mencoba dan memesan produk - produk<br>
+            dari perusahaan kami yang sudah terbukti kualitas kepuasan para pelanggan adalah kepuasan untuk kami juga.
+        </div><br><br><br>
         
         
         <table id="tabel-data" class="table table-striped table-bordered">

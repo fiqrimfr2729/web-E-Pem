@@ -1,25 +1,23 @@
-<?php 
+<?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
 
- // controller di awali dengan huruf kapital
+// controller di awali dengan huruf kapital
 class Lihatproduk extends CI_Controller
 {
     public function __construct()
     {
-        parent::__construct();
-        $this->load->model('Produk_model');
-    }
+		parent::__construct();
+	}
 
-    public function index(){
-        
-        
+    public function index()
+    {
+
+
         // user sebagai nama folder nya
         // contact itu untuk mamanggil method untuk urutan tampilan website / sbg Overview nya
-		$this->load->view('User/lihatproduk');
-    }
-    
 
-    
+        $data['title_dashboard'] = 'Produk Bangunan';
+        $this->load->view('User/lihatproduk', $data);
+    }
 }
- 
