@@ -33,6 +33,7 @@ class Lihatbarang extends CI_Controller
         $data['id_produk'] = $id;
         $data['coba'] = $this->produk_model->getById($id)->nama_produk;
         $data['gambar_produk'] = $this->produk_model->getById($id)->gambar;
+        $data['kategori'] = $this->produk_model->getById($id)->kategori;
         $data['info_kategori'] = 'Produk Mebel';
         $data['title_dashboard'] = 'Info Produk';
         $this->load->view('User/lihatbarang', $data);

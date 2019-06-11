@@ -9,19 +9,17 @@ class Bedug extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Produk_model');
-        $this->load->model('Produk_model');
         $this->load->model('kategori_model');
     }
 
     public function index()
     {
-
-        $data['bedug'] = $this->Produk_model->getProdukUser('JK03');
+        $data['produkbedug'] = $this->Produk_model->getProdukUser('JK03');
         $data['main_content'] = 'user/bedug';
         $data['title_dashboard'] = 'bedug';
         $this->load->view('User/dashbord', $data);
     }
-
+  
     public function add_to_cart($id_kategori)
     {
         $produk = $this->Produk_model->find($id_kategori);

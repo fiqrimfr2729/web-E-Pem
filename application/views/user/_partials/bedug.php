@@ -6,12 +6,11 @@
 			<h2>PRODUK UNGGULAN</h2>
 			<p>Dibawah ini adalah produk-produk unggulan dari perusahaan kami yang akhir-akhir ini banyak diminati dan dipesan oleh konsumen dari berbagai kota diluar majalengka khususnya.</p>
 		</div>
-	
-		<div>
-         <!-- Tampilkan semua produk -->
-         <div class="row" style="margin-left:40px">
+
+	       <!-- Tampilkan semua produk -->
+         <div class="row" style="margin-left:25px">
            <!-- looping products -->
-           <?php foreach ($bedug as $produk) : ?>
+           <?php foreach ($produkbedug as $produk) : ?>
              <div class="col-sm-3 col-md-3">
                <div class="thumbnail">
                  <div><img width="250px" height="200px" src="<?php echo base_url('upload/produk/' . $produk->gambar . '/thumbnail/' . $produk->gambar . '.png') ?>"> </div>
@@ -26,6 +25,5 @@
            <?php endforeach; ?>
            <!-- end looping -->
          </div>
-       </div>
-
+          
 </section>

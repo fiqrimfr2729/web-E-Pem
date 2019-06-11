@@ -18,7 +18,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 900px;
+        height: 1000px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -27,7 +27,7 @@
     div.kepala {
         background: #2980b9;
         padding: 10px 22px;
-        height: 60px;
+        height: 50px;
     }
 
     div.kepala h2.judul {
@@ -60,8 +60,8 @@
     textarea {
         color: black;
         border: 1px solid white;
-        width: 700px;
-        height: 500px;
+        width: 1000px;
+        height:300px;
     }
 
 
@@ -76,7 +76,10 @@
         }
 
         .card-header{
-            margin-top:-170px;
+            margin-top:100px;
+            width:1040px;
+            height:100px;
+            
         }
 </style>
 
@@ -104,13 +107,13 @@
                     <div class="grup">
                         <label for="isi_">Tentang : </label><br>
                         <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> " name="tentang"></textarea> </div><br><br>
-                    <div class="card-header">
-                        <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
-                            <i class="zmdi zmdi-plus"></i>EDIT</button>
-                    </div>
+                <div class="card-header"><br>
+                    <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
+                    <i class="zmdi zmdi-plus"></i>EDIT</button>
+                </div>
 
             </form>
-
+       
         </div>
     </div>
 

@@ -17,16 +17,19 @@
 <!--================Contact Area =================-->
 <section class="furniture_area p_120">
 <div style="margin-left:1px; border:black 1px solid; padding:25px; text-align:center; margin-top:-30px;">
-    <h4 style="font-size: 200%;"><?= $coba ?> </h4>
-    <br>
+   
     <img height="350px" src="<?php echo base_url('upload/produk/' . $data_produk->gambar . '/thumbnail/' . $data_produk->gambar . '.png') ?>" alt=""><br>
-    <br><h4 class="pb-2 display-5">Deskripsi : </h4>
+    <br><br>
+    <h4 style="font-size: 200%;">Nama Produk : <?= $coba ?></h4>
+
+    <h3 class="pb-2 display-5">Kategori : <?php echo $data_produk->kategori->nama_kategori ?></h3>
+    <h4 class="pb-2 display-5">Deskripsi : </h4>
     <?php echo $data_produk->deskripsi ?>
     <br><br>
 
     <form method="post" action="<?php echo site_url('user/pesansekarang') ?>">
-        <input type="hidden" name="id_produk" value="<?php echo $data_produk->id_produk ?>">
-        <button style="background:#f39c12; border:#f39c12; width:400px; height:40px;" type="submit" class="btn btn-info">Pesan</button>
+        <input type="hidden" name="id_produk" value="<?php echo $data_produk->id_produk ?>"><br>
+        <button style="background:#f39c12; border:#f39c12; width:400px; height:40px;" type="submit" class="btn btn-info">Pesan Sekarang</button>
     </form>
 </div>
 </section>

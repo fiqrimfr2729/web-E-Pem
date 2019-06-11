@@ -27,7 +27,7 @@
                             $i++ ?>
                         </td>
                         <td>
-                            <?php echo $data_pesanan->nama_pemesan ?>
+                            <?php echo $data_pesanan->namapemesan ?>
                         </td>
                         <td>
                             <?php echo ucfirst(strtolower($data_pesanan->kota->nama_kabkota)) ?>

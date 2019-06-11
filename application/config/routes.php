@@ -40,7 +40,6 @@ $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
 $route['user/mebel'] = 'user/mebel';
 $route['user/bangunan'] = 'user/bangunan';
-$route['user/bedug'] = 'user/bedug';
 $route['User/lihatproduk'] = 'User/lihatproduk';
 $route['user/pesancoustems'] = 'user/pesancoustems';
 

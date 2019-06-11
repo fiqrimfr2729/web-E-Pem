@@ -92,15 +92,15 @@
                                 <form action="<?php echo base_url('admin/cara_pesan/update') ?>" method="post" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label for="Cara_pesan">Cara Pesan</label>
-                                        <<<<<<< HEAD <span id="pesan" class="error"></span></p>
+                                        <span id="pesan" class="error"></span></p>
                                             <!--<input type="text" class="form-control txtOnly" id="cara_pesan" name="cara_pesan" placeholder="Masukkan Cara Pesan terbaru" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required />
                                         -->
 
-                                            =======
+                                           
                                             <span id="pesan" class="error"></span>
 
                                             <textarea rows="5" cols="40" name="cara_pesan" placeholder="<?php echo $profil['0']->caraPesan ?>" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required></textarea>
-                                            >>>>>>> ff3a80289de3dcde9d352b1501be34ac3d0e4b5a
+                                            
                                     </div>
                                     <textarea id="cara_pesan" name="cara_pesan" cols="4" rows="20" placeholder="<?= $profil['0']->caraPesan ?>"></textarea>
                             </div>
