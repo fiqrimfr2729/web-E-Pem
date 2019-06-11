@@ -104,7 +104,7 @@ class Produk_mebel extends CI_Controller
     {
         if ($this->produk_model->deleteProduk($id)) {
             $this->session->set_flashdata('success', 'Data berhasil dihapus');
-            redirect('admin/produk-mebel');
+            redirect('admin/produk_mebel');
         }
     }
 

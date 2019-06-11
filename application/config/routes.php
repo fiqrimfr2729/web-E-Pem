@@ -35,7 +35,7 @@ $route['admin/produk-mebel'] = 'admin/produk_mebel';
 
 // Bagian link buat web user
 $route['user/dashboard'] = 'user/Dashboard';
-$route['user/testmimoni'] = 'user/testimoni';
+$route['user/testimoni'] = 'user/testimoni';
 $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
 $route['user/mebel'] = 'user/mebel';

@@ -103,7 +103,7 @@ class Produk_bangunan extends CI_Controller
     {
         if ($this->produk_model->deleteProduk($id)) {
             $this->session->set_flashdata('success', 'Data berhasil dihapus');
-            redirect('admin/produk-bangunan');
+            redirect('admin/produk_bangunan');
         }
     }
 
