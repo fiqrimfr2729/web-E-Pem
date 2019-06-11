@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Pesanan_model extends CI_Model
 {
-    private $_table = 'produk';
+    private $_table = 'pesanan';
     private $_tableKota = 'kota';
     private $_tableProvinsi = 'provinsi';
 

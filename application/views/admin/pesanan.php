@@ -9,7 +9,6 @@
                 <tr>
                     <th width="30px">NO</th>
                     <th>NAMA PEMESAN</th>
-                    <th>PROVINSI</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
                     <th>STATUS</th>
