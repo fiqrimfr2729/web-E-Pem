@@ -79,6 +79,25 @@
                         Bahan Produk</a>
                 </li>
 
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        </i>Pesanan
+                        <span class="arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </span>
+                    </a>
+                    <ul class="list-unstyled navbar__sub-list js-sub-list">
+                        <li>
+                            <a href="<?php echo site_url('admin/kategori-bangunan') ?>">
+                                </i>Pesan</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('admin/kategori-mebel') ?>">
+                                </i>Costum</a>
+                        </li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
     </div>

@@ -33,7 +33,7 @@ class Produk_bedug extends CI_Controller
 
         if ($validation->run() == false) {
             $this->session->set_flashdata('error', 'Data produk gagal ditambahkan');
-            redirect('admin/produk-bedug');
+            redirect('admin/produk_bedug');
         } else {
             $gambar = $this->_uploadImage();
             $post = $this->input->post();
@@ -44,11 +44,11 @@ class Produk_bedug extends CI_Controller
             if ($gambar != false) {
                 if ($produk->addProduk($nama, $deskripsi, $kategori, $gambar)) {
                     $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
-                    redirect('admin/produk-bedug');
+                    redirect('admin/produk_bedug');
                 }
             } else {
                 $this->session->set_flashdata('error', 'Gambar tidak ada');
-                redirect('admin/produk-bedug');
+                redirect('admin/produk_bedug');
             }
         }
     }
