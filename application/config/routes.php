@@ -34,8 +34,8 @@ $route['admin/produk-mebel'] = 'admin/produk_mebel';
 */
 
 // Bagian link buat web user
-$route['user/home'] = 'user/home';
-$route['user/testmimoni'] = 'user/testimoni';
+$route['user/dashboard'] = 'user/Dashboard';
+$route['user/testimoni'] = 'user/testimoni';
 $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
 $route['user/mebel'] = 'user/mebel';
@@ -50,6 +50,7 @@ $route['api/getKategori'] = 'api/kategori/kategori/';
 $route['api/getKategoriJenis'] = 'api/kategori/kategoriByJenis/';
 $route['api/kategoriapi'] = 'api/kategoriapi/index_get';
 $route['api/login'] = 'api/login/login/';
+$route['api/pesanan'] = 'api/pesanan/ubah_status/';
 
 $route['api/example/users/(:num)'] = 'api/example/users/id/$1'; // Example 4
 $route['api/example/users/(:num)(\.)([a-zA-Z0-9_-]+)(.*)'] = 'api/example/users/id/$1/format/$3$4'; // Example 8

@@ -14,15 +14,13 @@ class Bedug extends CI_Controller
 
     public function index()
     {
-        $data['produkbedug'] = $this->Produk_model->getProdukUser('JK03');
-        $data['main_content'] = 'user/bedug';
-        $data['title_dashboard'] = 'bedug';
-        $this->load->view('User/dashbord', $data);
+        $data['produk'] = $this->Produk_model->all();
+        $this->load->view('User/bedug', $data);
     }
-  
-    public function add_to_cart($id_kategori)
+
+    public function add_to_cart($id)
     {
-        $produk = $this->Produk_model->find($id_kategori);
+        $produk = $this->Produk_model->find($id);
         $data = array(
             'id_produk'      => $produk->id_produk,
             'nama_produk'   => $produk->nama_produk,

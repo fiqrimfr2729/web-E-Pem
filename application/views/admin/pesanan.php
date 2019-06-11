@@ -9,7 +9,6 @@
                 <tr>
                     <th width="30px">NO</th>
                     <th>NAMA PEMESAN</th>
-                    <th>PROVINSI</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
                     <th>STATUS</th>
@@ -38,11 +37,11 @@
                             echo $newDate; ?>
                         </td>
                         <td>
-                            <?php if ($data_pesanan->status->id_status_pesanan == 'ST01') : ?>
+                            <?php if ($data_pesanan->status == 'ST01') : ?>
                                 <button class="btn btn-warning" type="button" title="Edit">
                                     Respon pesanan
                                 </button>
-                            <?php elseif ($data_pesanan->status->id_status_pesanan == 'ST02') : ?>
+                            <?php elseif ($data_pesanan->status == 'ST02') : ?>
                                 <button class="btn btn-secondary" type="button" title="Edit">
                                     Pesanan selesai
                                 </button>

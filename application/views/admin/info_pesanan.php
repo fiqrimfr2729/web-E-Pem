@@ -7,7 +7,7 @@
         <?php echo $pesanan->tanggal ?>
         <hr width="100%" size="2px" color="black">
         <h5 class="pb-2 display-5">Kota : </h5>
-        <?php echo ucfirst(strtolower($pesanan->kota)) ?>
+        <?php echo ucfirst(strtolower($pesanan->kota->nama_kabkota)) ?>
         <hr width="100%" size="2px" color="black">
         <h5 class="pb-2 display-5">Alamat : </h5>
         <?php echo $pesanan->alamat ?>

@@ -14,7 +14,7 @@ class Pesanan extends CI_Controller
 
         $data['main_content'] = 'admin/pesanan';
         $data['title_dashboard'] = 'Pesanan';
-        $data['pesanan'] = $this->pesanan_model->getAll();
+        $data['pesanan'] = $this->pesanan_model->getPesanan();
         $this->load->view('admin/overview', $data);
     }
 

@@ -3,8 +3,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Pesanan_model extends CI_Model
 {
-    private $_table = 'produk';
-
+    private $_table = 'pesanan';
+    private $_tableKota = 'kota';
     private $_tableProvinsi = 'provinsi';
 
 
@@ -21,6 +21,28 @@ class Pesanan_model extends CI_Model
     public function getAll()
     {
         return $this->db->get($this->_table)->result();
+    }
+
+    public function getPesanan()
+    {
+        $pesanan = $this->db->get($this->_table)->result();
+
+        foreach ($pesanan as $pesan) {
+            $pesan->kota = $this->db->get_where('kota', ['id_kabkota' => $pesan->kota])->row();
+        }
+
+        return $pesanan;
+    }
+
+    public function getById($id)
+    {
+        $pesanan = $this->db->get_where($this->_table, ['id_pesanan' => $id])->row();
+
+
+        $pesanan->kota = $this->db->get_where('kota', ['id_kabkota' => $pesanan->kota])->row();
+
+
+        return $pesanan;
     }
 
     public function getByKota($id_propinsi)
