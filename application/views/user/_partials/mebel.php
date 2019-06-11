@@ -18,7 +18,7 @@
 		<section class="furniture_area p_120">
 			<div>
 				<!-- Tampilkan semua produk -->
-				<div class="row" style="margin-left:25px">
+				<div class="row" style="margin-left:50px">
 					<!-- looping products -->
 					<?php foreach ($produkbykategori as $produk) : ?>
 						<div class="col-sm-3 col-md-3">
@@ -29,8 +29,8 @@
 									<h4 style="min-height:30px;"><?= $produk->nama_produk ?></h4>
 									<p><?= $produk->kategori ?></p>
 
-									<button type="button" onclick="window.location.href='<?php echo base_url('user/' . strtolower(str_replace(' ', '_', $title_dashboard)) . '/infoProduk/' . $produk->id_produk) ?>'" class="btn btn-info">Lihat Produk</button>
-								</div><br><br><br>
+									<button style="background:#f39c12; border:#f39c12; width:250px;" type="button" onclick="window.location.href='<?php echo base_url('user/' . strtolower(str_replace(' ', '_', $title_dashboard)) . '/infoProduk/' . $produk->id_produk) ?>'" class="btn btn-info">Lihat Produk</button>
+								</div><br><br><br><br>
 							</div>
 						</div>
 					<?php endforeach; ?>

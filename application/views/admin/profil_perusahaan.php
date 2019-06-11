@@ -18,7 +18,7 @@
     div.konten {
         background: #ffffff;
         width: 1100px;
-        height: 700px;
+        height: 900px;
         margin: 30px auto 0;
         border-radius: 16px;
         overflow: hidden;
@@ -74,6 +74,10 @@
             height: 40px;
             color: black;
         }
+
+        .card-header{
+            margin-top:-170px;
+        }
 </style>
 
 <body>
@@ -102,7 +106,7 @@
                         <textarea type="text" placeholder=" <?php echo $profil['0']->tentang ?> " name="tentang"></textarea> </div><br><br>
                     <div class="card-header">
                         <button class="au-btn au-btn-icon au-btn--green" data-toggle="modal" data-target="#modalFormCarapesan">
-                            <i class="zmdi zmdi-plus"></i>Edit</button>
+                            <i class="zmdi zmdi-plus"></i>EDIT</button>
                     </div>
 
             </form>

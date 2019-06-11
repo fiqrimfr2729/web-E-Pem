@@ -102,7 +102,7 @@ class Produk_bedug extends CI_Controller
     {
         if ($this->produk_model->deleteProduk($id)) {
             $this->session->set_flashdata('success', 'Data berhasil dihapus');
-            redirect('admin/produk-bedug');
+            redirect('admin/produk_bedug');
         }
     }
 

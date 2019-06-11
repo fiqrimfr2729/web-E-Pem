@@ -30,7 +30,7 @@
                  <div class="caption">
                    <h4 style="min-height:30px;"><?= $produk->nama_produk ?></h4>
                    <p><?= $produk->kategori ?></p>
-                   <button type="button" onclick="window.location.href='<?php echo base_url('user/' . strtolower(str_replace(' ', '_', $title_dashboard)) . '/infoProduk/' . $produk->id_produk) ?>'" class="btn btn-info">Lihat Produk</button>
+                   <button style="background:#f39c12; border:#f39c12; width:250px;" type="button" onclick="window.location.href='<?php echo base_url('user/' . strtolower(str_replace(' ', '_', $title_dashboard)) . '/infoProduk/' . $produk->id_produk) ?>'" class="btn btn-info">Lihat Produk</button>
                  </div><br><br><br>
                </div>
              </div>
