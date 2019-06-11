@@ -101,7 +101,6 @@ class Produk_model extends CI_Model
 		} else {
 			return array();
 		}
-	}
-	
-	
+    }
+
 }

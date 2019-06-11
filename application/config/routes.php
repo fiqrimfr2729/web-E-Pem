@@ -36,13 +36,11 @@ $route['admin/produk-mebel'] = 'admin/produk_mebel';
 // Bagian link buat web user
 $route['user/home'] = 'user/home';
 $route['user/testmimoni'] = 'user/testimoni';
-$route['user/contact'] = 'user/home';
 $route['user/pesansekarang'] = 'user/pesansekarang';
 $route['user/carapesan'] = 'user/carapesan';
 $route['user/mebel'] = 'user/mebel';
 $route['user/bangunan'] = 'user/bangunan';
-$route['user/lihatproduk'] = 'user/lihatproduk';
-$route['user/lihatbarang'] = 'user/lihatbarang';
+$route['User/lihatproduk'] = 'User/lihatproduk';
 $route['user/pesancoustems'] = 'user/pesancoustems';
 
 

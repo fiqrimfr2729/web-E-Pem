@@ -31,7 +31,7 @@
 			  <div class="caption">
 				<h4 style="min-height:30px;"><?=$produk->nama_produk?></h4>
 				<p><?=$produk->deskripsi?></p>
-				<button onclick="<?php echo base_url('user/lihatproduk') ?>" style="width:250px; background:#f39c12; border:#f39c12" type="button" class="btn btn-success">Lihat Produk</button>
+				<button onclick="window.location.href='<?php echo base_url('User/lihatproduk')?>'" style="width:250px; background:#f39c12; border:#f39c12" type="button" class="btn btn-success">Lihat Produk</button>
 				</div><br><br><br>
 			</div>
 		  </div>

@@ -16,9 +16,16 @@
 
         <!--================Contact Area =================-->
         <section class="furniture_area p_120">
-        <img width="250px" height="200px" src="<?php echo base_url('upload/produk/' . $produk->gambar . '/thumbnail/' . $produk->gambar . '.png') ?>">
-		  
-            <button style="width:200px; background:#f39c12; border:#f39c12" type="button" class="btn btn-info"  onclick="<?php echo base_url('') ?>">Chat</button>
-            <button style="width:250px; background:#d35400; border:#d35400" type="button" class="btn btn-info"  onclick="<?php echo base_url('') ?>">Pesan</button>
-                    
+       
+  
+                <h3 class="pb-2 display-5">Kategori : <?php echo $produk->kategori->nama_kategori ?></h3>
+                <hr width="100%" size="2px" color="black">
+
+                <h4 class="pb-2 display-5">Deskripsi : </h4>
+                <?php echo $produk->deskripsi ?>
+                <hr width="100%" size="2px" color="black">
+                
+            <button style="width:200px; background:#f39c12; border:#f39c12" type="button" class="btn btn-info"  onclick="<?php echo base_url('') ?>">WhatsApp</button>
+            <button style="width:250px; background:#d35400; border:#d35400" type="button" class="btn btn-info"  onclick="<?php echo base_url('') ?>">Pesan Sekarang</button>
+           
         </section>

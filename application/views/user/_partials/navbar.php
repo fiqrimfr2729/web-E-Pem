@@ -24,7 +24,7 @@
 						
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="<?php echo base_url('user/dasboard') ?>">BERANDA</a></li> 
+								<li class="nav-item active"><a class="nav-link" href="<?php echo base_url('user/dashbord') ?>">BERANDA</a></li> 
 								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/profile') ?>">TENTANG</a></li>								
 								<li class="nav-item"><a class="nav-link" href="<?php echo base_url('user/testimoni') ?>">TESTIMONI</a></li> 
                                 <li class="nav-item"><a class="nav-link" href="<?php echo base_url('User/bahanproduk') ?>">BAHAN PRODUK</a></li>

@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
  // controller di awali dengan huruf kapital
-class Mebel extends CI_Controller
+class Bedug extends CI_Controller
 {
     public function __construct()
     {
@@ -14,7 +14,7 @@ class Mebel extends CI_Controller
 	public function index()
 	{       
 		$data['produk'] = $this->Produk_model->all();
-		$this->load->view('user/mebel', $data);
+		$this->load->view('User/bedug', $data);
 	}
 	
 	public function add_to_cart($id)
@@ -32,7 +32,6 @@ class Mebel extends CI_Controller
 		redirect(base_url());
 	}
 	
-
 	
 }
  
