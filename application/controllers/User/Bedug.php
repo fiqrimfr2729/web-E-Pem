@@ -9,7 +9,6 @@ class Bedug extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Produk_model');
-        $this->load->model('Produk_model');
         $this->load->model('kategori_model');
     }
 
