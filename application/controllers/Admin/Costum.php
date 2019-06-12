@@ -1,33 +1,31 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Pesanan extends CI_Controller
+class Costum extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('pesanan_model');
+        $this->load->model('costum_model');
     }
 
     public function index()
     {
 
-        $data['main_content'] = 'admin/pesanan';
-        $data['title_dashboard'] = 'Pesanan-produk';
-        $data['pesanan'] = $this->pesanan_model->getPesanan();
+        $data['main_content'] = 'admin/list_costum';
+        $data['title_dashboard'] = 'Pesanan-costum';
+        $data['pesanan'] = $this->costum_model->getPesanan();
         $this->load->view('admin/overview', $data);
     }
 
     public function infoPesanan($id)
     {
-        $pesanan = $this->pesanan_model->getById($id);
+        $pesanan = $this->costum_model->getById($id);
         $data['main_content'] = 'admin/info_pesanan';
         $data['title_dashboard'] = 'Info Pesanan';
         $data['pesanan'] = $pesanan;
 
         $this->load->view('admin/overview', $data);
-
-        //$this->load->helper('www.google.com');
     }
 
     public function delete($id)

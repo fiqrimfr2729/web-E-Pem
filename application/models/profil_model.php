@@ -24,7 +24,7 @@ class Profil_model extends CI_Model
     {
         $cara_pesan = $this->input->post('cara_pesan');
 
-        $this->db->set('caraPesan', $cara_pesan);
+        $this->db->set('cara_pesan', $cara_pesan);
         $this->db->update('profil');
         $this->session->set_flashdata('success', 'Data berhasil diubah!!!');
 

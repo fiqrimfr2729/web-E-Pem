@@ -61,7 +61,7 @@
             </div><br>
 
             <div class="group">
-                <label for="gambar">Pilih Gambar : </label>
+                <label for="img">Pilih Gambar : </label>
                 <input class="form-control-file" type="file" name="img" required />
             </div><br>
 

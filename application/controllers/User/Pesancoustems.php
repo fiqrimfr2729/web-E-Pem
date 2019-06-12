@@ -29,7 +29,7 @@ class Pesancoustems extends CI_Controller
     public function tambahCostum()
     {
         $this->input->post();
-        $this->id = uniqid();
+
         $this->nama_pemesan = $_POST['nama_pemesan'];
         $this->kota = $_POST['kota'];
         $this->provinsi = $_POST['provinsi'];
@@ -37,10 +37,11 @@ class Pesancoustems extends CI_Controller
         $this->kontak = $_POST['kontak'];
         $this->alamat = $_POST['alamat'];
         $this->bahan = $_POST['bahan'];
-        $this->img = $_POST['img'];
+        $this->img = $this->_uploadImage();
+        $this->status_pesanan = 'ST01';
         $this->db->insert($this->_table, $this);
 
-        redirect('User/pesancostoums');
+        redirect('User/pesancoustems');
     }
 
     public function listKota()
@@ -85,7 +86,7 @@ class Pesancoustems extends CI_Controller
     private function _uploadImage()
     {
 
-        $config['upload_path']          = './upload/testimoni/';
+        $config['upload_path']          = './upload/costum/';
         $config['allowed_types']        = 'gif|jpg|png|jpeg';
         $config['file_name']            = date("ymdhis");
         $config['overwrite']            = true;
@@ -93,7 +94,7 @@ class Pesancoustems extends CI_Controller
 
         $this->load->library('upload', $config);
 
-        if ($this->upload->do_upload('gambar')) {
+        if ($this->upload->do_upload('img')) {
             return $this->upload->data("file_name");
         }
 

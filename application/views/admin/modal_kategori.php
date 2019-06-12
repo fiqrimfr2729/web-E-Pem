@@ -228,12 +228,67 @@
                     <div class="form-group">
                         <label for="Cara_pesan">Cara Pesan</label>
                         <span id="pesan" class="error"></span></p>
-                        <textarea rows="5" cols="40" id="cara_pesan" name="cara_pesan" placeholder="<?php echo $profil['0']->caraPesan ?>" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required></textarea>
+                        <textarea rows="5" cols="40" id="cara_pesan" name="cara_pesan" placeholder="<?php echo $profil['0']->cara_pesan ?>" oninvalid="this.setCustomValidity('Form tidak boleh kosong!')" required></textarea>
                     </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
                 <button type="submit" class="btn btn-primary">Ubah</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="editAkun" tabindex="-1" role="dialog" aria-labelledby="mediumModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mediumModalLabel">Data Produk Baru</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="<?php echo base_url('admin/' . strtolower(str_replace(' ', '_', $title_dashboard)) . '/tambahProduk') ?>" method="post" role="form" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="Nama Produk">Nama Produk</label>
+                        <input type="text" class="form-control" id="nama_produk" name="nama_produk" placeholder="Masukkan nama produk" pattern="[a-zA-Z0-9\s\-]+" required="required" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="deskripsi">Deskripsi</label>
+                        <textarea class="form-control" id="deskripsi" name="deskripsi" placeholder="Deskripsi" pattern="[a-zA-Z0-9\s\-]+"></textarea>
+                    </div>
+
+                    <?php if ($title_dashboard != "Produk Bedug") : ?>
+                        <div class="form-group">
+                            <label for="Kategori">Kategori</label>
+                            <select name="kategori" id="kategori" name="kategori" class="form-control" required="required">
+                                <option value="">Pilih Kategori</option>
+                                <?php foreach ($kategori as $data_kategori) : ?>
+                                    <option value="<?php echo $data_kategori->id_kategori ?>"> <?php echo $data_kategori->nama_kategori ?> </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    <?php else : ?>
+                        <div class="form-group">
+                            <label for="Kategori">Kategori</label>
+                            <select name="kategori" id="kategori" name="kategori" class="form-control">
+                                <option value="30" selected>Bedug</option>
+                            </select>
+                        </div>
+                    <?php endif; ?>
+
+                    Pilih File :
+                    <div class="form-group">
+                        <label for="gambar"></label>
+                        <input class="form-control-file" type="file" name="gambar" required />
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                <button type="submit" class="btn btn-primary">Masukan</button>
                 </form>
             </div>
         </div>

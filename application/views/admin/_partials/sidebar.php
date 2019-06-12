@@ -72,7 +72,7 @@
                                 </i>Produk</a>
                         </li>
                         <li>
-                            <a href="<?php echo site_url('admin/kategori-mebel') ?>">
+                            <a href="<?php echo site_url('admin/costum') ?>">
                                 </i>Costum</a>
                         </li>
                     </ul>

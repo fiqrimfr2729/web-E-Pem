@@ -23,7 +23,7 @@ class Pesansekarang extends CI_Controller
         //$data['kota'] = $this->pesanan_model->getByKota();
 
         $data['provinsi'] = $this->pesanan_model->getByProvinsi();
-        $data['bahan'] =  $this->bahan_model->getAll();
+        $data['bahan'] =  $this->bahan_model->getByStatus();
         $id_produk = $this->input->post("id_produk");
         $data['id_produk'] = $id_produk;
 

@@ -11,7 +11,7 @@
                     <th>NAMA PEMESAN</th>
                     <th>KOTA</th>
                     <th>TANGGAL</th>
-                    <th>KONTAK</th>
+                    <th>STATUS</th>
                     <th width="150px">AKSI</th>
 
                 </tr>
@@ -37,12 +37,21 @@
                             echo $newDate; ?>
                         </td>
                         <td>
-                            <?php echo $data_pesanan->kontak ?>
+                            <?php $no = substr($data_pesanan->kontak, 1, strlen($data_pesanan->kontak) - 1);
+                            if ($data_pesanan->status_pesanan == 'ST01') : ?>
+                                <a class="btn btn-warning" type="button" title="Edit" href="https://web.whatsapp.com/send?phone=62<?php echo $no ?> " target="_blank" title="Respon">
+                                    Respon pesanan
+                                </a>
+                            <?php elseif ($data_pesanan->status_pesanan == 'ST02') : ?>
+                                <button class="btn btn-secondary" type="button" title="Edit">
+                                    Pesanan selesai
+                                </button>
+                            <?php endif; ?>
                         </td>
                         <td>
                             <div>
-                                <button onclick="deleteConfirm('<?php echo site_url('admin/pesanan/delete/' . $data_pesanan->id_pesanan) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
-                                <button type="button" onclick="window.location.href='<?php echo base_url('admin/pesanan/infoPesanan/' . $data_pesanan->id_pesanan) ?>'" class="btn btn-info">Info</button>
+                                <button onclick="deleteConfirm('<?php echo site_url('admin/costum/delete/' . $data_pesanan->id) ?>')" type="button" class="btn btn-danger" onclick="">Hapus</button>
+                                <button type="button" onclick="window.location.href='<?php echo base_url('admin/costum/infoPesanan/' . $data_pesanan->id) ?>'" class="btn btn-info">Info</button>
                             </div>
                         </td>
                     </tr>
