@@ -53,6 +53,7 @@ class Pesansekarang extends CI_Controller
 
         $this->db->insert($this->_table, $this);
 
+        $this->session->set_flashdata('success', 'Pesanan berhasil');
         redirect('User/pesansekarang');
     }
 

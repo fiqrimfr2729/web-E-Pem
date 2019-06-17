@@ -103,12 +103,12 @@
 
               <div class="grup">
                   <label>Nama Pemesan : </label>
-                  <input type="text" placeholder="  " name="nama_pemesan" class="form-control" />
+                  <input type="text" placeholder="  " name="nama_pemesan" class="form-control" required />
               </div><br>
 
               <div class="grup">
                   <label>Pilih Bahan : </label>
-                  <select name="bahan" id="bahan" class="form-control">
+                  <select name="bahan" id="bahan" class="form-control" required>
                       <?php
                         echo '<option value="">PILIH BAHAN PRODUK</option>';
                         foreach ($bahan as $bahan) {
@@ -120,18 +120,18 @@
 
               <div class="grup">
                   <label>Tanggal : </label>
-                  <input type="date" value="<?php echo date('y-m-d'); ?>" name="tanggal" class="form-control" />
+                  <input type="date" value="<?php echo date('y-m-d'); ?>" name="tanggal" class="form-control" required />
               </div><br>
 
               <div class="grup">
                   <label>kontak : </label>
-                  <input type="tel" placeholder="No.Telephone" name="kontak" class="form-control" />
+                  <input type="tel" placeholder="No.Telephone" name="kontak" class="form-control" required />
               </div><br>
 
 
               <div class="grup">
                   <label>Pilih Provinsi : </label>
-                  <select name="provinsi" id="provinsi" class="form-control">
+                  <select name="provinsi" id="provinsi" class="form-control" required>
                       <?php
                         echo '<option value="">PILIH PROVINSI</option>';
                         foreach ($provinsi as $prov) {
@@ -143,7 +143,7 @@
 
               <div class="grup">
                   <label>Pilih Kota : </label>
-                  <select name="kota" id="kota" class="form-control">
+                  <select name="kota" id="kota" class="form-control" required>
 
                   </select>
               </div><br>
@@ -154,11 +154,11 @@
 
               <div class="grup">
                   <label>Alamat : </label>
-                  <input type="text" placeholder="Alamat Pembeli" name="alamat" class="form-control" />
+                  <input type="text" placeholder="Alamat Pembeli" name="alamat" class="form-control" required />
               </div><br>
 
               <div class="grup">
-                  <input type="text" placeholder="" id="status" name="status" class="form-control" />
+                  <input type="text" placeholder="" id="status" name="status" class="form-control" required />
               </div><br>
 
               <input type="hidden" name="id_produk" value="<?php echo $id_produk ?>" />

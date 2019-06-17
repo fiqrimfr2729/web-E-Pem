@@ -21,8 +21,8 @@ class Costum extends CI_Controller
     public function infoPesanan($id)
     {
         $pesanan = $this->costum_model->getById($id);
-        $data['main_content'] = 'admin/info_pesanan';
-        $data['title_dashboard'] = 'Info Pesanan';
+        $data['main_content'] = 'admin/info_costum';
+        $data['title_dashboard'] = 'Info Pesanan Custom';
         $data['pesanan'] = $pesanan;
 
         $this->load->view('admin/overview', $data);

@@ -15,20 +15,19 @@
   </section>
   <!--================End Home Banner Area =================-->
   <style>
-   textarea {
-        color: grey;
-        border: 1px solid white;
-        font-size:17px;
-        padding:100px;
-        margin-top:-50px;
+      textarea {
+          color: grey;
+          border: 1px solid white;
+          font-size: 17px;
+          padding: 100px;
+          margin-top: -50px;
 
-   }
-
+      }
   </style>
   <!--================Contact Area =================-->
   <section class="contact_area p_120">
-            <form action="" method="post">
-                
-                <textarea cols="70" rows="20"><?php echo $profil['0']->caraPesan ?></textarea>
-            </form>    
+      <form action="" method="post">
+
+          <textarea cols="70" rows="20"><?php echo $profil['0']->cara_pesan ?></textarea>
+      </form>
   </section>

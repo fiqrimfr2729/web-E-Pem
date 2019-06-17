@@ -35,13 +35,13 @@ class Bedug extends CI_Controller
 
     public function infoProduk($id)
     {
-        $data['main_content'] = 'admin/info_produk';
-        $data['data_produk'] = $this->produk_model->getById($id);
+        $data['main_content'] = 'user/info_produk';
+        $data['data_produk'] = $this->Produk_model->getById($id);
         $data['id_produk'] = $id;
-        $data['coba'] = $this->produk_model->getById($id)->nama_produk;
-        $data['gambar_produk'] = $this->produk_model->getById($id)->gambar;
+        $data['coba'] = $this->Produk_model->getById($id)->nama_produk;
+        $data['gambar_produk'] = $this->Produk_model->getById($id)->gambar;
         $data['info_kategori'] = 'Produk Bedug';
         $data['title_dashboard'] = 'Info Produk';
-        $this->load->view('admin/overview', $data);
+        $this->load->view('user/lihatproduk', $data);
     }
 }

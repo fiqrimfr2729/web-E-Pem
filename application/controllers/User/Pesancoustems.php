@@ -28,8 +28,8 @@ class Pesancoustems extends CI_Controller
 
     public function tambahCostum()
     {
+        $this->img = $this->_uploadImage();
         $this->input->post();
-
         $this->nama_pemesan = $_POST['nama_pemesan'];
         $this->kota = $_POST['kota'];
         $this->provinsi = $_POST['provinsi'];
@@ -37,11 +37,16 @@ class Pesancoustems extends CI_Controller
         $this->kontak = $_POST['kontak'];
         $this->alamat = $_POST['alamat'];
         $this->bahan = $_POST['bahan'];
-        $this->img = $this->_uploadImage();
         $this->status_pesanan = 'ST01';
-        $this->db->insert($this->_table, $this);
 
-        redirect('User/pesancoustems');
+        if ($this->img != false) {
+            $this->db->insert($this->_table, $this);
+            $this->session->set_flashdata('success', 'Pesanan berhasil');
+            redirect('User/pesancoustems');
+        } else {
+            $this->session->set_flashdata('error', 'Upload gambar gagal');
+            redirect('User/pesancoustems');
+        }
     }
 
     public function listKota()
@@ -65,39 +70,25 @@ class Pesancoustems extends CI_Controller
 
     }
 
-    public function uploadGambar()
-    {
-        $gambar = $this->_uploadImage();
-        $testimoni = $this->testimoni_model;
-        $post = $this->input->post();
-        $date = $post['tanggal'];
 
-        if ($gambar != false) {
-            if ($testimoni->save($gambar, $date)) {
-                $this->session->set_flashdata('success', 'Data berhasil ditambahkan');
-                redirect('admin/testimoni');
-            }
-        } else {
-            $this->session->set_flashdata('error', 'Gambar belum dipilih');
-            redirect('admin/testimoni');
-        }
-    }
 
     private function _uploadImage()
     {
-
+        $date = date("ymdhis");
+        mkdir('./upload/produk/' . $date . '/thumbnail/', 0777, true);
         $config['upload_path']          = './upload/costum/';
         $config['allowed_types']        = 'gif|jpg|png|jpeg';
-        $config['file_name']            = date("ymdhis");
-        $config['overwrite']            = true;
-        $config['max_size']             = 1024;
+        $config['file_name']            = $date . '.png';
+
+        $config['max_size']             = 5120;
 
         $this->load->library('upload', $config);
+        $this->upload->initialize($config);
 
-        if ($this->upload->do_upload('img')) {
-            return $this->upload->data("file_name");
+        if ($this->upload->do_upload('gambar')) {
+            return $date;
+        } else {
+            return false;
         }
-
-        return false;
     }
 }

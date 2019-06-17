@@ -19,10 +19,10 @@
     <div class="container">
 
         <h3 style="text-align:center;">FORM PEMESANAN COUSTEMS</h3><br><br>
-        <form id="regForm" action="<?php echo site_url('user/pesancoustems/tambahCostum'); ?>" method="post">
+        <form id="regForm" action="<?php echo site_url('user/pesancoustems/tambahCostum'); ?>" method="post" role="form" enctype="multipart/form-data">
             <div class="grup">
                 <label>Nama Pemesan : </label>
-                <input type="text" placeholder="Masukan Nama Lengkap" name="nama_pemesan" class="form-control" />
+                <input type="text" placeholder="Masukan Nama Lengkap" name="nama_pemesan" class="form-control" required />
             </div><br>
 
 
@@ -47,23 +47,23 @@
 
             <div class="grup">
                 <label>Tanggal : </label>
-                <input type="date" value="<?php echo date('y-m-d'); ?>" name="tanggal" class="form-control" />
+                <input type="date" value="<?php echo date('y-m-d'); ?>" name="tanggal" class="form-control" required>
             </div><br>
 
             <div class="grup">
                 <label>kontak : </label>
-                <input type="tel" placeholder="Masukan No.Telp" name="kontak" class="form-control" />
+                <input type="tel" placeholder="Masukan No.Telp" name="kontak" class="form-control" required />
             </div><br>
 
             <div class="grup">
                 <label>Alamat : </label>
-                <input type="text" placeholder="Masukan Alamat" name="alamat" class="form-control" />
+                <input type="text" placeholder="Masukan Alamat" name="alamat" class="form-control" required />
             </div><br>
 
-            <div class="group">
-                <label for="img">Pilih Gambar : </label>
-                <input class="form-control-file" type="file" name="img" required />
-            </div><br>
+            <div class="form-group">
+                <label for="gambar"></label>
+                <input class="form-control-file" type="file" name="gambar" required />
+            </div>
 
             <div class="grup">
                 <label>Pilih Bahan : </label>
